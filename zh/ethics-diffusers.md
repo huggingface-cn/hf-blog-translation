@@ -3,7 +3,7 @@ title: "开发 Diffusers 库的道德行为指南"
 thumbnail: /blog/assets/ethics-diffusers/thumbnail.png
 authors:
 - user: giadap
-translator:
+translators:
 - user: innovation64
 ---
 
