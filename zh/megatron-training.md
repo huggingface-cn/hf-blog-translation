@@ -36,7 +36,7 @@ Megatron-LM 带有一个高效的 DataLoader，其中数据在训练前被 token
 当一个计算在GPU上运行时，必要的数据会从内存中取出并加载到GPU上，然后计算结果被保存回内存。简单来说，融合内核的思想是：将通常由 Pytorch 单独执行的类似操作组合成一个单独的硬件操作。因此可以将多个离散计算合并为一个，从而减少在多个离散计算中的内存移动次数。下图说明了内核融合的思想。它的灵感来自这篇[论文](https://www.arxiv-vanity.com/papers/1305.1183/)，该论文详细讨论了这个概念。
 
 <p align="center">
-    <img src="assets/100_megatron_training/kernel_fusion.png" width="600" />
+    <img src="../assets/100_megatron_training/kernel_fusion.png" width="600" />
 </p>
 
 当 f、g 和 h 融合在一个内核中时，f 和 g 的中间结果 x’ 和 y’ 存储在 GPU 寄存器中并立即被 h 使用。但是如果不融合，x’ 和 y’就需要复制到内存中，然后由 h 加载。因此，融合 CUDA 内核显着加快了计算速度。此外，Megatron-LM 还使用 [Apex](https://github.com/NVIDIA/apex) 的 AdamW 融合实现，它比 Pytorch 实现更快。
