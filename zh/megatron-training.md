@@ -12,9 +12,9 @@ translators:
 
 <!-- {authors} -->
 
-在 Pytorch 中训练大语言模型不仅仅是写一个训练循环这么简单。我们通常需要将模型分布在多个设备上，并使用许多优化技术以实现稳定高效的训练。Hugging Face 🤗 [Accelerate](https://huggingface.co/docs/accelerate/index) 的创建是为了支持跨GPU和TPU的分布式训练，并使其能够非常容易的集成到训练代码中。🤗 [Transformers](https://huggingface.co/docs/transformers/index) 还支持使用 [Trainer](https://huggingface.co/docs/transformers/main_classes/trainer#transformers.Trainer) API来训练，其在Pytorch中提供功能完整的训练接口，甚至不需要自己编写训练的代码。
+在 Pytorch 中训练大语言模型不仅仅是写一个训练循环这么简单。我们通常需要将模型分布在多个设备上，并使用许多优化技术以实现稳定高效的训练。Hugging Face 🤗 [Accelerate](https://huggingface.co/docs/accelerate/index) 的创建是为了支持跨 GPU 和 TPU 的分布式训练，并使其能够非常容易的集成到训练代码中。🤗 [Transformers](https://huggingface.co/docs/transformers/index) 还支持使用 [Trainer](https://huggingface.co/docs/transformers/main_classes/trainer#transformers.Trainer) API来训练，其在Pytorch中提供功能完整的训练接口，甚至不需要自己编写训练的代码。
 
-[Megatron-LM](https://github.com/NVIDIA/Megatron-LM)是研究人员用于预训练大型Transformer模型的另一个流行工具，它是 NVIDIA 应用深度学习研究团队开发的一个强大框架。与 `accelerate` 和 `Trainer`不同，Megatron-LM 使用起来并不简单，对于初学者来说可能难以上手。但它针对 GPU 上的训练进行了高度优化。在这篇文章中，你将学习如何使用 Megatron-LM 框架在 NVIDIA GPU 上训练语言模型，并将其与 `transformers`结合。
+[Megatron-LM](https://github.com/NVIDIA/Megatron-LM) 是研究人员用于预训练大型Transformer模型的另一个流行工具，它是 NVIDIA 应用深度学习研究团队开发的一个强大框架。与 `accelerate` 和 `Trainer`不同，Megatron-LM 使用起来并不简单，对于初学者来说可能难以上手。但它针对 GPU 上的训练进行了高度优化。在这篇文章中，你将学习如何使用 Megatron-LM 框架在 NVIDIA GPU 上训练语言模型，并将其与 `transformers`结合。
 
 我们将分解在此框架中训练 GPT2 模型的不同步骤，包括：
 
