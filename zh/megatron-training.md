@@ -43,13 +43,13 @@ Megatron-LM 带有一个高效的 DataLoader，其中数据在训练前被 token
 
 虽然我们可以在 `transformers` 中自定义 Megatron-LM 中的 DataLoader 和 Apex 的融合优化器，但自定义融合 CUDA 内核对新手来说太不友好了。
 
-现在您已经熟悉了该框架及其优势，让我们进入训练细节吧！
+现在你已经熟悉了该框架及其优势，让我们进入训练细节吧！
 
 ## 如何使用 Megatron-LM 框架训练？
 
 ### 环境设置
 
-设置环境的最简单方法是从 [NGC](https://catalog.ngc.nvidia.com/orgs/nvidia/containers/pytorch) 拉取附带所有所需环境的 NVIDIA PyTorch 容器。有关详细信息，请参阅[文档](https://docs.nvidia.com/deeplearning/frameworks/pytorch-release-notes/index.html)。如果您不想使用此容器，则需要安装最新的 pytorch、cuda、nccl 和 NVIDIA [APEX](https://github.com/NVIDIA/apex#quick-start) 版本和 `nltk` 库。
+设置环境的最简单方法是从 [NGC](https://catalog.ngc.nvidia.com/orgs/nvidia/containers/pytorch) 拉取附带所有所需环境的 NVIDIA PyTorch 容器。有关详细信息，请参阅[文档](https://docs.nvidia.com/deeplearning/frameworks/pytorch-release-notes/index.html)。如果你不想使用此容器，则需要安装最新的 pytorch、cuda、nccl 和 NVIDIA [APEX](https://github.com/NVIDIA/apex#quick-start) 版本和 `nltk` 库。
 
 在安装完 Docker 之后，你可以使用以下命令运行容器（ `xx.xx` 表示你的 Docker 版本），然后在其中克隆 [Megatron-LM 库](https://github.com/NVIDIA/Megatron-LM)：
 
@@ -100,7 +100,7 @@ python tools/preprocess_data.py \
 
 ### 训练
 
-你可以使用如下所示配置模型架构和训练参数，或将其放入您将运行的 bash 脚本中。该命令在 8 个 GPU 上参数为 110M 的 CodeParrot 模型进行预训练。请注意，数据默认按 969:30:1 的比例划分为训练/验证/测试集。
+你可以使用如下所示配置模型架构和训练参数，或将其放入你将运行的 bash 脚本中。该命令在 8 个 GPU 上参数为 110M 的 CodeParrot 模型进行预训练。请注意，数据默认按 969:30:1 的比例划分为训练/验证/测试集。
 
 ```bash
 GPUS_PER_NODE=8
@@ -154,7 +154,7 @@ python3 -m torch.distributed.launch $DISTRIBUTED_ARGS \
 
 ### 将模型转换为 🤗 Transformers
 
-训练结束后，我们希望使用 `transformers` 库对该模型进行评估或将其部署到生产环境中。你可以按照[教程](https://huggingface.co/nvidia/megatron-gpt2-345m)将其转换为 `transformers` 模型。例如，在训练完成后，您可以复制第 150k 次迭代的权重，并使用以下命令将文件 `model_optim_rng.pt` 转换为 `transformers` 支持的 `pytorch_model.bin` 文件：
+训练结束后，我们希望使用 `transformers` 库对该模型进行评估或将其部署到生产环境中。你可以按照[教程](https://huggingface.co/nvidia/megatron-gpt2-345m)将其转换为 `transformers` 模型。例如，在训练完成后，你可以复制第 150k 次迭代的权重，并使用以下命令将文件 `model_optim_rng.pt` 转换为 `transformers` 支持的 `pytorch_model.bin` 文件：
 
 ```bash
 # to execute outside the container:
@@ -167,9 +167,9 @@ export PYTHONPATH=Megatron-LM
 python transformers/src/transformers/models/megatron_gpt2/convert_megatron_gpt2_checkpoint.py nvidia/megatron-codeparrot-small/model_optim_rng.pt
 ```
 
-请注意，如果你打算使用原始的分词器，您将需要在转换后将生成的词汇文件和合并表替换为我们之前介绍的原始文件。
+请注意，如果你打算使用原始的分词器，你将需要在转换后将生成的词汇文件和合并表替换为我们之前介绍的原始文件。
 
-不要忘记将你的模型推送到中心并与社区分享，只需三行代码 🤗：
+不要忘记将你的模型推送到 hub 并与社区分享，只需三行代码 🤗：
 
 ```python
 from transformers import AutoModelForCausalLM
@@ -194,7 +194,7 @@ print(outputs[0]["generated_text"])
     print("Hello World!")
 ```
 
-Transformer 还可以有效地处理大模型推理。如果您训练了一个非常大的模型（例如训练时使用了模型并行），你可以通过以下命令轻松地进行推理：
+Transformers 还可以有效地处理大模型推理。如果你训练了一个非常大的模型（例如训练时使用了模型并行），你可以通过以下命令轻松地进行推理：
 
 ```python
 from transformers import AutoModelForCausalLM
