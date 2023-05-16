@@ -19,7 +19,7 @@ translators:
 
 ### RWKV 项目概览
 
-RWKV 项目已经启动，由 [Bo Peng](https://github.com/BlinkDL) 主导、贡献和维护。同时项目成员在官方 Discord 也开设了不同主题的讨论频道：如性能（RWKV 的 C++、量化等），扩展性（数据集收集和处理），相关研究（chat 微调、多模态微调等）。该项目中训练 RWKV 模型所需的 GPU 资源由 Stability AI 提供。
+RWKV 项目已经启动，由 [Bo Peng](https://github.com/BlinkDL) 主导、贡献和维护。同时项目成员在官方 Discord 也开设了不同主题的讨论频道：如性能（RWKV.cpp、量化等），扩展性（数据集收集和处理），相关研究（chat 微调、多模态微调等）。该项目中训练 RWKV 模型所需的 GPU 资源由 Stability AI 提供。
 
 读者可以加入 [官方 discord 频道](https://discordapp.com/users/468093332535640064) 了解详情或者参与讨论。如想了解 RWKV 背后的思想，可以参考这两篇博文：
 
@@ -48,7 +48,7 @@ RNN 架构是最早广泛用于处理序列数据的神经网络架构之一。�
 
 在训练过程中，Transformer 架构相比于传统的 RNN 和 CNN 有多个优势，最突出的优势是它能够学到上下文特征表达。不同于每次仅处理输入序列中一个 token 的 RNN 和 CNN，transformer 可以单次处理整个输入序列，这种特性也使得 transformer 可以很好地应对长距离序列 token 依赖问题，因此 transformer 在语言翻译和问答等多种任务中表现非常亮眼。
 
-在推理过程中，RNN 架构在推理速度和内存效率方面会具有一些优势。例如计算简单（只需矩阵-向量操作）、内存友好（内存不会随着推理阶段的进行而增加），速度稳定（与上下文窗口长度一致，因为 RNN 只关注当前时刻的 token 和状态）。
+在推理过程中，RNN 架构在推理速度和内存效率方面会具有一些优势。例如计算简单（只需矩阵-向量运算）、内存友好（内存不会随着推理阶段的进行而增加），速度稳定（与上下文窗口长度一致，因为 RNN 只关注当前时刻的 token 和状态）。
 
 ## RWKV 架构
 
@@ -173,3 +173,19 @@ Bo 目前正在研究在多语言语料库上训练 RWKV 模型，最近发布�
 ### 社区后续研究方向 
 
 RWKV 社区非常活跃，致力于几个后续研究方向。项目清单可以在 RWKV 的 [discord 专用频道中找到（访问超链接时请确保已加入 discord 频道）](https://discord.com/channels/992359628979568762/1068563033510653992)。欢迎加入这个 RWKV 研究频道，以及对 RWKV 的积极贡献！
+
+### 模型压缩与加速
+
+由于只需要矩阵-向量运算，对于非标准化和实验性的计算硬件，RWKV 是一个非常理想的架构选择，例如光子处理器/加速器。
+
+因此自然地，RWKV 架构也可以使用经典的加速和压缩技术（如 [ONNX](https://github.com/harrisonvanderbyl/rwkv-onnx)、4位/8位量化等）。我们希望集成了 transformer 的 RWKV 架构能够使更多开发者和从业者受益。
+
+在不久的将来，RWKV 还可以使用 [optimum](https://github.com/huggingface/optimum) 库提出的加速技术。[rwkv.cpp](https://github.com/saharNooby/rwkv.cpp) 或 [rwkv-cpp-cuda](https://github.com/harrisonvanderbyl/rwkv-cpp-cuda) 仓库涉及的其中一些技术在库中已标明。
+
+### 致谢
+
+我们 Hugging Face 团队非常感谢 Bo 和 RWKV 社区抽出宝贵时间来回答关于架构的问题，以及非常感谢他们的帮助和支持。我们很期待在 HF 生态中看到更多 RWKV 模型的应用。我们还要感谢 [Johan Wind](https://twitter.com/johanwind) 发布的关于 RWKV 的博文，这对我们理解架构本身和其潜力有很大帮助。最后，我们着重感谢 [ArEnSc](https://github.com/ArEnSc) 开启 RWKV 集成到 `transformers` 库的 PR 所做的工作，以及感谢 [Merve Noyan](https://huggingface.co/merve)、[Maria Khalusova](https://huggingface.co/MariaK) 和 [Pedro Cuenca](https://huggingface.co/pcuenq) 审阅和校对本篇文章！
+
+### 引用
+
+如果您希望在工作中使用 RWKV，请使用以下 [cff 引用](https://github.com/BlinkDL/RWKV-LM/blob/main/CITATION.cff)。
