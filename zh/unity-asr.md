@@ -22,7 +22,7 @@ translators:
 
 ### 先决条件
 
-阅读文本可能需要了解一些 Unity 的基本概念。除此之外，您还需安装 [Hugging Face Unity API](https://github.com/huggingface/unity-api)，可以点击 [之前的博文](https://huggingface.co/blog/unity-api) 阅读 API 安装说明。
+阅读文本可能需要了解一些 Unity 的基本概念。除此之外，您还需安装 [Hugging Face Unity API](https://github.com/huggingface/unity-api)，可以点击 [之前的博文](https://huggingface.co/blog/zh/unity-api) 阅读 API 安装说明。
 
 ## 步骤
 
@@ -38,7 +38,7 @@ translators:
 
 ### 2. 创建脚本
 
-创建一个名为 `SpeechRecognitionTest` 的脚本，并将其附加到一个空的游戏对象上。
+创建一个名为 `SpeechRecognitionTest` 的脚本，并将其附加到一个空的游戏对象 (GameObject) 上。
 
 在脚本中，首先定义对 UI 组件的引用：
 
