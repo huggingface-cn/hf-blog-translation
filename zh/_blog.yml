@@ -643,3 +643,16 @@
 #   tags:
 #     - community
 #     - ethics
+
+- local: evaluating-mmlu-leaderboard
+  title: "Open LLM 排行榜近况"
+  author: clefourrier
+  thumbnail: /blog/assets/evaluating-mmlu-leaderboard/thumbnail.png
+  date: June 23, 2023
+  tags:
+    - community
+    - research
+    - nlp
+    - evaluation
+    - leaderboard
+
