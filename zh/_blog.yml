@@ -685,3 +685,14 @@
   date: June 26, 2023
   tags:
     - ethics
+
+- local: inference-endpoints-llm
+  title: "用 Hugging Face 推理端点部署 LLM"
+  author: philschmid
+  thumbnail: /blog/assets/155_inference_endpoints_llm/thumbnail.jpg
+  date: July 4, 2023
+  tags:
+    - guide
+    - llm
+    - apps
+    - inference
