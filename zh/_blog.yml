@@ -695,3 +695,15 @@
   date: June 26, 2023
   tags:
     - ethics
+
+- local: stable-diffusion-finetuning-intel
+  title: "在英特尔 CPU 上微调 Stable Diffusion 模型"
+  author: juliensimon
+  thumbnail: /blog/assets/stable-diffusion-finetuning-intel/dicoo_image.png
+  date: July 14, 2023
+  tags:
+    - guide
+    - intel
+    - hardware
+    - partnerships
+
