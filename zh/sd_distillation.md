@@ -1,5 +1,5 @@
 ---
-title: "Open-sourcing Knowledge Distillation Code and Weights of SD-Small and SD-Tiny"
+title: "开源 SD-Small 和 SD-Tiny 知识蒸馏代码与权重"
 thumbnail: /blog/assets/distill_sd/thumbnail.png
 authors:
 - user: harishsegmind
@@ -12,7 +12,7 @@ translators:
 - user: innovation64
 ---
 
-<h1> Open-sourcing Knowledge Distillation Code and Weights of SD-Small and SD-Tiny </h1>
+<h1> 开源 SD-Small 和 SD-Tiny 知识蒸馏代码与权重 </h1>
 
 <!-- {blog_metadata} -->
 <!-- {authors} -->
