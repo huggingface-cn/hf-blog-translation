@@ -756,6 +756,16 @@
     - hardware
     - partnerships
 
+- local: os-llms
+  title: "Hugging Face 的文本生成和大语言模型的开源生态"
+  author: merve
+  thumbnail: /blog/assets/os_llms/thumbnail.png
+  date: July 17, 2023
+  tags:
+    - LLM
+    - inference
+    - nlp
+
 - local: llama2
   title: "Llama 2 来袭 - 在 Hugging Face 上玩转它"
   author: osanseviero
@@ -787,3 +797,14 @@
     - ai-for-games
     - game-dev
 
+- local: 3d-assets
+  title: "手把手教你使用人工智能生成 3D 素材"
+  author: dylanebert
+  thumbnail: /blog/assets/124_ml-for-games/thumbnail-3d.jpg
+  date: August 01, 2023
+  tags:
+    - community
+    - guide
+    - cv
+    - diffusion
+    - game-dev
