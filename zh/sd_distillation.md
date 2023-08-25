@@ -11,6 +11,8 @@ authors:
 translators:
 - user: innovation64
 - user: zhongdongy
+  proofread: true
+- user: zhongdongy
   proofreader: true
 ---
 
