@@ -808,3 +808,14 @@
     - cv
     - diffusion
     - game-dev
+
+- local: sd_distillation
+  title: "开源 SD-Small 和 SD-Tiny 知识蒸馏代码与权重"
+  author: harishsegmind
+  guest: true
+  thumbnail: /blog/assets/distill_sd/thumbnail.png
+  date: August 1, 2023
+  tags:
+    - stable-diffusion
+    - research
+    - diffusers
