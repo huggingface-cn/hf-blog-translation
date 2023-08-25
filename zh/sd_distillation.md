@@ -93,6 +93,7 @@ image.save("my_image.png")
 
 我们已经在 Realistic Vision v4.0 模型生成的人像图像上微调了我们的 sd-tiny 模型。下面是使用的微调参数。
 
+
 |原版参数|中文释义|
 |--|--|
 | Steps: 131000|步数: 131000|
