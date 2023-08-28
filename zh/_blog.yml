@@ -841,6 +841,17 @@
     - benchmark
     - bark
 
+- local: safecoder
+  title: "推介 SafeCoder"
+  author: jeffboudier
+  thumbnail: /blog/assets/159_safecoder/thumbnail.jpg
+  date: August 22, 2023
+  tags:
+    - announcement
+    - partnerships
+    - vmware
+    - bigcode
+
 - local: gptq-integration
   title: "使用 AutoGPTQ 和 transformers 让大语言模型更轻量化"
   author: marcsun13
