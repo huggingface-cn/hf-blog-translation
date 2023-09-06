@@ -32,11 +32,11 @@ translators:
 ## 目录
 
 - [何以 Llama 2?](#何以-llama-2)
-- [示](#演示)
+- [演示](#演示)
 - [推理](#推理)
-    - [用 transformers](#用-transformers)
-    - [用 TGI 和推理终端](#用-TGI-和推理终端)
-- [用 PEFT 微调](#用-PEFT-微调)
+    - [使用 transformers](#使用-transformers)
+    - [使用 TGI 和推理终端](#使用-tgi-和推理终端)
+- [使用 PEFT 微调](#使用-PEFT-微调)
 - [如何提示 Llama 2](#如何提示-Llama-2)
 - [其他资源](#其他资源)
 - [总结](#总结)
@@ -155,7 +155,7 @@ Of course! If you enjoyed "Breaking Bad" and "Band of Brothers," here are some o
 
 你还可以从我们的另一篇博文中了解更多有关[如何使用 Hugging Face 推理终端部署 LLM](https://huggingface.co/blog/zh/inference-endpoints-llm) 的知识, 文中包含了推理终端支持的超参以及如何使用其 Python 和 Javascript API 实现流式输出等信息。
 
-## 用 PEFT 微调
+## 使用 PEFT 微调
 
 训练 LLM 在技术和计算上都有一定的挑战。本节，我们将介绍 Hugging Face 生态中有哪些工具可以帮助开发者在简单的硬件上高效训练 Llama 2，我们还将展示如何在单张 NVIDIA T4（16GB - Google Colab）上微调 Llama 2 7B 模型。你可以通过[让 LLM 更可得](https://huggingface.co/blog/4bit-transformers-bitsandbytes)这篇博文了解更多信息。
 
