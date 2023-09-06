@@ -8,8 +8,8 @@ authors:
 - user: lewtun
 translators:
 - user: MatrixYao
--- user: zhongdongy
--  proofreader: true
+- user: zhongdongy
+  proofreader: true
 ---
 
 # Llama 2 来袭 - 在 Hugging Face 上玩转它
@@ -32,7 +32,7 @@ translators:
 ## 目录
 
 - [何以 Llama 2?](#何以-llama-2)
-- [演示](#演示)
+- [示](#演示)
 - [推理](#推理)
     - [用 transformers](#用-transformers)
     - [用 TGI 和推理终端](#用-TGI-和推理终端)
@@ -84,7 +84,7 @@ Llama 2 引入了一系列预训练和微调 LLM，参数量范围从 7B 到 70B
 
 **注意：请务必按照页面上的指示填写 Meta 官方表格。填完两个表格数小时后，用户就可以访问模型存储库。
 
-### 用 transformers
+### 使用 transformers
 
 从 transformers [4.31](https://github.com/huggingface/transformers/releases/tag/v4.31.0) 版本开始，HF 生态中的所有工具和机制都可以适用于 Llama 2，如：
 
@@ -141,7 +141,7 @@ Of course! If you enjoyed "Breaking Bad" and "Band of Brothers," here are some o
 
 另外，尽管模型本身的上下文长度*仅* 4k 词元，但你可以使用 `transformers` 支持的技术，如旋转位置嵌入缩放（rotary position embedding scaling）（[推特](https://twitter.com/joao_gante/status/1679775399172251648)），进一步把它变长！
 
-### 用 TGI 和推理终端
+### 使用 TGI 和推理终端
 
 **[Text Generation Inference（TGI）](https://github.com/huggingface/text-generation-inference)** 是 Hugging Face 开发的生产级推理容器，可用于轻松部署大语言模型。它支持流式组批、流式输出、基于张量并行的多 GPU 快速推理，并支持生产级的日志记录和跟踪等功能。
 
