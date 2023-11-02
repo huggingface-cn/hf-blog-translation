@@ -1019,3 +1019,15 @@
     - research
     - rl
     - rlhf
+
+- local: personal-copilot
+  title: "个人编程助手：训练你自己的编码助手"
+  author: smangrul
+  thumbnail: /blog/assets/170_personal_copilot/thumbnail.png
+  date: October 27, 2023
+  tags:
+    - bigcode
+    - llm
+    - nlp
+    - inference
+    - guide
