@@ -657,6 +657,17 @@
     - research
     - guide 
 
+- local: 4bit-transformers-bitsandbytes
+  title: "用 bitsandbytes、4 比特量化和 QLoRA 打造亲民的 LLM"
+  author: ybelkada
+  thumbnail: /blog/assets/96_hf_bitsandbytes_integration/Thumbnail_blue.png
+  date: May 24, 2023
+  tags:
+    - transformers
+    - quantization
+    - bitsandbytes
+    - 4bit
+    
 - local: train-optimize-sd-intel
   title: "基于 NNCF 和 🤗 Optimum 面向 Intel CPU 对 Stable Diffusion 优化"
   author: AlexKoff88
@@ -978,6 +989,19 @@
     - diffusers
     - diffusion
 
+- local: overview-quantization-transformers
+  title: "🤗 Transformers 中原生支持的量化方案概述"
+  author: ybelkada
+  thumbnail: /blog/assets/163_overview_quantization_transformers/thumbnail.jpg
+  date: September 12, 2023
+  tags:
+    - llm
+    - optimization
+    - quantization
+    - comparison
+    - bitsandbytes
+    - gptq
+
 - local: optimize-llm
   title: "面向生产的 LLM 优化"
   author: patrickvonplaten
@@ -1010,6 +1034,7 @@
     - nlp
     - community
 
+
 - local: the_n_implementation_details_of_rlhf_with_ppo
   title: "使用 PPO 算法进行 RLHF 的 N 步实现细节"
   author: vwxyzjn
@@ -1031,3 +1056,13 @@
     - nlp
     - inference
     - guide
+
+- local: regions
+  title: "HF Hub 现已加入存储区域功能"
+  author: julien-c
+  thumbnail: /blog/assets/172_regions/thumbnail.png
+  date: November 3, 2023
+  tags:
+    - announcement
+    - enterprise
+    - hub

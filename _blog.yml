@@ -1081,7 +1081,8 @@
   date: August 3, 2022
   tags:
     - announcement
-    - private hub
+    - enterprise
+    - hub
 
 - local: deep-rl-ppo
   title: "Proximal Policy Optimization (PPO)"
@@ -1792,7 +1793,7 @@
     - fine-tuning
     - community
     - dreambooth
-    
+
 - local: mantis-case-study
   title: "Why we’re switching to Hugging Face Inference Endpoints, and maybe you should too"
   author: mattupson
@@ -1851,7 +1852,7 @@
 
 - local: classification-use-cases
   title: "How Hugging Face Accelerated Development of Witty Works Writing Assistant"
-  author: VioletteLepercq
+  author: Violette
   thumbnail: /blog/assets/78_ml_director_insights/witty-works.png
   date: March 1, 2023
   tags:
@@ -1991,10 +1992,10 @@
     - rl
     - rlhf
     - nlp
-    
+
 - local: snorkel-case-study
   title: "Snorkel AI x Hugging Face: unlock foundation models for enterprises"
-  author: VioletteLepercq
+  author: Violette
   thumbnail: /blog/assets/78_ml_director_insights/snorkel.png
   date: April 6, 2023
   tags:
@@ -2734,7 +2735,7 @@
     - security
 
 - local: codellama
-  title: "Code Llama: Llama 2 learns to code" 
+  title: "Code Llama: Llama 2 learns to code"
   author: philschmid
   thumbnail: /blog/assets/160_codellama/thumbnail.jpg
   date: August 25, 2023
@@ -2860,7 +2861,7 @@
     - guide
     - cv
     - game-dev
-    
+
 - local: rocketmoney-case-study
   title: "Rocket Money x Hugging Face: Scaling Volatile ML Models in Production"
   author: nicokuzak
@@ -2915,7 +2916,7 @@
     - diffusers
     - rl
     - rlhf
-   
+
 - local: ethics-soc-5
   title: "Ethics and Society Newsletter #5: Hugging Face Goes To Washington and Other Summer 2023 Musings"
   author: meg
@@ -2979,3 +2980,122 @@
     - gradio
     - open-source
     - serverless
+
+- local: simple_sdxl_optimizations
+  title: "Exploring simple optimizations for SDXL"
+  author: sayakpaul
+  thumbnail: /blog/assets/simple_sdxl_optimizations/thumbnail.png
+  date: October 24, 2023
+  tags:
+    - diffusers
+    - guide
+    - sdxl
+
+- local: the_n_implementation_details_of_rlhf_with_ppo
+  title: "The N Implementation Details of RLHF with PPO"
+  author: vwxyzjn
+  thumbnail: /blog/assets/167_the_n_implementation_details_of_rlhf_with_ppo/thumbnail.png
+  date: October 24, 2023
+  tags:
+    - research
+    - rl
+    - rlhf
+
+- local: inference-endpoints-embeddings
+  title: "Deploy Embedding Models with Hugging Face Inference Endpoints"
+  author: philschmid
+  thumbnail: /blog/assets/168_inference_endpoints_embeddings/thumbnail.jpg
+  date: October 24, 2023
+  tags:
+    - guide
+    - llm
+    - apps
+    - inference
+
+- local: scalable-data-inspection
+  title: "Interactively explore your Huggingface dataset with one line of code"
+  author: sps44
+  thumbnail: /blog/assets/scalable-data-inspection/thumbnail.png
+  date: October 25, 2023
+  tags:
+    - open-source-collab
+    - visualization
+    - data inspection
+
+- local: personal-copilot
+  title: "Personal Copilot: Train Your Own Coding Assistant"
+  author: smangrul
+  thumbnail: /blog/assets/170_personal_copilot/thumbnail.png
+  date: October 27, 2023
+  tags:
+    - bigcode
+    - llm
+    - nlp
+    - inference
+    - guide
+
+- local: researcher-dataset-sharing
+  title: "Creating open machine learning datasets? Share them on the Hugging Face Hub!"
+  author: davanstrien
+  thumbnail: /blog/assets/researcher-dataset-sharing/thumbnail.png
+  date: October 30, 2023
+  tags:
+    - community
+    - research
+    - datasets
+    - guide
+
+- local: regions
+  title: "Introducing Storage Regions on the HF Hub"
+  author: julien-c
+  thumbnail: /blog/assets/172_regions/thumbnail.png
+  date: November 3, 2023
+  tags:
+    - announcement
+    - enterprise
+    - hub
+
+- local: Lora-for-sequence-classification-with-Roberta-Llama-Mistral
+  title: "Comparing the Performance of LLMs: A Deep Dive into Roberta, Llama 2, and Mistral for Disaster Tweets Analysis with Lora"
+  author: mehdiiraqui
+  thumbnail: /blog/assets/Lora-for-sequence-classification-with-Roberta-Llama-Mistral/Thumbnail.png
+  date: November 7, 2023
+  tags:
+    - nlp
+    - case-studies
+    - guide
+    - llm
+    - peft
+
+- local: prodigy-hf
+  title: "Introducing Prodigy-HF: a direct integration with Hugging Face"
+  author: koaning
+  thumbnail: /blog/assets/171_prodigy_hf/thumbnail.png
+  date: November 7, 2023
+  tags:
+    - community
+    - nlp
+    - datasets
+    - guide
+
+- local: inferentia-llama2
+  title: "Make your llama generation time fly with AWS Inferentia2"
+  author: dacorvo
+  thumbnail: /blog/assets/inferentia-llama2/thumbnail.png
+  date: November 7, 2023
+  tags:
+    - guide
+    - text-generation
+    - llama2
+    - aws
+
+- local: lcm_lora
+  title: "SDXL in 4 steps with Latent Consistency LoRAs"
+  author: pcuenq
+  thumbnail: /blog/assets/lcm_sdxl/lcm_thumbnail.png
+  date: November 9, 2023
+  tags:
+    - sdxl
+    - lcm
+    - stable diffusion
+    - guide
