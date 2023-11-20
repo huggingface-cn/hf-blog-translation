@@ -19,7 +19,7 @@ Gradio是一个经常用于创建交互式机器学习应用的Python库，在�
 
 `@gradio/lite`是一个JavaScript库，可以使开发人员直接在Web浏览器中运行Gradio应用，它通过Pyodide完成在浏览器环境中执行构建Gradio应用的python代码，以此实现Gradio应用可作为一个网页进行分享和外部访问。Pyodide是一个可以在浏览器中运行Python代码的项目，它将Python解释器编译为WebAssembly字节码。通过`@gradio/lite`**编写常规的Python代码来创建Gradio应用程序**，可以**使它们在浏览器中运行并被外部访问**，而无需额外的服务器部署和管理。
 
-## 照猫画虎
+## 动手试一试
 
 让我们来构建一个在`@gradio/lite` 中的“Hello World” Gradio应用程序。
 
