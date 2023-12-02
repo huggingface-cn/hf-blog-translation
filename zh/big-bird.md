@@ -400,5 +400,4 @@ with torch.no_grad():
 **BigBird 版的 Pegasus** 模型很快就会面世，你可将它们用于 **长文档摘要** 💥。
 
 ## 尾注
-
 你可在 [此处](https://github.com/google-research/bigbird/blob/master/bigbird/core/attention.py) 找到 **块稀疏注意力矩阵** 的原始实现。🤗 版的实现在 [这儿](https://github.com/huggingface/transformers/tree/master/src/transformers/models/big_bird)。
