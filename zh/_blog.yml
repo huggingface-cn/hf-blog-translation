@@ -898,6 +898,15 @@
     - FHE
     - llm
 
+- local: huggy-lingo
+  title: "Huggy Lingo：利用机器学习改进 Hugging Face Hub 上的语言元数据"
+  author: davanstrien
+  thumbnail: /blog/assets/156_huggylingo/Huggy_Lingo.png
+  date: August 2, 2023
+  tags:
+    - announcement
+    - research
+
 - local: dpo-trl
   title: "使用 DPO 微调 Llama 2"
   author: kashif
@@ -1060,6 +1069,17 @@
     - guide
     - cv
     - game-dev
+
+
+- local: Llama2-for-non-engineers
+  title: "非工程师指南：训练 LLaMA 2 聊天机器人"
+  author: 2legit2overfit
+  thumbnail: /blog/assets/78_ml_director_insights/tuto.png
+  date: September 28, 2023
+  tags:
+    - guide
+    - community
+    - nlp
 
 - local: trl-ddpo
   title: "使用 DDPO 在 TRL 中微调 Stable Diffusion 模型"
