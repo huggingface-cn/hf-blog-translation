@@ -1178,3 +1178,15 @@
     - nlp
     - llm
     - guide
+
+- local: mixtral
+  title: "欢迎 Mixtral - 当前 Hugging Face 上最先进的 MoE 模型"
+  author: lewtun
+  thumbnail: /blog/assets/mixtral/thumbnail.jpg
+  date: December 11, 2023
+  tags:
+    - mixtral
+    - moe
+    - nlp
+    - llm
+    - transformers
