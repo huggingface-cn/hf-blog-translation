@@ -1179,6 +1179,7 @@
     - llm
     - guide
 
+
 - local: mixtral
   title: "欢迎 Mixtral - 当前 Hugging Face 上最先进的 MoE 模型"
   author: lewtun
@@ -1190,3 +1191,14 @@
     - nlp
     - llm
     - transformers
+
+- local: 2023-in-llms
+  title: "2023, 开源大模型之年"
+  thumbnail: /blog/assets/cv_state/thumbnail.png
+  author: clefourrier
+  date: December 18, 2023
+  tags:
+    - research
+    - nlp
+    - llm
+
