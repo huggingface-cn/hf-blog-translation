@@ -1250,3 +1250,17 @@
     - fine-tuning
     - community
     - sdxl
+
+- local: synthetic-data-save-costs
+  title: "合成数据：利用开源技术，节约资金、时间和减少碳排放"
+  author: MoritzLaurer
+  thumbnail: /blog/assets/176_synthetic-data-save-costs/thumbnail.png
+  date: Feb 16, 2024
+  tags:
+    - guide
+    - llm
+    - nlp
+    - synthetic-data
+    - mixtral
+    - inference-endpoints
+    - autotrain
