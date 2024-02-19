@@ -3337,7 +3337,7 @@
   title: "An Introduction to AI Secure LLM Safety Leaderboard"
   author: danielz01
   guest: true
-  thumbnail: /blog/assets/leaderboards-on-the-hub/thumbnail.png
+  thumbnail: /blog/assets/leaderboards-on-the-hub/thumbnail_decodingtrust.png
   date: January 26, 2024
   tags:
     - leaderboard
@@ -3438,3 +3438,50 @@
     - stable-diffusion
     - moe
     - segmoe
+
+- local: tgi-messages-api
+  title: "From OpenAI to Open LLMs with Messages API"
+  author: andrewrreed
+  thumbnail: /blog/assets/tgi-messages-api/thumbnail.jpg
+  date: Feb 8, 2024
+  tags:
+    - guide
+    - llm
+    - nlp
+    - tgi
+
+- local: amd_pervasive_developer_ai_contest
+  title: "AMD Pervasive AI Developer Contest!"
+  author: guruprasadmp
+  guest: true
+  thumbnail: /blog/assets/amd_pervasive_developer_ai_contest/amd_developer_general_abstract.jpg
+  date: Feb 14, 2024
+  tags:
+    - partner
+    - amd
+
+- local: synthetic-data-save-costs
+  title: "Synthetic data: save money, time and carbon with open source"
+  author: MoritzLaurer
+  thumbnail: /blog/assets/176_synthetic-data-save-costs/thumbnail.png
+  date: Feb 16, 2024
+  tags:
+    - guide
+    - llm
+    - nlp
+    - synthetic-data
+    - mixtral
+    - inference-endpoints
+    - autotrain
+
+- local: peft_merging
+  title: "🤗 PEFT welcomes new merging methods"
+  author: smangrul
+  thumbnail: /blog/assets/peft_merging/thumbnail.png
+  date: Feb 19, 2024
+  tags:
+    - guide
+    - llm
+    - nlp
+    - cv 
+    - lora
