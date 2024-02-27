@@ -1308,7 +1308,7 @@
     - peft
 
 - local: watermarking
-  title: "人工智能水印 101: 工具与技术"
+  title: "人工智能水印技术入门：工具与技巧"
   author: sasha
   thumbnail: /blog/assets/watermarking/thumbnail.png
   date: Feb 26, 2024
