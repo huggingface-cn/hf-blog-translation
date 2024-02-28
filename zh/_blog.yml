@@ -1264,3 +1264,13 @@
     - mixtral
     - inference-endpoints
     - autotrain
+
+- local: matryoshka
+  title: "🪆 俄罗斯套娃嵌入模型"
+  author: tomaarsen
+  thumbnail: /blog/assets/matryoshka/thumbnail.png
+  date: Feb 23, 2024
+  tags:
+    - nlp
+    - community
+    - guide
