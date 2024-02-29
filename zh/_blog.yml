@@ -1267,6 +1267,18 @@
     - langchain
     - benchmark
 
+- local: leaderboards-on-the-hub-decodingtrust
+  title: "来自 AI Secure 实验室的 LLM 安全排行榜简介"
+  author: danielz01
+  guest: true
+  thumbnail: /blog/assets/leaderboards-on-the-hub/thumbnail_decodingtrust.png
+  date: January 26, 2024
+  tags:
+    - leaderboard
+    - guide
+    - collaboration
+    - research
+
 - local: intel-starcoder-quantization
   title: "使用 🤗 Optimum Intel 在英特尔至强上加速 StarCoder：Q8/Q4 及投机解码"
   author: ofirzaf
