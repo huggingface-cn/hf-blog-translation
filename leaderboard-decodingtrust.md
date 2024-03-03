@@ -1,6 +1,6 @@
 ---
 title: "An Introduction to AI Secure LLM Safety Leaderboard"
-thumbnail: /blog/assets/leaderboards-on-the-hub/thumbnail.png
+thumbnail: /blog/assets/leaderboards-on-the-hub/thumbnail_decodingtrust.png
 authors:
 - user: danielz01
   guest: true
@@ -77,7 +77,7 @@ Notes:
 
 Finally, use the ["Submit here!" panel in our leaderboard](https://huggingface.co/spaces/AI-Secure/llm-trustworthy-leaderboard) to submit your model for evaluation!
 
-# Citation
+## Citation
 
 If you find our evaluations useful, please consider citing our work.
 
