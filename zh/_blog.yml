@@ -1267,7 +1267,7 @@
     - langchain
     - benchmark
 
-- local: leaderboards-on-the-hub-decodingtrust
+- local: leaderboard-decodingtrust
   title: "来自 AI Secure 实验室的 LLM 安全排行榜简介"
   author: danielz01
   guest: true
