@@ -1374,4 +1374,18 @@
     - nlp
     - community
     - research
-    - LLM 
+    - LLM
+
+- local: textgen-pipe-gaudi
+  title: "基于英特尔® Gaudi® 2 AI 加速器的文本生成流水线"
+  author: siddjags
+  guest: true
+  thumbnail: /blog/assets/textgen-pipe-gaudi/thumbnail.png
+  date: Feb 29, 2024
+  tags:
+    - habana
+    - partnerships
+    - hardware
+    - nlp
+    - llm
+    - inference 
