@@ -215,7 +215,7 @@
     - inference
 
 - local: document-ai
-  title: Accelerating Document AI
+  title: 加速 Document AI (文档智能) 发展
   author: rajistics
   thumbnail: /blog/assets/112_document-ai/thumbnail.png
   date: Nov 21, 2022
@@ -224,7 +224,7 @@
     - expert-acceleration-program
 
 - local: time-series-transformers
-  title: Probabilistic Time Series Forecasting with 🤗 Transformers
+  title: 使用 🤗 Transformers 进行概率时间序列预测
   author: nielsr
   thumbnail: /blog/assets/118_time-series-transformers/thumbnail.png
   date: December 1, 2022
@@ -275,7 +275,7 @@
     - partnerships
 
 - local: ml-for-games-1
-  title: 'AI for Game Development: Creating a Farming Game in 5 Days. Part 1'
+  title: 基于 AI 进行游戏开发：5天创建一个农场游戏！第1部分
   author: dylanebert
   thumbnail: /blog/assets/124_ml-for-games/thumbnail.png
   date: January 2, 2023
