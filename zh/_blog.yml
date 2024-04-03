@@ -1427,3 +1427,15 @@
     - llm
     - training
 
+- local: embedding-quantization
+  title: "用于显著提高检索速度和降低成本的二进制和标量嵌入量化"
+  author: aamirshakir
+  guest: true
+  thumbnail: /blog/assets/embedding-quantization/thumbnail.png
+  date: Mar 22, 2024
+  tags:
+    - nlp
+    - community
+    - guide
+    - collaboration
+    - research
