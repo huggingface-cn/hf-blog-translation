@@ -1491,13 +1491,13 @@
     - gcp
     - hardware
 
-- local: llama3
-  title: "欢迎 Llama 3：Meta 的新一代开源大语言模型"
-  author: philschmid
-  thumbnail: /blog/assets/llama3/thumbnail.jpg
-  date: April 18, 2024
+- local: gradio-reload
+  title: 使用 Gradio 的“热重载”模式快速开发 AI 应用
+  author: freddyaboulton
+  thumbnail: /blog/assets/gradio-reload/thumbnail_compressed.png
+  date: April 16, 2024
   tags:
-    - nlp
-    - community
-    - research
-    - LLM
+    - gradio
+    - open-source
+    - guide
+    - demo
