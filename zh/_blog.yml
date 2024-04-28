@@ -1481,6 +1481,21 @@
     - llm
     - inference
 
+- local: setfit-optimum-intel
+  title: 在英特尔至强 CPU 上使用 🤗 Optimum Intel 实现超快 SetFit 推理
+  author: danielkorat
+  guest: true
+  thumbnail: /blog/assets/optimum_intel/intel_thumbnail.png
+  date: April 3, 2024
+  tags:
+    - nlp
+    - intel
+    - quantization
+    - optimum
+    - collaboration
+    - community
+    - open-source-collab
+
 - local: google-cloud-model-garden
   title: 在 Google Cloud 上轻松部署开放大语言模型
   author: philschmid
@@ -1490,6 +1505,18 @@
     - partnerships
     - gcp
     - hardware
+
+- local: vlms
+  title: 视觉语言模型详解
+  author: merve
+  thumbnail: /blog/assets/vlms_explained/thumbnail.png
+  date: April 11, 2024
+  tags:
+    - vision
+    - vlm
+    - multimodal
+    - guide
+    - trl
 
 - local: gradio-reload
   title: 使用 Gradio 的“热重载”模式快速开发 AI 应用
