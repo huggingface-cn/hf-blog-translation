@@ -1,5 +1,5 @@
 ---
-title: "万事通，专精部分领域的多功能Transformer代理"
+title: "万事通，专精部分领域的多功能Transformer智能体"
 thumbnail: /blog/assets/jat/thumbnail.gif
 authors:
 - user: qgallouedec
@@ -10,11 +10,11 @@ translators:
 - user: xiaodouzi
 ---
 
-# 万事通，专精部分领域的多功能Transformer代理
+# 万事通，专精部分领域的多功能Transformer智能体
 
 ## 介绍
 
-我们很高兴分享“万事通”（Jack of All Trades，简称JAT）项目，该项目旨在朝着通用代理的方向发展。该项目最初是作为对[Gato](https://huggingface.co/papers/2205.06175)（Reed等，2022年）工作的公开复现启动的，Gato提出训练一种能够执行视觉与语言以及决策任务的Transformer。于是我们首先构建了Gato数据集的开放版本。随后，我们在此基础上训练了多模态Transformer模型，并针对处理顺序数据和连续值引入了若干改进。
+我们很高兴分享“万事通”（Jack of All Trades，简称JAT）项目，该项目旨在朝着通用智能体的方向发展。该项目最初是作为对[Gato](https://huggingface.co/papers/2205.06175)（Reed等，2022年）工作的公开复现启动的，Gato提出训练一种能够执行视觉与语言以及决策任务的Transformer。于是我们首先构建了Gato数据集的开放版本。随后，我们在此基础上训练了多模态Transformer模型，并针对处理顺序数据和连续值引入了若干改进。
 
 总体而言，该项目取得了以下成果：
 
@@ -28,7 +28,7 @@ translators:
 
 ### 专家策略
 
-传统的强化学习（RL）涉及在单一环境中训练策略。利用这些专家策略是构建多功能代理的有效方法。我们选择了各种性质和难度不同的环境，包括Atari、BabyAI、Meta-World和MuJoCo。在每个环境中，我们训练一个智能体，直到它达到最先进的性能水平。（对于BabyAI，我们使用的是[BabyAI bot](https://github.com/mila-iqia/babyai)）。这些训练结果被称为专家智能体，并已在🤗 Hub上发布。您可以在[JAT数据集卡](https://huggingface.co/datasets/jat-project/jat-dataset)中找到所有代理的列表。
+传统的强化学习（RL）涉及在单一环境中训练策略。利用这些专家策略是构建多功能智能体的有效方法。我们选择了各种性质和难度不同的环境，包括Atari、BabyAI、Meta-World和MuJoCo。在每个环境中，我们训练一个智能体，直到它达到最先进的性能水平。（对于BabyAI，我们使用的是[BabyAI bot](https://github.com/mila-iqia/babyai)）。这些训练结果被称为专家智能体，并已在🤗 Hub上发布。您可以在[JAT数据集卡](https://huggingface.co/datasets/jat-project/jat-dataset)中找到所有智能体的列表。
 
 ### JAT数据集
 
