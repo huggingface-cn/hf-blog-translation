@@ -35,7 +35,7 @@ PaliGemma 的发布包括三种模型类型：
 
 正如后续详细说明的，高分辨率模型因输入序列较长而需要更多内存。虽然它们可能有助于执行细粒度任务，如 OCR，但对大多数任务的质量提升较小。224 版本已足够应对大多数场景。
 
-你可以在这个 Hugging Face  [合集](https://huggingface.co/collections/google/paligemma-release-6643a9ffbf57de2ae0448dda) 中找到所有相关模型和 Space 应用。
+你可以在这个 Hugging Face [合集](https://huggingface.co/collections/google/paligemma-release-6643a9ffbf57de2ae0448dda) 中找到所有相关模型和 Space 应用。
 
 ## 模型功能
 
