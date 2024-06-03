@@ -4110,3 +4110,22 @@
     - guide
     - community
     - open-source
+
+- local: tgi-benchmarking
+  title: "Benchmarking Text Generation Inference"
+  thumbnail: /blog/assets/tgi-benchmarking/tgi-benchmarking-thumbnail.png
+  author: derek-thomas
+  date: May 29, 2024
+  tags:
+    - LLM
+    - NLP
+    - guide
+    - tgi
+
+- local: space-secrets-disclosure
+  title: "Space secrets security update"
+  thumbnail: /blog/assets/space-secrets-security-update/space-secrets-security-update.png
+  author: huggingface
+  date: May 31, 2024
+  tags:
+    - security
