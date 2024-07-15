@@ -7,9 +7,9 @@ authors:
 - user: merve
 - user: kashif
 translators:
-- user: hugging-hoi
+- user: hugging-hoi2022
 - user: 
-- proofreader: false
+  proofreader: false
 ---
 
 # 使用 TRL 为视觉语言多模态模型进行偏好优化
