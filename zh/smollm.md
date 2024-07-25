@@ -173,8 +173,6 @@ SmolLM 包含三种不同参数量大小的模型，它们均在下图所示的�
 
 我们还尝试添加指令数据集以及在学习率冷却阶段对 Cosmopedia 子集进行上采样，但这些收效甚微。可能的原因是，我们的混合数据集质量已经足够高了，所以这些改进效果很有限。
 
-To track our training progress, we evaluate our two smallest models every 2B token. The following plot shows their performance on several benchmarks:
-
 在训练两个较小模型的过程中，我们记录了各项评测指标的变化情况。见下图：
 
 <p align="center">
@@ -185,8 +183,6 @@ To track our training progress, we evaluate our two smallest models every 2B tok
 ## 模型评测
 
 我们对不同参数量的 SmolLM 模型进行了评测，并和当前最好的一些模型进行了对比。我们使用了多种指标，评测内容包括常识推理和世界知识。我们使用 `lighteval` 和 [这些配置](https://github.com/huggingface/cosmopedia/tree/main/evaluation) 进行评测。对于人类主观评测，我们使用了 [bigcode-evaluation-harness]()，其中 temperature 设为 0.2，top-p 为 0.95，样本量为 20。针对未开源的 MobileLLM，其测试结果均取自论文中的数据。
-
-We find that:
 
 我们发现：
 
@@ -215,8 +211,6 @@ We find that:
 
 ## 如何本地运行 SmolLM 模型？
 
-Our models are designed to be small and can run locally on various hardware configurations. For reference, an iPhone 15 has 6GB of DRAM, while an iPhone 15 Pro has 8GB. These memory requirements make our models suitable for deployment on a wide range of devices, from smartphones to laptops. We benchmarked the memory footprint of our three model sizes:
-
 我们的小模型可以在各种本地的硬件上运行。举例来说，iPhone 15 有 6GB 的内存，iPhone 15 Pro 有 8GB 内存，从手机到笔记本电脑，诸多设备都足以运行我们的模型。下表中，我们记录了模型运行时实际的内存占用情况：
 
 <p align="center">
@@ -228,7 +222,7 @@ Our models are designed to be small and can run locally on various hardware conf
 
 ## 总结
 
-本文介绍了 SmolLM 系列模型，通过实验证明了，只要训练充分、数据质量足够好，小模型也可以取得很好的性能。我们在此提供了一个模型大小和模型性能完美权衡的示例。
+本文介绍了 SmolLM 系列模型，通过实验证明了，只要训练充分、数据质量足够好，小模型也可以取得很好的性能。本文在此用 SmolLM 提供了一个示例，强有力地证明了模型大小和模型性能可以做到完美权衡。
 
 ## 其它资源
 - SmolLM 模型集合：[https://huggingface.co/collections/HuggingFaceTB/smollm-models-6695016cad7167254ce15966](https://huggingface.co/collections/HuggingFaceTB/smollm-models-6695016cad7167254ce15966)
