@@ -190,14 +190,14 @@ We find that:
 
 我们发现：
 
-- 在 200M 参数量以下的模型中，SmolLM-135M 在各项指标上都超越了当前最好的模型 MobileLM-125M。相比于 MobileLM-125M 使用 1T token 的数据量去训练，SmolLM-135M 只使用了 600B 的数据量。 
-- 在 500M 参数量以下的模型中，SmolLM-360M 也超越了其它模型。相比于 MobileLM-350M 和 Qwen2-500M，MobileLM-360M参数量和训练数据均更少。
-- 在 2B 参数量以下的模型中，SmolLM-1.7B 也超越了包括 Phi1.5 和 MobileLM-1.5B 等模型。
+- 在 200M 参数量以下的模型中，SmolLM-135M 在各项指标上都超越了当前最好的模型 MobileLLM-125M。相比于 MobileLLM-125M 使用 1T token 的数据量去训练，SmolLM-135M 只使用了 600B 的数据量。 
+- 在 500M 参数量以下的模型中，SmolLM-360M 也超越了其它模型。相比于 MobileLLM-350M 和 Qwen2-500M，SmolLM-360M参数量和训练数据均更少。
+- 在 2B 参数量以下的模型中，SmolLM-1.7B 也超越了包括 Phi1.5 和 MobileLLM-1.5B 等模型。
 - SmolLM-1.7B 还在 Python 编程能力上表现抢眼（我们测评的 Qwen2-1.5B 分数和 Qwen 团队给出的不同，我们的实验配置是：temperature 设为 0.2，top-p 设为 0.95，样本量为 20）。
 
 <p align="center">
  <img src="https://huggingface.co/datasets/HuggingFaceTB/images/resolve/main/Untitled%2014.png" alt=""  style="width: 90%; height: auto;"><br>
-<em>SmolLM 和其它小语言模型的对比，除 MobileLM 外，所有实验的配置均相同，因为 MobileLM 未开源</em>
+<em>SmolLM 和其它小语言模型的对比，除 MobileLLM 外，所有实验的配置均相同，因为 MobileLLM 未开源</em>
 </p>
 <p align="center">
  <img src="https://huggingface.co/datasets/HuggingFaceTB/images/resolve/main/image.png" alt=""  style="width: 50%; height: auto;"><br>
