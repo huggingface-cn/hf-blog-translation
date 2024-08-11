@@ -1836,7 +1836,6 @@
     - datasets
     - community
 
-
 - local: multi-lora-serving
   title: TGI 多-LoRA：部署一次，搞定 30 个模型的推理服务
   author: derek-thomas
@@ -1861,3 +1860,25 @@
     - community
     - research
     - LLM
+
+- local: gemma-july-update
+  title: "Google 最新发布：Gemma 2 2B、ShieldGemma 和 Gemma Scope"
+  author: Xenova
+  thumbnail: /blog/assets/gemma-july-update/thumbnail.jpg
+  date: July 31, 2024
+  tags:
+    - nlp
+    - community
+    - research
+    - LLM
+    - gcp
+
+- local: xethub-joins-hf
+  title: "XetHub 加入 Hugging Face!"
+  author: julien-c
+  thumbnail: /blog/assets/xethub-joins-hf/thumbnail.png
+  date: August 8, 2024
+  tags:
+    - announcement
+    - enterprise
+    - hub

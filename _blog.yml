@@ -4307,7 +4307,7 @@
   date: July 9, 2024
   tags:
     - case-studies
-  
+
 - local: tpu-inference-endpoints-spaces
   title: "Google Cloud TPUs made available to Hugging Face users"
   thumbnail: /blog/assets/tpu-inference-endpoints-spaces/thumbnail.png
@@ -4441,7 +4441,7 @@
     - LLM
 
 - local: zero-shot-vqa-docmatix
-  title: "LAVE: Zero-shot VQA Evaluation on Docmatix with LLMs - Do We Still Need Fine-Tuning?" 
+  title: "LAVE: Zero-shot VQA Evaluation on Docmatix with LLMs - Do We Still Need Fine-Tuning?"
   author: danaaubakirova
   thumbnail: /blog/assets/184_zero_shot_docmatix/thumb.001.jpeg
   date: Jul 25, 2024
@@ -4451,5 +4451,70 @@
     - synthetic-data
     - vqa
     - vlm
-    - zero-shot 
+    - zero-shot
     - research
+
+- local: inference-dgx-cloud
+  title: "Serverless Inference with Hugging Face and NVIDIA NIMs"
+  author: philschmid
+  thumbnail: /blog/assets/train-dgx-cloud/thumbnail.jpg
+  date: July 29, 2024
+  tags:
+    - partnerships
+    - hardware
+    - nvidia
+    - llm
+    - inference
+
+- local: quanto-diffusers
+  title: "Memory-efficient Diffusion Transformers with Quanto and Diffusers"
+  author: sayakpaul
+  thumbnail: /blog/assets/quanto-diffusers/thumbnail.png
+  date: July 30, 2024
+  tags:
+    - diffusers
+    - guide
+    - diffusion-transformers
+
+- local: gemma-july-update
+  title: "Google releases Gemma 2 2B, ShieldGemma and Gemma Scope"
+  author: Xenova
+  thumbnail: /blog/assets/gemma-july-update/thumbnail.jpg
+  date: July 31, 2024
+  tags:
+    - nlp
+    - community
+    - research
+    - LLM
+    - gcp
+
+- local: doc_aug_hf_alb
+  title: "Introducing TextImage Augmentation for Document Images"
+  author: danaaubakirova
+  thumbnail: /blog/assets/185_albumentations/thumbnail.png
+  date: Aug 6, 2024
+  tags:
+    - document ai
+    - data augmentation
+    - synthetic-data
+    - albumentations
+    - research
+
+- local: 2024-security-features
+  title: 2024 Security Feature Highlights
+  author: jack-kumar
+  thumbnail: /blog/assets/2024-security-features/thumbnail.png
+  date: August 6, 2024
+  tags:
+    - security
+    - enterprise
+
+- local: xethub-joins-hf
+  title: "XetHub is joining Hugging Face!"
+  author: julien-c
+  thumbnail: /blog/assets/xethub-joins-hf/thumbnail.png
+  date: August 8, 2024
+  tags:
+    - announcement
+    - enterprise
+    - hub
