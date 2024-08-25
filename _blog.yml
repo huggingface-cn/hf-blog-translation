@@ -4487,6 +4487,7 @@
     - research
     - LLM
     - gcp
+
 - local: doc_aug_hf_alb
   title: "Introducing TextImage Augmentation for Document Images"
   author: danaaubakirova
@@ -4560,3 +4561,41 @@
     - long-context
     - infini-attention
     - memory-compression
+
+- local: llama31-on-vertex-ai
+  title: "Deploy Meta Llama 3.1 405B on Google Cloud Vertex AI"
+  author: alvarobartt
+  thumbnail: /blog/assets/llama31-on-vertex-ai/thumbnail.png
+  date: August 19, 2024
+  tags:
+    - nlp
+    - partnerships
+    - gcp
+    - vertex
+    
+- local: packing-with-FA2
+  title: "Improving Hugging Face Training Efficiency Through Packing with Flash Attention"
+  author: lwtr
+  thumbnail: /blog/assets/packing-with-FA2/thumbnail.png
+  date: August 21, 2024
+  tags:
+    - padding
+    - packing
+    - Flash Attention 2
+
+- local: unsung-heroes
+  title: "The 5 Most Under-Rated Tools on Hugging Face"
+  author: derek-thomas
+  thumbnail: /blog/assets/unsung-heroes/new-thumbnail.png
+  date: August 22, 2024
+  tags:
+    - hub
+    - api
+    - apps
+    - datasets
+    - enterprise
+    - nlp
+    - visualization
+    - nomic
+    - atlas
+    - guide
