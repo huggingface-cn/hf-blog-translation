@@ -1,5 +1,5 @@
 ---
-title: "Falcon Mamba：首个高效的无注意力机制7B模型" 
+title: "Falcon Mamba: 首个高效的无注意力机制 7B 模型" 
 thumbnail: /blog/assets/Falcon Mamba/thumbnail.png
 authors:
 - user: JingweiZuo
