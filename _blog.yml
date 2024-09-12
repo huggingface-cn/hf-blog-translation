@@ -1,25 +1,14 @@
-# "thumbnail" attribute can be GIFs while in the blogpost itself it's better if it's a simple bitmap (because it will be used as a social thumbnail)
-# make sure to optimize your "thumbnail" img with tinypng.com
-- local: how-to-train
-  title: How to train a new language model from scratch using Transformers and Tokenizers
-  thumbnail: /blog/assets/01_how-to-train/how-to-train_blogpost.png
-  author: julien-c
-  date: February 14, 2020
-  tags:
-    - guide
-    - nlp
-
 - local: how-to-generate
-  title: "How to generate text: using different decoding methods for language generation with Transformers"
+  title: 如何生成文本：通过 Transformers 用不同的解码方法生成文本
   author: patrickvonplaten
   thumbnail: /blog/assets/02_how-to-generate/thumbnail.png
-  date: March, 2020
+  date: March 1, 2020
   tags:
     - guide
     - nlp
 
 - local: reformer
-  title: "The Reformer - Pushing the limits of language modeling"
+  title: Reformer 模型 - 突破语言建模的极限
   author: patrickvonplaten
   thumbnail: /blog/assets/03_reformer/thumbnail.png
   date: July 3, 2020
@@ -27,17 +16,8 @@
     - research
     - nlp
 
-- local: pytorch_block_sparse
-  title: Block Sparse Matrices for Smaller and Faster Language Models
-  author: madlag
-  thumbnail: /blog/assets/04_pytorch_block_sparse/thumbnail.png
-  date: Sep 10, 2020
-  tags:
-    - research
-    - nlp
-
 - local: encoder-decoder
-  title: "Transformer-based Encoder-Decoder Models"
+  title: 基于 Transformers 的编码器-解码器模型
   author: patrickvonplaten
   thumbnail: /blog/assets/05_encoder_decoder/thumbnail.png
   date: October 10, 2020
@@ -45,36 +25,8 @@
     - research
     - nlp
 
-- local: ray-tune
-  title: "Hyperparameter Search with Transformers and Ray Tune"
-  thumbnail: /blog/assets/06_ray_tune/ray-hf.jpg
-  author: ray-project
-  guest: true
-  date: November 2, 2020
-  tags:
-    - open-source-collab
-    - nlp
-
-- local: porting-fsmt
-  title: "Porting fairseq wmt19 translation system to transformers"
-  thumbnail: /blog/assets/07_porting_fsmt/thumbnail.png
-  author: stas
-  date: November 3, 2020
-  tags:
-    - open-source-collab
-    - nlp
-
-- local: warm-starting-encoder-decoder
-  title: "Leveraging Pre-trained Language Model Checkpoints for Encoder-Decoder Models"
-  author: patrickvonplaten
-  thumbnail: /blog/assets/08_warm_starting_encoder_decoder/thumbnail.png
-  date: November 09, 2020
-  tags:
-    - guide
-    - nlp
-
 - local: accelerated-inference
-  title: How we sped up transformer inference 100x for 🤗 API customers
+  title: 如何成功将 🤗 API 客户的 transformer 模型推理速度加快 100 倍
   author: Narsil
   thumbnail: /blog/assets/09_accelerated_inference/thumbnail.png
   date: January 18, 2021
@@ -82,52 +34,8 @@
     - analysis
     - nlp
 
-- local: zero-deepspeed-fairscale
-  title: "Fit More and Train Faster With ZeRO via DeepSpeed and FairScale"
-  author: stas
-  thumbnail: /blog/assets/11_zero_deepspeed_fairscale/zero-partitioning.png
-  date: January 19, 2021
-  tags:
-    - guide
-
-- local: tf-serving
-  title: "Faster TensorFlow models in Hugging Face Transformers"
-  author: jplu
-  thumbnail: /blog/assets/10_tf-serving/thumbnail.png
-  date: January 26, 2021
-  tags:
-    - guide
-    - nlp
-
-- local: pytorch-xla
-  title: "Hugging Face on PyTorch / XLA TPUs"
-  thumbnail: /blog/assets/13_pytorch_xla/pytorch_xla_thumbnail.png
-  author: jysohn23
-  guest: true
-  date: February 9, 2021
-  tags:
-    - open-source-collab
-
-- local: ray-rag
-  title: "Retrieval Augmented Generation with Huggingface Transformers and Ray"
-  thumbnail: /blog/assets/12_ray_rag/ray_arch_updated.png
-  author: amogkam
-  guest: true
-  date: February 10, 2021
-  tags:
-    - open-source-collab
-    - nlp
-
-- local: simple-considerations
-  title: "Simple considerations for simple people building fancy neural networks"
-  author: VictorSanh
-  thumbnail: /blog/assets/13_simple-considerations/henry-co-3coKbdfnAFg-unsplash.jpg
-  date: February 25, 2021
-  tags:
-    - guide
-
 - local: long-range-transformers
-  title: "Hugging Face Reads, Feb. 2021 - Long-range Transformers"
+  title: 长程 transformer 模型
   author: VictorSanh
   thumbnail: /blog/assets/14_long_range_transformers/EfficientTransformerTaxonomy.png
   date: March 09, 2021
@@ -135,34 +43,8 @@
     - research
     - nlp
 
-- local: fine-tune-wav2vec2-english
-  title: "Fine-Tune Wav2Vec2 for English ASR with 🤗 Transformers"
-  author: patrickvonplaten
-  thumbnail: /blog/assets/15_fine_tune_wav2vec2/wav2vec2.png
-  date: March 12, 2021
-  tags:
-    - guide
-    - audio
-
-- local: how-to-deploy-a-pipeline-to-google-clouds
-  title: "My Journey to a serverless transformers pipeline on Google Cloud"
-  author: Maxence
-  guest: true
-  date: March 18, 2021
-  tags:
-    - guide
-
-- local: the-partnership-amazon-sagemaker-and-hugging-face
-  title: "The Partnership: Amazon SageMaker and Hugging Face"
-  author: philschmid
-  thumbnail: /blog/assets/17_the_partnership_amazon_sagemaker_and_hugging_face/thumbnail.png
-  date: March 23, 2021
-  tags:
-    - partnerships
-    - aws
-
 - local: big-bird
-  title: "Understanding BigBird's Block Sparse Attention"
+  title: 深入理解 BigBird 的块稀疏注意力
   thumbnail: /blog/assets/18_big_bird/block-sparse-attn.gif
   author: vasudevgupta
   guest: true
@@ -172,163 +54,16 @@
     - research
     - nlp
 
-- local: sagemaker-distributed-training-seq2seq
-  title: "Distributed Training: Train BART/T5 for Summarization using 🤗 Transformers and Amazon SageMaker"
-  author: philschmid
-  thumbnail: /blog/assets/19_sagemaker_distributed_training_seq2seq/thumbnail.png
-  date: April 8, 2021
-  tags:
-    - guide
-    - partnerships
-    - aws
-    - nlp
-
-- local: accelerate-library
-  title: Introducing 🤗 Accelerate
-  thumbnail: /blog/assets/20_accelerate_library/accelerate_diff.png
-  author: sgugger
-  date: April 16, 2021
-  tags:
-    - guide
-
-- local: bert-cpu-scaling-part-1
-  title: "Scaling-up BERT Inference on CPU (Part 1)"
-  thumbnail: /blog/assets/21_bert_cpu_scaling_part_1/imgs/numa_set.png
-  author: mfuntowicz
-  date: April 20, 2021
-  tags:
-    - guide
-    - nlp
-    - partnerships
-    - intel
-
-- local: gradio
-  title: "Using & Mixing Hugging Face Models with Gradio 2.0"
-  author: abidlabs
-  thumbnail: /blog/assets/22_gradio/gradio.png
-  guest: true
-  date: May 25, 2021
-  tags:
-    - open-source-collab
-    - guide
-
-- local: few-shot-learning-gpt-neo-and-inference-api
-  title: "Few-shot learning in practice: GPT-NEO and the 🤗 Accelerated Inference API"
-  author: philschmid
-  thumbnail: /blog/assets/22_few_shot_learning_gpt_neo_and_inference_api/few-shot-prompt.png
-  date: June 3, 2021
-  tags:
-    - guide
-    - nlp
-
-- local: sentence-transformers-in-the-hub
-  title: "Sentence Transformers in the 🤗 Hub"
-  author: nreimers
-  date: June 28, 2021
-  tags:
-    - open-source-collab
-    - nlp
-
-- local: deploy-hugging-face-models-easily-with-amazon-sagemaker
-  title: "Deploy Hugging Face models easily with Amazon SageMaker"
-  author: philschmid
-  date: July 8, 2021
-  tags:
-    - guide
-    - partnerships
-    - aws
-
-- local: spacy
-  title: "Welcome spaCy to the 🤗 Hub"
-  author: osanseviero
-  thumbnail: /blog/assets/23_spacy/thumbnail.png
-  date: July 13, 2021
-  tags:
-    - open-source-collab
-    - nlp
-
-- local: collaborative-training
-  title: "Deep Learning over the Internet: Training Language Models Collaboratively"
-  author: mryab
-  guest: true
-  thumbnail: /blog/assets/24_sahajBERT/thumbnail.png
-  date: July 15, 2021
-  tags:
-    - research
-
-- local: hardware-partners-program
-  title: "Introducing Optimum: The Optimization Toolkit for Transformers at Scale"
-  author: mfuntowicz
-  thumbnail: /blog/assets/25_hardware_partners_program/carbon_inc_quantizer.png
-  date: September 14, 2021
-  tags:
-    - guide
-
-- local: graphcore
-  title: "Hugging Face and Graphcore partner for IPU-optimized Transformers"
-  author: sallydoherty
-  guest: true
-  thumbnail: /blog/assets/26_graphcore-ipu/thumbnail.png
-  date: September 14, 2021
-  tags:
-    - graphcore
-    - partnerships
-
-- local: summer-at-huggingface
-  title: "Summer at Hugging Face ☀️"
-  author: huggingface
-  thumbnail: /blog/assets/27_summer_at_huggingface/thumbnail.png
-  date: September 24, 2021
-  tags:
-    - community
-
-- local: gradio-spaces
-  title: "Showcase Your Projects in Spaces using Gradio"
-  author: merve
-  thumbnail: /blog/assets/28_gradio-spaces/thumbnail.png
-  date: October 5, 2021
-  tags:
-    - guide
-
-- local: streamlit-spaces
-  title: "Hosting your Models and Datasets on Hugging Face Spaces using Streamlit"
-  author: merve
-  thumbnail: /blog/assets/29_streamlit-spaces/thumbnail.png
-  date: October 5, 2021
-  tags:
-    - guide
-
-- local: fine-tune-clip-rsicd
-  title: "Fine tuning CLIP with Remote Sensing (Satellite) images and captions"
-  author: arampacha
-  guest: true
-  thumbnail: /blog/assets/30_clip_rsicd/clip-rsicd-header-image.png
-  date: October 13, 2021
-  tags:
-    - community
-    - cv
-    - nlp
-
 - local: the-age-of-ml-as-code
-  title: "The Age of Machine Learning As Code Has Arrived"
+  title: 机器学习即代码的时代已经到来
   author: juliensimon
   thumbnail: /blog/assets/31_age_of_ml_as_code/01_entreprise_ml.png
   date: October 20, 2021
   tags:
     - analysis
 
-- local: 1b-sentence-embeddings
-  title: "Train a Sentence Embedding Model with 1B Training Pairs"
-  author: asi
-  guest: true
-  thumbnail: /blog/assets/32_1b_sentence_embeddings/model.png
-  date: October 25, 2021
-  tags:
-    - community
-    - nlp
-
 - local: large-language-models
-  title: "Large Language Models: A New Moore's Law?"
+  title: '大语言模型: 新的摩尔定律？'
   author: juliensimon
   thumbnail: /blog/assets/33_large_language_models/01_model_size.jpg
   date: October 26, 2021
@@ -336,198 +71,16 @@
     - analysis
     - nlp
 
-- local: course-launch-event
-  title: "Course Launch Community Event"
-  author: sgugger
-  thumbnail: /blog/assets/34_course_launch/speakers_day1.png
-  date: October 26, 2021
-  tags:
-    - community
-    - nlp
-
-- local: bert-cpu-scaling-part-2
-  title: "Scaling up BERT-like model Inference on modern CPU - Part 2"
-  author: mfuntowicz
-  thumbnail: /blog/assets/35_bert_cpu_scaling_part_2/openmp.png
-  date: November 4, 2021
-  tags:
-    - partnerships
-    - intel
-    - guide
-    - nlp
-
-- local: fine-tune-xlsr-wav2vec2
-  title: "Fine-tuning XLS-R for Multi-Lingual ASR with 🤗 Transformers"
-  author: patrickvonplaten
-  thumbnail: /blog/assets/16_fine_tune_xlsr_wav2vec2/xlsr_wav2vec2.png
-  date: November 15, 2021
+- local: pytorch-fsdp
+  title: 使用 PyTorch 完全分片数据并行技术加速大模型训练
+  author: smangrul
+  thumbnail: /blog/assets/62_pytorch_fsdp/fsdp-thumbnail.png
+  date: May 2, 2022
   tags:
     - guide
-    - audio
-
-- local: accelerating-pytorch
-  title: "Accelerating PyTorch distributed fine-tuning with Intel technologies"
-  author: juliensimon
-  thumbnail: /blog/assets/36_accelerating_pytorch/03_two_nodes.png
-  date: November 19, 2021
-  tags:
-    - guide
-
-- local: data-measurements-tool
-  title: "Introducing the Data Measurements Tool: an Interactive Tool for Looking at Datasets"
-  author: sasha
-  thumbnail: /blog/assets/37_data-measurements-tool/basics_scroll.gif
-  date: November 29, 2021
-  tags:
-    - research
-
-- local: graphcore-getting-started
-  title: "Getting Started with Hugging Face Transformers for IPUs with Optimum"
-  author: internetoftim
-  guest: true
-  thumbnail: /blog/assets/38_getting_started_graphcore/graphcore_1.png
-  date: November 30, 2021
-  tags:
-    - partnerships
-    - graphcore
-    - guide
-
-- local: snowball-fight
-  title: "Introducing Snowball Fight ☃️, our First ML-Agents Environment"
-  author: ThomasSimonini
-  thumbnail: /blog/assets/39_introducing_snowball_fight/snowballfight.gif
-  date: December 2, 2021
-  tags:
-    - research
-    - rl
-
-- local: codeparrot
-  title: "Training CodeParrot 🦜 from Scratch"
-  author: lvwerra
-  thumbnail: /blog/assets/40_codeparrot/thumbnail.png
-  date: December 8, 2021
-  tags:
-    - guide
-    - research
-    - nlp
-
-- local: perceiver
-  title: "Perceiver IO: a scalable, fully-attentional model that works on any modality"
-  author: nielsr
-  thumbnail: /blog/assets/41_perceiver/thumbnail.png
-  date: December 15, 2021
-  tags:
-    - research
-    - guide
-    - nlp
-    - audio
-    - cv
-
-- local: gradio-joins-hf
-  title: "Gradio joins Hugging Face!"
-  author: abidlabs
-  thumbnail: /blog/assets/42_gradio_joins_hf/thumbnail.png
-  date: December 21, 2021
-  tags:
-    - community
-    - open-source-collab
-
-- local: autonlp-prodigy
-  title: "Active Learning with AutoNLP and Prodigy"
-  author: abhishek
-  thumbnail: /blog/assets/43_autonlp_prodigy/thumbnail.png
-  date: December 23, 2021
-  tags:
-    - research
-    - partnerships
-    - nlp
-
-- local: gptj-sagemaker
-  title: "Deploy GPT-J 6B for inference using  Hugging Face Transformers and Amazon SageMaker"
-  author: philschmid
-  thumbnail: /blog/assets/45_gptj_sagemaker/thumbnail.png
-  date: January 11, 2022
-  tags:
-    - partnerships
-    - aws
-    - guide
-    - nlp
-
-- local: wav2vec2-with-ngram
-  title: "Boost Wav2Vec2 with n-gram LM in 🤗 Transformers"
-  author: patrickvonplaten
-  thumbnail: /blog/assets/44_boost_wav2vec2_ngram/wav2vec2_ngram.png
-  date: January 12, 2022
-  tags:
-    - research
-    - guide
-    - audio
-
-- local: infinity-cpu-performance
-  title: "Case Study: Millisecond Latency using Hugging Face Infinity and modern CPUs"
-  author: philschmid
-  thumbnail: /blog/assets/46_infinity_cpu_performance/thumbnail.png
-  date: January 13, 2022
-  tags:
-    - analysis
-
-- local: sb3
-  title: "Welcome Stable-baselines3 to the Hugging Face Hub 🤗"
-  author: ThomasSimonini
-  thumbnail: /blog/assets/47_sb3/thumbnail.png
-  date: January 21, 2022
-  tags:
-    - open-source-collab
-    - rl
-
-- local: searching-the-hub
-  title: "Supercharged Searching on the Hugging Face Hub"
-  author: muellerzr
-  thumbnail: /blog/assets/48_hubsearch/thumbnail.png
-  date: January 25, 2022
-  tags:
-    - guide
-
-- local: asr-chunking
-  title: "Making automatic speech recognition work on large files with Wav2Vec2 in 🤗 Transformers"
-  author: Narsil
-  thumbnail: /blog/assets/49_asr_chunking/thumbnail.png
-  date: February 1, 2022
-  tags:
-    - guide
-    - research
-    - audio
-
-- local: sentiment-analysis-python
-  title: "Getting Started with Sentiment Analysis using Python"
-  author: FedericoPascual
-  thumbnail: /blog/assets/50_sentiment_python/thumbnail.png
-  date: February 2, 2022
-  tags:
-    - sentiment-analysis
-    - nlp
-    - guide
-
-- local: fine-tune-vit
-  title: "Fine-Tune ViT for Image Classification with 🤗 Transformers"
-  author: nateraw
-  thumbnail: /blog/assets/51_fine_tune_vit/vit-thumbnail.jpg
-  date: February 11, 2022
-  tags:
-    - guide
-    - cv
-
-- local: bert-101
-  title: "BERT 101 🤗 State Of The Art NLP Model Explained"
-  author: britneymuller
-  thumbnail: /blog/assets/52_bert_101/thumbnail.jpg
-  date: March 2, 2022
-  tags:
-    - guide
-    - nlp
 
 - local: constrained-beam-search
-  title: "Guiding Text Generation with Constrained Beam Search in 🤗 Transformers"
+  title: 在 🤗 Transformers 中使用约束波束搜索引导文本生成
   author: cwkeam
   guest: true
   thumbnail: /blog/assets/53_constrained_beam_search/thumbnail.png
@@ -536,116 +89,16 @@
     - guide
     - nlp
 
-- local: image-search-datasets
-  title: "Image search with 🤗 datasets"
-  author: davanstrien
-  thumbnail: /blog/assets/54_image_search_datasets/spaces_image_search.jpg
-  date: March 16, 2022
-  tags:
-    - cv
-
-- local: bert-inferentia-sagemaker
-  title: "Accelerate BERT inference with Hugging Face Transformers and AWS inferentia"
-  author: philschmid
-  thumbnail: /blog/assets/55_bert_inferentia_sagemaker/thumbnail.png
-  date: March 16, 2022
-  tags:
-    - partnerships
-    - aws
-    - guide
-    - nlp
-
-- local: fine-tune-segformer
-  title: "Fine-Tune a Semantic Segmentation Model with a Custom Dataset"
-  author: tobiasc
-  thumbnail: /blog/assets/56_fine_tune_segformer/thumb.png
-  date: March 17, 2022
-  tags:
-    - guide
-    - partnerships
-    - cv
-
-- local: ai-residency
-  title: "Announcing the 🤗 AI Research Residency Program"
-  author: douwekiela
-  thumbnail: /blog/assets/57_ai_residency/residency-thumbnail.jpg
-  date: March 22, 2022
-  tags:
-    - community
-    - research
-
-- local: meg-mitchell-interview
-  title: "Machine Learning Experts - Meg Mitchell Interview"
-  author: britneymuller
-  thumbnail: /blog/assets/57_meg_mitchell_interview/thumbnail.png
-  date: March 23, 2022
-  tags:
-    - expert-acceleration-program
-    - ml-experts
-
-- local: decision-transformers
-  title: "Introducing Decision Transformers on Hugging Face 🤗"
-  author: edbeeching
-  thumbnail: /blog/assets/58_decision-transformers/thumbnail.jpg
-  date: March 28, 2022
-  tags:
-    - open-source-collab
-    - guide
-    - rl
-
 - local: transformers-design-philosophy
-  title: "Don't repeat yourself - 🤗 Transformers Design Philosophy"
+  title: 不要重复自己 - 🤗 Transformers 的设计理念
   author: patrickvonplaten
   thumbnail: /blog/assets/59_transformers_philosophy/transformers.png
   date: April 5, 2022
   tags:
     - community
 
-- local: habana
-  title: "Habana Labs and Hugging Face Partner to Accelerate Transformer Model Training"
-  author: susanlansing
-  thumbnail: /blog/assets/60_habana/habana.png
-  date: April 12, 2022
-  tags:
-    - partnerships
-
-- local: lewis-tunstall-interview
-  title: "Machine Learning Experts - Lewis Tunstall Interview"
-  author: britneymuller
-  thumbnail: /blog/assets/60_lewis_tunstall_interview/thumbnail.png
-  date: April 13, 2022
-  tags:
-    - expert-acceleration-program
-    - ml-experts
-
-- local: carbon-emissions-on-the-hub
-  title: "CO2 Emissions and the 🤗 Hub: Leading the Charge"
-  author: sasha
-  thumbnail: /blog/assets/60_carbon_emissions_on_the_hub/thumbnail.jpg
-  date: April 22, 2022
-  tags:
-    - community
-    - guide
-
-- local: supercharge-customer-service-with-machine-learning
-  title: "Supercharged Customer Service with Machine Learning"
-  author: patrickvonplaten
-  thumbnail: /blog/assets/61_supercharged_customer_service_with_nlp/thumbnail.png
-  date: April 25, 2022
-  tags:
-    - guide
-    - nlp
-
-- local: education
-  title: "Introducing Hugging Face for Education"
-  author: Violette
-  thumbnail: /blog/assets/61_education/thumbnail.png
-  date: April 25, 2022
-  tags:
-    - community
-
 - local: getting-started-habana
-  title: "Getting Started with Transformers on Habana Gaudi"
+  title: 基于 Habana Gaudi 的 Transformers 入门
   author: juliensimon
   thumbnail: /blog/assets/61_getting_started_habana/thumbnail.png
   date: April 26, 2022
@@ -653,296 +106,8 @@
     - partnerships
     - guide
 
-- local: ml-director-insights
-  title: "Director of Machine Learning Insights [Series]"
-  author: britneymuller
-  thumbnail: /blog/assets/61_ml_director_insights/thumbnail.png
-  date: April 27, 2022
-  tags:
-    - community
-    - research
-
-- local: opinion-classification-with-kili
-  title: "Opinion Classification with Kili and HuggingFace AutoTrain"
-  author: alperiox
-  guest: true
-  thumbnail: /blog/assets/59_opinion-classification-with-kili/thumbnail.png
-  date: April 28, 2022
-  tags:
-    - guide
-
-- local: pytorch-fsdp
-  title: "Accelerate Large Model Training using PyTorch Fully Sharded Data Parallel"
-  author: smangrul
-  thumbnail: /blog/assets/62_pytorch_fsdp/fsdp-thumbnail.png
-  date: May 2, 2022
-  tags:
-    - guide
-
-- local: deep-rl-intro
-  title: "An Introduction to Deep Reinforcement Learning"
-  author: ThomasSimonini
-  thumbnail: /blog/assets/63_deep_rl_intro/thumbnail.png
-  date: May 4, 2022
-  tags:
-    - rl
-
-- local: fastai
-  title: "Welcome fastai to the Hugging Face Hub"
-  author: espejelomar
-  thumbnail: /blog/assets/64_fastai/fastai_hf_blog.png
-  date: May 6, 2022
-  tags:
-    - guide
-    - open-source-collab
-    - community
-
-- local: series-c
-  title: "We Raised $100 Million for Open & Collaborative Machine Learning 🚀"
-  author: The Hugging Face Team
-  thumbnail: /blog/assets/65_series_c/thumbnail.jpg
-  date: May 9, 2022
-  tags:
-    - news
-
-- local: optimum-inference
-  title: "Accelerated Inference with Optimum and Transformers Pipelines"
-  author: philschmid
-  thumbnail: /blog/assets/66_optimum_inference/thumbnail.png
-  date: May 10, 2022
-  tags:
-    - guide
-    - community
-
-- local: ambassadors
-  title: "Student Ambassador Program's call for applications is open!"
-  author: Violette
-  thumbnail: /blog/assets/67_ambassadors/thumbnail.png
-  date: May 13, 2022
-  tags:
-    - community
-
-- local: ml-director-insights-2
-  title: "Director of Machine Learning Insights [Part 2: SaaS Edition]"
-  author: britneymuller
-  thumbnail: /blog/assets/67_ml_director_insights/thumbnail.png
-  date: May 13, 2022
-  tags:
-    - community
-    - research
-
-- local: gradio-blocks
-  title: "Gradio 3.0 is Out!"
-  author: abidlabs
-  thumbnail: /blog/assets/68_gradio_blocks/block-party.png
-  date: May 16, 2022
-  tags:
-    - community
-    - open-source-collab
-
-- local: fellowship
-  title: "Announcing the Hugging Face Fellowship Program"
-  author: espejelomar
-  thumbnail: /blog/assets/62_fellowship/fellowship-thumbnail.png
-  date: May 17, 2022
-  tags:
-    - community
-
-- local: sasha-luccioni-interview
-  title: "Machine Learning Experts - Sasha Luccioni Interview"
-  author: britneymuller
-  thumbnail: /blog/assets/69_sasha_luccioni_interview/thumbnail.png
-  date: May 17, 2022
-  tags:
-    - expert-acceleration-program
-    - ml-experts
-
-- local: deep-rl-q-part1
-  title: "An Introduction to Q-Learning Part 1"
-  author: ThomasSimonini
-  thumbnail: /blog/assets/70_deep_rl_q_part1/thumbnail.gif
-  date: May 18, 2022
-  tags:
-    - rl
-
-- local: ethical-charter-multimodal
-  title: "Putting ethical principles at the core of research lifecycle"
-  author: SaulLu
-  thumbnail: /blog/assets/71_ethical-charter/thumbnail.jpg
-  date: May 19, 2022
-  tags:
-    - research
-    - nlp
-    - audio
-    - cv
-
-- local: sempre-health-eap-case-study
-  title: "How Sempre Health is leveraging the Expert Acceleration Program to accelerate their ML roadmap"
-  author: federicopascual
-  thumbnail: /blog/assets/70_sempre_health/thumbnail.jpg
-  date: May 19, 2022
-  tags:
-    - expert-acceleration-program
-    - case-study
-    - case-studies
-
-- local: deep-rl-q-part2
-  title: "An Introduction to Q-Learning Part 2"
-  author: ThomasSimonini
-  thumbnail: /blog/assets/73_deep_rl_q_part2/thumbnail.gif
-  date: May 20, 2022
-  tags:
-    - rl
-
-- local: tapex
-  title: "Efficient Table Pre-training without Real Data: An Introduction to TAPEX"
-  author: SivilTaram
-  thumbnail: /blog/assets/74_tapex/thumbnail.png
-  guest: true
-  date: May 23, 2022
-  tags:
-    - research
-    - nlp
-    - community
-
-- local: community-update
-  title: "Introducing Pull Requests and Discussions 🥳"
-  author: victor
-  thumbnail: /blog/assets/76_community_update/thumbnail.png
-  date: May 25, 2022
-  tags:
-    - launch
-
-- local: graphcore-update
-  title: "Graphcore and Hugging Face Launch New Lineup of IPU-Ready Transformers"
-  author: sallydoherty
-  thumbnail: /blog/assets/77_graphcore-update/graphcore_update.png
-  date: May 26, 2022
-  tags:
-    - graphcore
-    - partnerships
-
-- local: deep-rl-dqn
-  title: "Deep Q-Learning with Atari"
-  author: ThomasSimonini
-  thumbnail: /blog/assets/78_deep_rl_dqn/thumbnail.gif
-  date: June 7, 2022
-  tags:
-    - rl
-
-- local: annotated-diffusion
-  title: "The Annotated Diffusion Model"
-  author: nielsr
-  thumbnail: /blog/assets/78_annotated-diffusion/thumbnail.png
-  date: June 7, 2022
-  tags:
-    - guide
-    - diffusion
-    - stable-diffusion
-
-- local: ml-director-insights-3
-  title: "Director of Machine Learning Insights [Part 3: Finance Edition]"
-  author: britneymuller
-  thumbnail: /blog/assets/78_ml_director_insights/thumbnail.png
-  date: June 14, 2022
-  tags:
-    - community
-    - research
-
-- local: intel
-  title: "Intel and Hugging Face Partner to Democratize Machine Learning Hardware Acceleration"
-  author: juliensimon
-  thumbnail: /blog/assets/80_intel/01.png
-  date: June 15, 2022
-  tags:
-    - hardware
-    - intel
-    - guide
-
-- local: convert-transformers-to-onnx
-  title: "Convert Transformers to ONNX with Hugging Face Optimum"
-  author: philschmid
-  thumbnail: /blog/assets/81_convert_transformers_to_onnx/thumbnail.png
-  date: June 22, 2022
-  tags:
-    - guide
-    - community
-    - hardware
-
-- local: getting-started-with-embeddings
-  title: "Getting Started With Embeddings"
-  author: espejelomar
-  thumbnail: /blog/assets/80_getting_started_with_embeddings/thumbnail.png
-  date: June 23, 2022
-  tags:
-    - guide
-    - nlp
-
-- local: eval-on-the-hub
-  title: "Announcing Evaluation on the Hub"
-  author: douwekiela
-  thumbnail: /blog/assets/82_eval_on_the_hub/thumbnail.png
-  date: June 28, 2022
-  tags:
-    - community
-    - launch
-    - guide
-
-- local: accelerate-deepspeed
-  title: "Accelerate Large Model Training using DeepSpeed"
-  author: smangrul
-  thumbnail: /blog/assets/83_accelerate_deepspeed/deepspeed-thumbnail.png
-  date: June 28, 2022
-  tags:
-    - guide
-
-- local: your-first-ml-project
-  title: "Liftoff! How to get started with your first ML project 🚀"
-  author: nimaboscarino
-  thumbnail: /blog/assets/84_first_ml_project/thumbnail.png
-  date: June 29, 2022
-  tags:
-    - guide
-
-- local: deep-rl-pg
-  title: "Policy Gradient with PyTorch"
-  author: ThomasSimonini
-  thumbnail: /blog/assets/85_policy_gradient/thumbnail.gif
-  date: June 30, 2022
-  tags:
-    - rl
-
-- local: sentiment-analysis-twitter
-  title: "Getting Started with Sentiment Analysis on Twitter"
-  author: FedericoPascual
-  thumbnail: /blog/assets/85_sentiment_analysis_twitter/thumbnail.png
-  date: July 7, 2022
-  tags:
-    - sentiment-analysis
-    - nlp
-    - guide
-
-- local: bloom
-  title: "Introducing The World's Largest Open Multilingual Language Model: BLOOM"
-  author: BigScience
-  thumbnail: /blog/assets/86_bloom/thumbnail.png
-  date: July 12, 2022
-  tags:
-    - open-source-collab
-    - community
-    - research
-
-- local: playlist-generator
-  title: "Building a Playlist Generator with Sentence Transformers"
-  author: NimaBoscarino
-  thumbnail: /blog/assets/87_playlist_generator/thumbnail.png
-  date: July 13, 2022
-  tags:
-    - nlp
-    - guide
-
 - local: bloom-megatron-deepspeed
-  title: "The Technology Behind BLOOM Training"
+  title: BLOOM 训练背后的技术
   author: stas
   thumbnail: /blog/assets/86_bloom_megatron_deepspeed/thumbnail.png
   date: July 14, 2022
@@ -950,130 +115,8 @@
     - nlp
     - llm
 
-- local: mnist-adversarial
-  title: "How to train your model dynamically using adversarial data"
-  author: chrisjay
-  thumbnail: /blog/assets/88_mnist_adversarial/mnist-adversarial.png
-  date: July 16, 2022
-  tags:
-    - mnist
-    - adversarial
-    - guide
-
-- local: deep-rl-a2c
-  title: "Advantage Actor Critic (A2C)"
-  author: ThomasSimonini
-  thumbnail: /blog/assets/89_deep_rl_a2c/thumbnail.gif
-  date: July 22, 2022
-  tags:
-    - rl
-
-- local: tf-serving-vision
-  title: "Deploying TensorFlow Vision Models in Hugging Face with TF Serving"
-  author: sayakpaul
-  thumbnail: /blog/assets/90_tf_serving_vision/thumbnail.png
-  date: July 25, 2022
-  tags:
-    - guide
-    - cv
-
-- local: tf-xla-generate
-  title: "Faster Text Generation with TensorFlow and XLA"
-  author: joaogante
-  thumbnail: /blog/assets/91_tf_xla_generate/thumbnail.png
-  date: July 27, 2022
-  tags:
-    - nlp
-    - guide
-
-- local: datasets-docs-update
-  title: "Introducing new audio and vision documentation in 🤗 Datasets"
-  author: stevhliu
-  thumbnail: /blog/assets/87_datasets-docs-update/thumbnail.gif
-  date: July 28, 2022
-  tags:
-    - audio
-    - cv
-    - community
-    - announcement
-
-- local: us-national-ai-research-resource
-  title: "AI Policy @🤗: Comments on U.S. National AI Research Resource Interim Report"
-  author: irenesolaiman
-  thumbnail: /blog/assets/92_us_national_ai_research_resource/nairr_thumbnail.png
-  date: August 1, 2022
-  tags:
-    - community
-    - ethics
-
-- local: nystromformer
-  title: "Nyströmformer, Approximating self-attention in linear time and memory via the Nyström method"
-  author: novice03
-  thumbnail: /blog/assets/86_nystromformer/thumbnail.png
-  date: August 2, 2022
-  tags:
-    - research
-    - nlp
-
-- local: introducing-private-hub
-  title: "Introducing the Private Hub: A New Way to Build With Machine Learning"
-  author: FedericoPascual
-  thumbnail: /blog/assets/92_introducing_private_hub/thumbnail.png
-  date: August 3, 2022
-  tags:
-    - announcement
-    - enterprise
-    - hub
-
-- local: deep-rl-ppo
-  title: "Proximal Policy Optimization (PPO)"
-  author: ThomasSimonini
-  thumbnail: /blog/assets/93_deep_rl_ppo/thumbnail.png
-  date: August 5, 2022
-  tags:
-    - rl
-
-- local: how-to-train-sentence-transformers
-  title: "Train and Fine-Tune Sentence Transformers Models"
-  author: espejelomar
-  thumbnail: /blog/assets/95_training_st_models/thumbnail.png
-  date: August 10, 2022
-  tags:
-    - guide
-    - nlp
-
-- local: deploy-tfserving-kubernetes
-  title: "Deploying 🤗 ViT on Kubernetes with TF Serving"
-  author: chansung
-  thumbnail: /blog/assets/94_tf_serving_kubernetes/thumb.png
-  date: August 11, 2022
-  tags:
-    - guide
-    - cv
-
-- local: tensorflow-philosophy
-  title: "Hugging Face's TensorFlow Philosophy"
-  author: rocketknight1
-  thumbnail: /blog/assets/96_tensorflow_philosophy/thumbnail.png
-  date: August 12, 2022
-  tags:
-    - nlp
-    - cv
-    - guide
-
-- local: skops
-  title: Introducing Skops
-  author: merve
-  thumbnail: /blog/assets/94_skops/introducing_skops.png
-  date: August 12, 2022
-  tags:
-    - open-source-collab
-    - scikit-learn
-    - announcement
-    - guide
-
 - local: hf-bitsandbytes-integration
-  title: "A Gentle Introduction to 8-bit Matrix Multiplication for transformers at scale using transformers, accelerate and bitsandbytes"
+  title: 大规模 Transformer 模型 8 比特矩阵乘简介 - 基于 Hugging Face Transformers、Accelerate 以及 bitsandbytes
   author: ybelkada
   thumbnail: /blog/assets/96_hf_bitsandbytes_integration/Thumbnail_blue.png
   date: August 17, 2022
@@ -1082,85 +125,8 @@
     - llm
     - quantization
 
-- local: vision-transformers
-  title: "Deep Dive: Vision Transformers On Hugging Face Optimum Graphcore"
-  author: juliensimon
-  thumbnail: /blog/assets/97_vision_transformers/thumbnail.jpg
-  date: August 18, 2022
-  tags:
-    - vision
-    - graphcore
-
-- local: deploy-vertex-ai
-  title: "Deploying 🤗 ViT on Vertex AI"
-  author: sayakpaul
-  thumbnail: /blog/assets/97_vertex_ai/image1.png
-  date: August 19, 2022
-  tags:
-    - guide
-    - cv
-
-- local: pretraining-bert
-  title: "Pre-Train BERT with Hugging Face Transformers and Habana Gaudi"
-  author: philschmid
-  thumbnail: /blog/assets/99_pretraining_bert/thumbnail.png
-  date: August 22, 2022
-  tags:
-    - nlp
-    - partnerships
-    - guide
-
-- local: stable_diffusion
-  title: "Stable Diffusion with 🧨 Diffusers"
-  author: valhalla
-  thumbnail: /blog/assets/98_stable_diffusion/thumbnail.png
-  date: August 22, 2022
-  tags:
-    - guide
-    - diffusion
-    - nlp
-    - text to image
-    - clip
-    - stable-diffusion
-    - dalle
-
-- local: spaces_3dmoljs
-  title: "Visualize proteins on Hugging Face Spaces"
-  author: duerrsimon
-  thumbnail: /blog/assets/98_spaces_3dmoljs/thumbnail.png
-  date: August 24, 2022
-  tags:
-    - research
-
-- local: open_rail
-  title: "OpenRAIL: Towards open and responsible AI licensing frameworks"
-  author: CarlosMFerr
-  thumbnail: /blog/assets/100_open_rail/100_open-rail.png
-  date: August 31, 2022
-  tags:
-    - community
-
-- local: train-decision-transformers
-  title: "Train your first Decision Transformer"
-  author: edbeeching
-  thumbnail: /blog/assets/101_train-decision-transformers/thumbnail.gif
-  date: September 08, 2022
-  tags:
-    - rl
-
-- local: diffusers-2nd-month
-  title: "What's new in Diffusers? 🎨"
-  author: osanseviero
-  thumbnail: /blog/assets/102_diffusers_2nd_month/inpainting.png
-  date: September 12, 2022
-  tags:
-    - guide
-    - diffusion
-    - text_to_image
-    - stable-diffusion
-
 - local: megatron-training
-  title: "How to train a Language Model with Megatron-LM"
+  title: 如何使用 Megatron-LM 训练语言模型
   author: loubnabnl
   thumbnail: /blog/assets/100_megatron_training/thumbnail.png
   date: September 7, 2022
@@ -1169,7 +135,7 @@
     - nlp
 
 - local: bloom-inference-pytorch-scripts
-  title: "Incredibly Fast BLOOM Inference with DeepSpeed and Accelerate"
+  title: 使用 DeepSpeed 和 Accelerate 进行超快 BLOOM 模型推理
   author: stas
   thumbnail: /blog/assets/bloom-inference-pytorch-scripts/thumbnail.png
   date: Sep 16, 2022
@@ -1179,16 +145,8 @@
     - bloom
     - inference
 
-- local: ethics-soc-1
-  title: "Ethics and Society Newsletter #1"
-  author: meg
-  thumbnail: /blog/assets/103_ethics-soc-1/thumbnail.png
-  date: Sep 22, 2022
-  tags:
-    - ethics
-
 - local: setfit
-  title: "SetFit: Efficient Few-Shot Learning Without Prompts"
+  title: 'SetFit: 高效的无提示少样本学习'
   author: Unso
   thumbnail: /blog/assets/103_setfit/intel_hf_logo.png
   date: September 26, 2022
@@ -1196,58 +154,8 @@
     - research
     - nlp
 
-- local: accelerate-large-models
-  title: "How 🤗 Accelerate runs very large models thanks to PyTorch"
-  author: sgugger
-  thumbnail: /blog/assets/104_accelerate-large-models/thumbnail.png
-  date: September 27, 2022
-  tags:
-    - guide
-    - research
-    - open-source-collab
-
-- local: autotrain-image-classification
-  title: "Image Classification with AutoTrain"
-  author: NimaBoscarino
-  thumbnail: /blog/assets/105_autotrain-image-classification/thumbnail.png
-  date: Sep 28, 2022
-  tags:
-    - autotrain
-    - cv
-    - guide
-
-- local: zero-shot-eval-on-the-hub
-  title: "Very Large Language Models and How to Evaluate Them"
-  author: mathemakitten
-  thumbnail: /blog/assets/106_zero_shot_eval_on_the_hub/thumbnail.png
-  date: Oct 3, 2022
-  tags:
-    - autotrain
-    - research
-    - nlp
-
-- local: japanese-stable-diffusion
-  title: "Japanese Stable Diffusion"
-  author: mkshing
-  thumbnail: /blog/assets/106_japanese_stable_diffusion/jsd_thumbnail.png
-  date: Oct 5, 2022
-  tags:
-    - diffusion
-    - nlp
-    - text-to-image
-    - clip
-    - stable-diffusion
-
-- local: introducing-doi
-  title: "Introducing DOI: the Digital Object Identifier to Datasets and Models"
-  author: sylvestre
-  thumbnail: /blog/assets/107_launching_doi/thumbnail.jpeg
-  date: Oct 7, 2022
-  tags:
-    - community
-
 - local: bloom-inference-optimization
-  title: "Optimization story: Bloom inference"
+  title: '优化故事: BLOOM 模型推理'
   author: Narsil
   thumbnail: /blog/assets/bloom-inference-pytorch-scripts/thumbnail.png
   date: Oct 12, 2022
@@ -1256,41 +164,8 @@
     - community
     - research
 
-- local: stable_diffusion_jax
-  title: "Stable Diffusion in JAX/Flax 🚀"
-  author: pcuenca
-  thumbnail: /blog/assets/108_stable_diffusion_jax/thumbnail.png
-  date: Oct 13, 2022
-  tags:
-    - guide
-    - diffusion
-    - nlp
-    - text-to-image
-    - clip
-    - stable-diffusion
-    - dalle
-
-- local: inference-endpoints
-  title: "Getting started with Hugging Face Inference Endpoints"
-  author: julsimon
-  thumbnail: /blog/assets/109_inference_endpoints/endpoints05.png
-  date: Oct 14, 2022
-  tags:
-    - guide
-    - cloud
-    - inference
-
-- local: mteb
-  title: "MTEB: Massive Text Embedding Benchmark"
-  author: Muennighoff
-  thumbnail: /blog/assets/110_mteb/thumbnail.png
-  date: Oct 19, 2022
-  tags:
-    - nlp
-    - research
-    - llm
 - local: pytorch-ddp-accelerate-transformers
-  title: "From PyTorch DDP to 🤗 Accelerate to 🤗 Trainer, mastery of distributed training with ease"
+  title: 从 PyTorch DDP 到 Accelerate 到 Trainer，轻松掌握分布式训练
   author: muellerzr
   thumbnail: /blog/assets/111_pytorch_ddp_accelerate_transformers/thumbnail.png
   date: October 21, 2022
@@ -1299,28 +174,8 @@
     - research
     - open-source-collab
 
-- local: evaluating-llm-bias
-  title: "Evaluating Language Model Bias with 🤗 Evaluate"
-  author: sasha
-  thumbnail: /blog/assets/112_evaluating-llm-bias/thumbnail.png
-  date: Oct 24, 2022
-  tags:
-    - ethics
-    - research
-    - nlp
-
-- local: openvino
-  title: "Accelerate your models with 🤗 Optimum Intel and OpenVINO"
-  author: echarlaix
-  thumbnail: /blog/assets/113_openvino/thumbnail.png
-  date: November 2, 2022
-  tags:
-    - hardware
-    - intel
-    - guide
-
 - local: fine-tune-whisper
-  title: "Fine-Tune Whisper with 🤗 Transformers"
+  title: 使用 🤗 Transformers 微调 Whisper 模型
   author: sanchit-gandhi
   thumbnail: /blog/assets/111_fine_tune_whisper/thumbnail.jpg
   date: Nov 3, 2022
@@ -1329,7 +184,7 @@
     - audio
 
 - local: dreambooth
-  title: "Training Stable Diffusion with Dreambooth using 🧨 Diffusers"
+  title: 使用 🧨 Diffusers 通过 Dreambooth 技术来训练 Stable Diffusion
   author: valhalla
   thumbnail: /blog/assets/sd_dreambooth_training/thumbnail.jpg
   date: November 7, 2022
@@ -1340,16 +195,8 @@
     - fine-tuning
     - guide
 
-- local: pricing-update
-  title: "Introducing our new pricing"
-  author: sbrandeis
-  thumbnail: /blog/assets/114_pricing-update/thumbnail.png
-  date: November 8, 2022
-  tags:
-    - announcement
-
 - local: introducing-csearch
-  title: "Generating Human-level Text with Contrastive Search in Transformers 🤗"
+  title: 在 Transformers 中使用对比搜索生成可媲美人类水平的文本🤗
   author: yxuansu
   thumbnail: /blog/assets/115_introducing_contrastive_search/thumbnail.png
   date: Nov 8, 2022
@@ -1358,37 +205,8 @@
     - text generation
     - research
 
-- local: sentiment-analysis-fhe
-  title: "Sentiment Classification with Fully Homomorphic Encryption using Concrete ML"
-  author: jfrery-zama
-  thumbnail: /blog/assets/sentiment-analysis-fhe/thumbnail.png
-  date: November 17, 2022
-  tags:
-    - guide
-    - privacy
-    - research
-    - FHE
-
-- local: arxiv
-  title: "Hugging Face Machine Learning Demos on arXiv"
-  author: abidlabs
-  thumbnail: /blog/assets/arxiv/thumbnail.png
-  date: Nov 17, 2022
-  tags:
-    - research
-    - community
-
-- local: ml-director-insights-4
-  title: "Director of Machine Learning Insights [Part 4]"
-  author: Violette
-  thumbnail: /blog/assets/78_ml_director_insights/part4.png
-  date: November 23, 2022
-  tags:
-    - community
-    - research
-
 - local: inference-update
-  title: "An Overview of Inference Solutions on Hugging Face"
+  title: Hugging Face 提供的推理 (Inference) 解决方案
   author: julsimon
   thumbnail: /blog/assets/116_inference_update/widget.png
   date: Nov 21, 2022
@@ -1397,49 +215,16 @@
     - inference
 
 - local: document-ai
-  title: "Accelerating Document AI"
+  title: 加速 Document AI (文档智能) 发展
   author: rajistics
   thumbnail: /blog/assets/112_document-ai/thumbnail.png
   date: Nov 21, 2022
   tags:
     - guide
     - expert-acceleration-program
-    - case-studies
-
-- local: diffusion-models-event
-  title: "Diffusion Models Live Event"
-  author: lewtun
-  thumbnail: /blog/assets/diffusion-models-event/thumbnail.png
-  date: Nov 25, 2022
-  tags:
-    - diffusion
-    - nlp
-    - text to image
-    - clip
-    - stable-diffusion
-    - dalle
-
-- local: interns-2023
-  title: "We are hiring interns!"
-  author: douwekiela
-  thumbnail: /blog/assets/interns-2023/thumbnail.png
-  date: November 29, 2022
-  tags:
-    - community
-    - announcement
-
-- local: vq-diffusion
-  title: "VQ Diffusion with 🧨 Diffusers"
-  author: williamberman
-  thumbnail: /blog/assets/117_vq_diffusion/thumbnail.png
-  date: November 30, 2022
-  tags:
-    - diffusers
-    - diffusion
-    - text-to-image
 
 - local: time-series-transformers
-  title: "Probabilistic Time Series Forecasting with 🤗 Transformers"
+  title: 使用 🤗 Transformers 进行概率时间序列预测
   author: nielsr
   thumbnail: /blog/assets/118_time-series-transformers/thumbnail.png
   date: December 1, 2022
@@ -1447,28 +232,18 @@
     - research
     - time-series
 
-- local: diffusers-coreml
-  title: "Using Stable Diffusion with Core ML on Apple Silicon"
-  author: pcuenca
-  thumbnail: /blog/assets/diffusers_coreml/thumbnail.png
-  date: December 1, 2022
+- local: rlhf
+  title: ChatGPT 背后的「功臣」——RLHF 技术详解
+  author: natolambert
+  thumbnail: /blog/assets/120_rlhf/thumbnail.png
+  date: December 9, 2022
   tags:
-    - coreml
-    - diffusers
-    - stable-diffusion
-    - diffusion
-
-- local: deep-learning-with-proteins
-  title: "Deep Learning with Proteins"
-  author: rocketknight1
-  thumbnail: /blog/assets/119_deep_learning_with_proteins/folding_example.png
-  date: December 2, 2022
-  tags:
+    - rlhf
+    - rl
     - guide
-    - fine-tuning
 
 - local: elixir-bumblebee
-  title: "From GPT2 to Stable Diffusion: Hugging Face arrives to the Elixir community"
+  title: 从 GPT2 到 Stable Diffusion：Elixir 社区迎来了 Hugging Face
   author: josevalim
   thumbnail: /blog/assets/120_elixir-bumblebee/thumbnail.png
   date: December 9, 2022
@@ -1479,18 +254,8 @@
     - nlp
     - open-source-collab
 
-- local: rlhf
-  title: "Illustrating Reinforcement Learning from Human Feedback (RLHF)"
-  author: natolambert
-  thumbnail: /blog/assets/120_rlhf/thumbnail.png
-  date: December 9, 2022
-  tags:
-    - rlhf
-    - rl
-    - guide
-
 - local: habana-gaudi-2-benchmark
-  title: "Faster Training and Inference: Habana Gaudi®2 vs Nvidia A100 80GB"
+  title: 更快的训练和推理：对比 Habana Gaudi®2 和英伟达 A100 80GB
   author: regisss
   thumbnail: /blog/assets/habana-gaudi-2-benchmark/thumbnail.png
   date: December 14, 2022
@@ -1498,47 +263,8 @@
     - partnerships
     - habana
 
-- local: audio-datasets
-  title: "A Complete Guide to Audio Datasets"
-  author: sanchit-gandhi
-  thumbnail: /blog/assets/116_audio_datasets/thumbnail.jpg
-  date: Dec 15, 2022
-  tags:
-    - guide
-    - audio
-
-- local: ethics-soc-2
-  title: "Ethics and Society Newsletter #2: Let's talk about bias!"
-  author: yjernite
-  thumbnail: /blog/assets/122_ethics_soc_2/thumbnail-solstice.png
-  date: Dec 15, 2022
-  tags:
-    - ethics
-
-- local: model-cards
-  title: "Model Cards: Introducing HF Model documentation tools"
-  author: Ezi
-  thumbnail: /blog/assets/121_model-cards/thumbnail.png
-  date: December 20, 2022
-  tags:
-    - community
-    - research
-    - ethics
-    - guide
-
-- local: clipseg-zero-shot
-  title: "Zero-shot image segmentation with CLIPSeg"
-  author: tobiasc
-  thumbnail: /blog/assets/123_clipseg-zero-shot/thumb.png
-  date: December 21, 2022
-  tags:
-    - guide
-    - partnerships
-    - cv
-    - clip
-
 - local: intel-sapphire-rapids
-  title: "Accelerating PyTorch Transformers with Intel Sapphire Rapids, part 1"
+  title: 使用英特尔 Sapphire Rapids 加速 PyTorch Transformers 模型（第一部分）
   author: juliensimon
   thumbnail: /blog/assets/124_intel_sapphire_rapids/02.png
   date: January 2, 2023
@@ -1549,7 +275,7 @@
     - partnerships
 
 - local: ml-for-games-1
-  title: "AI for Game Development: Creating a Farming Game in 5 Days. Part 1"
+  title: 基于 AI 进行游戏开发：5天创建一个农场游戏！第1部分
   author: dylanebert
   thumbnail: /blog/assets/124_ml-for-games/thumbnail.png
   date: January 2, 2023
@@ -1560,7 +286,7 @@
     - game-dev
 
 - local: intro-graphml
-  title: "Introduction to Graph Machine Learning"
+  title: 一文带你入门图机器学习
   author: clefourrier
   thumbnail: /blog/assets/125_intro-to-graphml/thumbnail.png
   date: January 3, 2023
@@ -1570,7 +296,7 @@
     - graphs
 
 - local: ml-for-games-2
-  title: "AI for Game Development: Creating a Farming Game in 5 Days. Part 2"
+  title: 使用 ChatGPT 启发游戏创意：基于 AI 5 天创建一个农场游戏，第 2 天
   author: dylanebert
   thumbnail: /blog/assets/124_ml-for-games/thumbnail2.png
   date: January 9, 2023
@@ -1580,7 +306,7 @@
     - game-dev
 
 - local: image-similarity
-  title: "Image Similarity with Hugging Face Datasets and Transformers"
+  title: 基于 Hugging Face Datasets 和 Transformers 的图像相似性搜索
   author: sayakpaul
   thumbnail: /blog/assets/image_similarity/thumbnail.png
   date: Jan 16, 2023
@@ -1588,18 +314,8 @@
     - guide
     - cv
 
-- local: paddlepaddle
-  title: "Welcome PaddlePaddle to the Hugging Face Hub"
-  author: paddlepaddle
-  guest: true
-  thumbnail: /blog/assets/126_paddlepaddle/thumbnail.jpg
-  date: January 17, 2023
-  tags:
-    - open-source-collab
-    - nlp
-
 - local: mask2former
-  title: "Universal Image Segmentation with Mask2Former and OneFormer"
+  title: '通用图像分割任务: 使用 Mask2Former 和 OneFormer'
   author: nielsr
   thumbnail: /blog/assets/127_mask2former/thumbnail.png
   date: Jan 19, 2023
@@ -1608,7 +324,7 @@
     - guide
 
 - local: ml-for-games-3
-  title: "3D Asset Generation: AI for Game Development #3"
+  title: AI 制作 3D 素材——基于 AI 5 天创建一个农场游戏，第 3 天
   author: dylanebert
   thumbnail: /blog/assets/124_ml-for-games/thumbnail3.png
   date: January 20, 2023
@@ -1617,18 +333,8 @@
     - guide
     - game-dev
 
-- local: optimum-onnxruntime-training
-  title: "Optimum+ONNX Runtime - Easier, Faster training for your Hugging Face models"
-  author: Jingya
-  thumbnail: /blog/assets/optimum_onnxruntime-training/thumbnail.png
-  date: January 24, 2023
-  tags:
-    - guide
-    - community
-    - onnxruntime
-
 - local: dialog-agents
-  title: "What Makes a Dialog Agent Useful?"
+  title: 解读 ChatGPT 背后的技术重点：RLHF、IFT、CoT、红蓝对抗
   author: nazneen
   thumbnail: /blog/assets/dialog-agents/thumbnail.png
   date: January 24, 2023
@@ -1639,20 +345,30 @@
     - ift
     - sft
 
+- local: optimum-onnxruntime-training
+  title: Optimum + ONNX Runtime—更容易、更快地训练你的 Hugging Face 模型
+  author: Jingya
+  thumbnail: /blog/assets/optimum_onnxruntime-training/thumbnail.png
+  date: January 24, 2023
+  tags:
+    - guide
+    - community
+    - onnxruntime
+
 - local: lora
-  title: "Using LoRA for Efficient Stable Diffusion Fine-Tuning"
+  title: 使用 LoRA 进行 Stable Diffusion 的高效参数微调
   author: pcuenq
   thumbnail: /blog/assets/lora/thumbnail.png
   date: January 26, 2023
   tags:
-    - diffusers
+    - diffusersgame
     - stable-diffusion
     - dreambooth
     - fine-tuning
     - guide
 
 - local: ml-for-games-4
-  title: "2D Asset Generation: AI for Game Development #4"
+  title: 制作 2D 素材——基于 AI 5 天创建一个农场游戏，第 4 天
   author: dylanebert
   thumbnail: /blog/assets/124_ml-for-games/thumbnail4.png
   date: January 26, 2023
@@ -1661,18 +377,8 @@
     - guide
     - game-dev
 
-- local: cv_state
-  title: "The State of Computer Vision at Hugging Face 🤗"
-  author: sayakpaul
-  thumbnail: /blog/assets/cv_state/thumbnail.png
-  date: January 30, 2023
-  tags:
-    - community
-    - guide
-    - cv
-
 - local: vision_language_pretraining
-  title: "A Dive into Pretraining Strategies for Vision-Language Models"
+  title: 深入了解视觉语言模型
   author: adirik
   thumbnail: /blog/assets/128_vision_language_pretraining/thumbnail.png
   date: February 03, 2023
@@ -1682,7 +388,7 @@
     - multimodal
 
 - local: intel-sapphire-rapids-inference
-  title: "Accelerating PyTorch Transformers with Intel Sapphire Rapids, part 2"
+  title: CPU 推理——使用英特尔 Sapphire Rapids 加速 PyTorch Transformers，第二部分
   author: juliensimon
   thumbnail: /blog/assets/129_intel_sapphire_rapids_inference/01.png
   date: February 6, 2023
@@ -1693,7 +399,7 @@
     - partnerships
 
 - local: aivsai
-  title: "Introducing ⚔️ AI vs. AI ⚔️ a deep reinforcement learning multi-agents competition system"
+  title: AI ⚔️ 大战 AI ⚔️ ，一个深度强化学习多智能体竞赛系统
   author: CarlCochet
   thumbnail: /blog/assets/128_aivsai/thumbnail.png
   date: February 07, 2023
@@ -1701,7 +407,7 @@
     - rl
 
 - local: ml-for-games-5
-  title: "Generating Stories: AI for Game Development #5"
+  title: 使用 ChatGPT 设计游戏剧情——基于 AI 5 天创建一个农场游戏，完结篇！
   author: dylanebert
   thumbnail: /blog/assets/124_ml-for-games/thumbnail5.png
   date: February 07, 2023
@@ -1711,7 +417,7 @@
     - game-dev
 
 - local: speecht5
-  title: "Speech Synthesis, Recognition, and More With SpeechT5"
+  title: 使用 SpeechT5 进行语音合成、识别和更多功能
   author: Matthijs
   thumbnail: /blog/assets/speecht5/thumbnail.png
   date: February 8, 2023
@@ -1720,7 +426,7 @@
     - audio
 
 - local: peft
-  title: "🤗 PEFT: Parameter-Efficient Fine-Tuning of Billion-Scale Models on Low-Resource Hardware"
+  title: '🤗 PEFT: 在低资源硬件上对十亿规模模型进行参数高效微调'
   author: smangrul
   thumbnail: /blog/assets/130_peft/thumbnail.png
   date: February 10, 2023
@@ -1733,17 +439,8 @@
     - community
     - dreambooth
 
-- local: mantis-case-study
-  title: "Why we’re switching to Hugging Face Inference Endpoints, and maybe you should too"
-  author: mattupson
-  guest: true
-  thumbnail: /blog/assets/78_ml_director_insights/mantis1.png
-  date: February 15, 2023
-  tags:
-    - case-studies
-
 - local: blip-2
-  title: "Zero-shot image-to-text generation with BLIP-2"
+  title: 使用 BLIP-2 零样本“图生文”
   author: MariaK
   thumbnail: /blog/assets/blip-2/thumbnail.png
   date: February 15, 2023
@@ -1753,33 +450,11 @@
     - cv
     - multimodal
 
-- local: aws-partnership
-  title: "Hugging Face and AWS partner to make AI more accessible"
-  author: jeffboudier
-  thumbnail: /blog/assets/131_aws-partnership/aws-partnership-thumbnail.png
-  date: February 21, 2023
-  tags:
-    - partnerships
-    - aws
-    - nlp
-    - cv
-
-- local: fast-mac-diffusers
-  title: "Swift Diffusers: Fast Stable Diffusion for Mac"
-  author: pcuenq
-  thumbnail: /blog/assets/fast-mac-diffusers/thumbnail.png
-  date: February 24, 2023
-  tags:
-    - coreml
-    - diffusers
-    - stable-diffusion
-    - diffusion
-
 - local: red-teaming
-  title: "Red-Teaming Large Language Models"
+  title: 为大语言模型建立红队对抗
   author: nazneen
   thumbnail: /blog/assets/red-teaming/thumbnail.png
-  date: February 24, 2023
+  date: February 22, 2023
   tags:
     - llms
     - rlhf
@@ -1788,17 +463,8 @@
     - safety
     - alignment
 
-- local: classification-use-cases
-  title: "How Hugging Face Accelerated Development of Witty Works Writing Assistant"
-  author: Violette
-  thumbnail: /blog/assets/78_ml_director_insights/witty-works.png
-  date: March 1, 2023
-  tags:
-    - nlp
-    - case-studies
-
 - local: ethics-diffusers
-  title: "Ethical guidelines for developing the Diffusers library"
+  title: 开发 Diffusers 库的道德行为指南
   author: giadap
   thumbnail: /blog/assets/ethics-diffusers/thumbnail.png
   date: March 2, 2023
@@ -1807,25 +473,15 @@
     - diffusers
 
 - local: controlnet
-  title: "ControlNet in Diffusers 🧨"
+  title: 使用 🧨 Diffusers 实现 ControlNet 高速推理
   author: sayakpaul
   thumbnail: /blog/assets/controlnet/thumbnail.png
   date: March 3, 2023
   tags:
     - diffusers
 
-- local: using-ml-for-disasters
-  title: "Using Machine Learning to Aid Survivors and Race through Time"
-  author: merve
-  thumbnail: /blog/assets/using-ml-for-disasters/thumbnail.png
-  date: March 3, 2023
-  tags:
-    - nlp
-    - transformers
-    - object-detection
-
 - local: vit-align
-  title: "New ViT and ALIGN Models From Kakao Brain"
+  title: Kakao Brain 的开源 ViT、ALIGN 和 COYO 文字—图片数据集
   author: adirik
   thumbnail: /blog/assets/132_vit_align/thumbnail.png
   date: March 6, 2023
@@ -1836,17 +492,16 @@
     - multimodal
 
 - local: trl-peft
-  title: "Fine-tuning 20B LLMs with RLHF on a 24GB consumer GPU"
+  title: 在一张 24 GB 的消费级显卡上用 RLHF 微调 20B LLMs
   author: edbeeching
   thumbnail: /blog/assets/133_trl_peft/thumbnail.png
   date: March 9, 2023
   tags:
     - rl
-    - rlhf
     - nlp
 
 - local: informer
-  title: "Multivariate Probabilistic Time Series Forecasting with Informer"
+  title: 使用 Informer 进行多元概率时间序列预测
   author: elisim
   thumbnail: /blog/assets/134_informer/thumbnail.png
   date: March 10, 2023
@@ -1855,42 +510,8 @@
     - research
     - time-series
 
-- local: notebooks-hub
-  title: "Jupyter X Hugging Face"
-  author: davanstrien
-  thumbnail: /blog/assets/135_notebooks-hub/before_after_notebook_rendering.png
-  date: March 23, 2023
-  tags:
-    - partnerships
-    - announcement
-
-- local: train-your-controlnet
-  title: "Train your ControlNet with diffusers"
-  author: multimodalart
-  thumbnail: /blog/assets/136_train-your-controlnet/thumbnail.png
-  date: March 24, 2023
-  tags:
-    - guide
-    - diffusion
-    - stable-diffusion
-
-- local: fl-with-flower
-  title: "Federated Learning using Hugging Face and Flower"
-  author: charlesbvll
-  guest: true
-  thumbnail: /blog/assets/fl-with-flower/thumbnail.png
-  date: March 27, 2023
-  tags:
-    - nlp
-    - transformers
-    - guide
-    - flower
-    - federated-learning
-    - fl
-    - open-source-collab
-
 - local: stable-diffusion-inference-intel
-  title: "Accelerating Stable Diffusion Inference on Intel CPUs"
+  title: 在英特尔 CPU 上加速 Stable Diffusion 推理
   author: juliensimon
   thumbnail: /blog/assets/136_stable_diffusion_inference_intel/01.png
   date: March 28, 2023
@@ -1900,7 +521,7 @@
     - guide
 
 - local: habana-gaudi-2-bloom
-  title: "Fast Inference on Large Language Models: BLOOMZ on Habana Gaudi2 Accelerator"
+  title: 大语言模型快速推理：在 Habana Gaudi2 上推理 BLOOMZ
   author: regisss
   thumbnail: /blog/assets/habana-gaudi-2-bloom/thumbnail.png
   date: March 28, 2023
@@ -1913,8 +534,16 @@
     - bloom
     - inference
 
+- local: train-your-controlnet
+  title: 使用 diffusers 训练你自己的 ControlNet 🧨
+  author: multimodalart
+  thumbnail: /blog/assets/136_train-your-controlnet/thumbnail.png
+  date: March 28, 2023
+  tags:
+    - diffusers
+
 - local: ethics-soc-3
-  title: "Ethics and Society Newsletter #3: Ethical Openness at Hugging Face"
+  title: '道德与社会问题简报 #3: Hugging Face 上的道德开放性'
   author: irenesolaiman
   thumbnail: /blog/assets/137_ethics_soc_3/ethics_3_thumbnail.png
   date: Mar 30, 2023
@@ -1922,7 +551,7 @@
     - ethics
 
 - local: stackllama
-  title: "StackLLaMA: A hands-on guide to train LLaMA with RLHF"
+  title: '“StackLLaMA”: 用 RLHF 训练 LLaMA 的手把手教程'
   author: edbeeching
   thumbnail: /blog/assets/138_stackllama/thumbnail.png
   date: April 5, 2023
@@ -1931,27 +560,8 @@
     - rlhf
     - nlp
 
-- local: snorkel-case-study
-  title: "Snorkel AI x Hugging Face: unlock foundation models for enterprises"
-  author: Violette
-  thumbnail: /blog/assets/78_ml_director_insights/snorkel.png
-  date: April 6, 2023
-  tags:
-    - case-studies
-
-- local: owkin-substra
-  title: "Creating Privacy Preserving AI with Substra"
-  author: EazyAl
-  thumbnail: /blog/assets/139_owkin-substra/thumbnail.png
-  date: April 12, 2023
-  tags:
-    - cv
-    - federated-learning
-    - fl
-    - open-source-collab
-
 - local: graphml-classification
-  title: "Graph Classification with Transformers"
+  title: 使用 Transformers 进行图分类
   author: clefourrier
   thumbnail: /blog/assets/125_intro-to-graphml/thumbnail_classification.png
   date: April 14, 2023
@@ -1960,19 +570,8 @@
     - guide
     - graphs
 
-- local: accelerate-transformers-with-inferentia2
-  title: "Accelerating Hugging Face Transformers with AWS Inferentia2"
-  author: philschmid
-  thumbnail: /blog/assets/140_accelerate_transformers_with_inferentia2/thumbnail.png
-  date: April 17, 2023
-  tags:
-    - partnerships
-    - aws
-    - nlp
-    - cv
-
 - local: unity-in-spaces
-  title: "How to host a Unity game in a Space"
+  title: 如何在 🤗 Space 上托管 Unity 游戏
   author: dylanebert
   thumbnail: /blog/assets/124_ml-for-games/unity-in-spaces-thumbnail.png
   date: April 21, 2023
@@ -1982,7 +581,7 @@
     - game-dev
 
 - local: chinese-language-blog
-  title: "Introducing HuggingFace blog for Chinese speakers: Fostering Collaboration with the Chinese AI community"
+  title: Hugging Face 中文博客正式发布！
   author: xianbao
   thumbnail: /blog/assets/chinese-language-blog/thumbnail.png
   date: April 24, 2023
@@ -1990,37 +589,8 @@
     - partnerships
     - community
 
-- local: databricks-case-study
-  title: "Databricks ❤️ Hugging Face: up to 40% faster training and tuning of Large Language Models"
-  author: alighodsi
-  guest: true
-  thumbnail: /blog/assets/78_ml_director_insights/databricks.png
-  date: April 26, 2023
-  tags:
-    - case-studies
-
-- local: tf_tpu
-  title: "Training a language model with 🤗 Transformers using TensorFlow and TPUs"
-  author: rocketknight1
-  thumbnail: /blog/assets/tf_tpu_training/thumbnail.png
-  date: April 27, 2023
-  tags:
-    - nlp
-    - guide
-    - tensorflow
-    - tpu
-
-- local: if
-  title: "Running IF with 🧨 diffusers on a Free Tier Google Colab"
-  author: williamberman
-  thumbnail: /blog/assets/if/thumbnail.jpg
-  date: April 26, 2023
-  tags:
-    - guide
-    - diffusion
-
 - local: unity-api
-  title: "How to Install and Use the Hugging Face Unity API"
+  title: 如何安装和使用 Hugging Face Unity API
   author: dylanebert
   thumbnail: /blog/assets/124_ml-for-games/unity-api-thumbnail.png
   date: May 1, 2023
@@ -2030,7 +600,7 @@
     - game-dev
 
 - local: starcoder
-  title: "StarCoder: A State-of-the-Art LLM for Code"
+  title: StarCoder：最先进的代码大模型
   author: lvwerra
   thumbnail: /blog/assets/141_starcoder/starcoder_thumbnail.png
   date: May 4, 2023
@@ -2040,7 +610,7 @@
     - research
 
 - local: text-to-video
-  title: "A Dive into Text-to-Video Models"
+  title: 深入理解文生视频模型
   author: adirik
   thumbnail: /blog/assets/140_text-to-video/thumbnail.png
   date: May 8, 2023
@@ -2053,7 +623,7 @@
     - text-to-video
 
 - local: starchat-alpha
-  title: "Creating a Coding Assistant with StarCoder"
+  title: 使用 StarCoder 创建一个编程助手
   author: lewtun
   thumbnail: /blog/assets/starchat_alpha/thumbnail.png
   date: May 9, 2023
@@ -2063,7 +633,7 @@
     - research
 
 - local: assisted-generation
-  title: "Assisted Generation: a new direction toward low-latency text generation"
+  title: 辅助生成：低延迟文本生成的新方向
   author: joaogante
   thumbnail: /blog/assets/assisted-generation/thumbnail.png
   date: May 11, 2023
@@ -2072,7 +642,7 @@
     - research
 
 - local: rwkv
-  title: "Introducing RWKV — An RNN with the advantages of a transformer"
+  title: RWKV——transformer 与 RNN 的强强联合
   author: BlinkDL
   thumbnail: /blog/assets/142_rwkv/rwkv_thumbnail.png
   date: May 15, 2023
@@ -2081,20 +651,8 @@
     - community
     - research
 
-- local: chatbot-amd-gpu
-  title: "Run a Chatgpt-like Chatbot on a Single GPU with ROCm"
-  thumbnail: /blog/assets/chatbot-amd-gpu/thumbnail.png
-  author: andyll7772
-  date: May 15, 2023
-  tags:
-    - guide
-    - llm
-    - nlp
-    - inference
-    - rocm
-
 - local: generative-ai-models-on-intel-cpu
-  title: "Smaller is better: Q8-Chat, an efficient generative AI experience on Xeon"
+  title: 越小越好：Q8-Chat，在英特尔至强 CPU 上体验高效的生成式 AI
   thumbnail: /blog/assets/143_q8chat/thumbnail.png
   author: andyll7772
   date: May 16, 2023
@@ -2106,7 +664,7 @@
     - quantization
 
 - local: dedup
-  title: "Large-scale Near-deduplication Behind BigCode"
+  title: BigCode 背后的大规模数据去重
   author: chenghao
   guest: true
   thumbnail: /blog/assets/dedup/thumbnail.png
@@ -2116,7 +674,7 @@
     - deduplication
 
 - local: instruction-tuning-sd
-  title: "Instruction-tuning Stable Diffusion with InstructPix2Pix"
+  title: 使用 InstructPix2Pix 对 Stable Diffusion 进行指令微调
   author: sayakpaul
   thumbnail: /blog/assets/instruction_tuning_sd/thumbnail.png
   date: May 23, 2023
@@ -2127,38 +685,8 @@
     - research
     - guide
 
-- local: safetensors-security-audit
-  title: "Safetensors audited as really safe and becoming the default"
-  author: Narsil
-  thumbnail: /blog/assets/142_safetensors_official/thumbnail.png
-  date: May 23, 2023
-  tags:
-    - pickle
-    - serialization
-    - load times
-
-- local: huggingface-and-ibm
-  title: "Hugging Face and IBM partner on watsonx.ai, the next-generation enterprise studio for AI builders"
-  author: juliensimon
-  thumbnail: /blog/assets/144_ibm/01.png
-  date: May 23, 2023
-  tags:
-    - cloud
-    - ibm
-    - partnership
-
-- local: hugging-face-endpoints-on-azure
-  title: "Hugging Face Collaborates with Microsoft to Launch Hugging Face Model Catalog on Azure"
-  author: philschmid
-  thumbnail: /blog/assets/75_hugging_face_endpoints_on_azure/01.jpg
-  date: May 24, 2023
-  tags:
-    - cloud
-    - azure
-    - partnership
-
 - local: 4bit-transformers-bitsandbytes
-  title: "Making LLMs even more accessible with bitsandbytes, 4-bit quantization and QLoRA"
+  title: 用 bitsandbytes、4 比特量化和 QLoRA 打造亲民的 LLM
   author: ybelkada
   thumbnail: /blog/assets/96_hf_bitsandbytes_integration/Thumbnail_blue.png
   date: May 24, 2023
@@ -2169,7 +697,7 @@
     - 4bit
 
 - local: train-optimize-sd-intel
-  title: "Optimizing Stable Diffusion for Intel CPUs with NNCF and 🤗 Optimum"
+  title: 基于 NNCF 和 🤗 Optimum 面向 Intel CPU 对 Stable Diffusion 优化
   author: AlexKoff88
   thumbnail: /blog/assets/train_optimize_sd_intel/thumbnail.png
   date: May 25, 2023
@@ -2177,48 +705,10 @@
     - diffusers
     - cpu
     - intel
-    - guide
-    - quantization
-
-- local: bertopic
-  title: "Introducing BERTopic Integration with Hugging Face Hub"
-  author: davanstrien
-  thumbnail: /blog/assets/145_bertopic/logo.png
-  date: May 31, 2023
-  tags:
-    - guide
-    - open-source-collab
-    - community
-
-- local: sagemaker-huggingface-llm
-  title: "Introducing the Hugging Face LLM Inference Container for Amazon SageMaker"
-  author: philschmid
-  thumbnail: /blog/assets/145_sagemaker-huggingface-llm/thumbnail.jpg
-  date: May 31, 2023
-  tags:
-    - cloud
-    - aws
-    - partnership
-    - guide
-
-- local: cnil
-  title: "Hugging Face Selected for the French Data Protection Agency Enhanced Support Program"
-  author: yjernite
-  thumbnail: /blog/assets/146_cnil-accompaniment/logo.png
-  date: May 15, 2023
-  tags:
-    - ethics
-
-- local: game-jam
-  title: "Announcing the Open Source AI Game Jam 🎮"
-  author: ThomasSimonini
-  thumbnail: /blog/assets/145_gamejam/thumbnail.png
-  date: June 1, 2023
-  tags:
-    - community
+    - guide - quantization
 
 - local: unity-asr
-  title: "AI Speech Recognition in Unity"
+  title: 如何在 Unity 游戏中集成 AI 语音识别？
   author: dylanebert
   thumbnail: /blog/assets/124_ml-for-games/unity-asr-thumbnail.png
   date: June 2, 2023
@@ -2226,9 +716,10 @@
     - community
     - guide
     - game-dev
+    - speech-recognition
 
 - local: falcon
-  title: "The Falcon has landed in the Hugging Face ecosystem"
+  title: Falcon 登陆 Hugging Face 生态
   author: lvwerra
   thumbnail: /blog/assets/147_falcon/falcon_thumbnail.jpg
   date: June 5, 2023
@@ -2237,35 +728,8 @@
     - community
     - research
 
-- local: fasttext
-  title: "Welcome fastText to the 🤗 Hub"
-  author: sheonhan
-  thumbnail: /blog/assets/147_fasttext/thumbnail.png
-  date: June 6, 2023
-  tags:
-    - open-source-collab
-    - nlp
-    - partnerships
-
-- local: hub-duckdb
-  title: "DuckDB: run SQL queries on 50,000+ datasets on the Hugging Face Hub"
-  author: stevhliu
-  thumbnail: /blog/assets/hub_duckdb/hub_duckdb.png
-  date: June 7, 2023
-  tags:
-    - guide
-
-- local: hf-hub-glam-guide
-  title: "The Hugging Face Hub for Galleries, Libraries, Archives and Museums"
-  author: davanstrien
-  thumbnail: /blog/assets/144_hf_hub_glam_guide/thumbnail.png
-  date: June 12, 2023
-  tags:
-    - community
-    - guide
-
 - local: open-llm-leaderboard-rlhf
-  title: "Can foundation models label data like humans?"
+  title: 基础大模型能像人类一样标注数据吗？
   author: nazneen
   thumbnail: /blog/assets/llm-leaderboard/leaderboard-thumbnail.png
   date: June 12, 2023
@@ -2274,50 +738,8 @@
     - evaluation
     - leaderboard
 
-- local: huggingface-and-amd
-  title: "Hugging Face and AMD partner on accelerating state-of-the-art models for CPU and GPU platforms"
-  author: juliensimon
-  thumbnail: /blog/assets/148_huggingface_amd/01.png
-  date: June 13, 2023
-  tags:
-    - hardware
-    - amd
-    - partnership
-
-- local: content-guidelines-update
-  title: "Announcing our new Content Guidelines and Policy"
-  author: giadap
-  thumbnail: /blog/assets/content-guidelines-blogpost/thumbnail.png
-  date: June 15, 2023
-  tags:
-    - community
-    - ethics
-
-- local: livebook-app-deployment
-  title: "Deploy Livebook notebooks as apps to Hugging Face Spaces"
-  author: josevalim
-  thumbnail: /blog/assets/120_elixir-bumblebee/thumbnail.png
-  date: Jun 15, 2023
-  tags:
-    - elixir
-    - notebooks
-    - spaces
-    - whisper
-
-- local: fast-diffusers-coreml
-  title: "Faster Stable Diffusion with Core ML on iPhone, iPad, and Mac"
-  author: pcuenq
-  thumbnail: /blog/assets/149_fast_diffusers_coreml/thumbnail.png
-  date: June 15, 2023
-  tags:
-    - coreml
-    - diffusers
-    - stable-diffusion
-    - diffusion
-    - quantization
-
 - local: autoformer
-  title: "Yes, Transformers are Effective for Time Series Forecasting (+ Autoformer)"
+  title: Transformer 模型能够有效地进行时间序列预测 (使用 Autoformer)
   author: elisim
   thumbnail: /blog/assets/150_autoformer/thumbnail.png
   date: June 16, 2023
@@ -2326,17 +748,8 @@
     - research
     - time-series
 
-- local: policy-ntia-rfc
-  title: "AI Policy @🤗: Response to the U.S. NTIA's Request for Comment on AI Accountability"
-  author: yjernite
-  thumbnail: /blog/assets/151_policy_ntia_rfc/us_policy_thumbnail.png
-  date: June 20, 2023
-  tags:
-    - community
-    - ethics
-
 - local: mms_adapters
-  title: "Fine-tuning MMS Adapter Models for Multi-Lingual ASR"
+  title: 微调用于多语言 ASR 的 MMS 适配器模型
   author: patrickvonplaten
   thumbnail: /blog/assets/151_mms/mms_map.png
   date: June 19, 2023
@@ -2344,21 +757,8 @@
     - audio
     - research
 
-- local: panel-on-hugging-face
-  title: "Panel on Hugging Face"
-  author: sophiamyang
-  thumbnail: /blog/assets/panel-on-hugging-face/thumbnail.png
-  date: June 22, 2023
-  tags:
-    - open-source-collab
-    - panel
-    - deployment
-    - spaces
-    - visualization
-    - apps
-
 - local: open-llm-leaderboard-mmlu
-  title: "What's going on with the Open LLM Leaderboard?"
+  title: Open LLM 排行榜近况
   author: clefourrier
   thumbnail: /blog/assets/evaluating-mmlu-leaderboard/thumbnail.png
   date: June 23, 2023
@@ -2367,11 +767,10 @@
     - research
     - nlp
     - evaluation
-    - open-llm-leaderboard
     - leaderboard
 
 - local: ethics-soc-4
-  title: "Ethics and Society Newsletter #4: Bias in Text-to-Image Models"
+  title: '道德与社会问题简报 #4：文生图模型中的偏见'
   author: sasha
   thumbnail: /blog/assets/152_ethics_soc_4/ethics_4_thumbnail.png
   date: June 26, 2023
@@ -2379,7 +778,7 @@
     - ethics
 
 - local: bridgetower
-  title: "Accelerating Vision-Language Models: BridgeTower on Habana Gaudi2"
+  title: 使用 Habana Gaudi2 加速视觉语言模型 BridgeTower
   author: regisss
   thumbnail: /blog/assets/bridgetower/thumbnail.png
   date: June 29, 2023
@@ -2390,26 +789,8 @@
     - cv
     - hardware
 
-- local: writer-case-study
-  title: "Leveraging Hugging Face for complex generative AI use cases"
-  author: jeffboudier
-  thumbnail: /blog/assets/78_ml_director_insights/writer.png
-  date: July 1, 2023
-  tags:
-    - case-studies
-
-- local: text-to-webapp
-  title: "Making a web app generator with open ML models"
-  author: jbilcke-hf
-  thumbnail: /blog/assets/153_text_to_webapp/thumbnail.jpg
-  date: July 3, 2023
-  tags:
-    - guide
-    - llm
-    - apps
-
 - local: inference-endpoints-llm
-  title: "Deploy LLMs with Hugging Face Inference Endpoints"
+  title: 用 Hugging Face 推理端点部署 LLM
   author: philschmid
   thumbnail: /blog/assets/155_inference_endpoints_llm/thumbnail.jpg
   date: July 4, 2023
@@ -2419,20 +800,8 @@
     - apps
     - inference
 
-- local: ml-web-games
-  title: "Making ML-powered web games with Transformers.js"
-  author: Xenova
-  thumbnail: /blog/assets/ml-web-games/thumbnail.png
-  date: July 5, 2023
-  tags:
-    - game-dev
-    - guide
-    - web
-    - javascript
-    - transformers.js
-
 - local: stable-diffusion-finetuning-intel
-  title: "Fine-tuning Stable Diffusion models on Intel CPUs"
+  title: 在英特尔 CPU 上微调 Stable Diffusion 模型
   author: juliensimon
   thumbnail: /blog/assets/stable-diffusion-finetuning-intel/dicoo_image.png
   date: July 14, 2023
@@ -2443,7 +812,7 @@
     - partnerships
 
 - local: os-llms
-  title: "Open-Source Text Generation & LLM Ecosystem at Hugging Face"
+  title: Hugging Face 的文本生成和大语言模型的开源生态
   author: merve
   thumbnail: /blog/assets/os_llms/thumbnail.png
   date: July 17, 2023
@@ -2452,17 +821,8 @@
     - inference
     - nlp
 
-- local: ai-webtv
-  title: "Building an AI WebTV"
-  author: jbilcke-hf
-  thumbnail: /blog/assets/156_ai_webtv/thumbnail.gif
-  date: July 17, 2023
-  tags:
-    - text-to-video
-    - guide
-
 - local: llama2
-  title: "Llama 2 is here - get it on Hugging Face"
+  title: Llama 2 来袭 - 在 Hugging Face 上玩转它
   author: osanseviero
   thumbnail: /blog/assets/llama2/thumbnail.jpg
   date: July 18, 2023
@@ -2473,7 +833,7 @@
     - LLM
 
 - local: diffusers-turns-1
-  title: "Happy 1st anniversary 🤗 Diffusers!"
+  title: 🤗 Diffusers 一岁啦!
   author: stevhliu
   thumbnail: /blog/assets/diffusers-turns-1/diffusers-turns-1.png
   date: July 20, 2023
@@ -2484,55 +844,16 @@
     - diffusers
 
 - local: game-jam-first-edition-results
-  title: "Results of the Open Source AI Game Jam"
+  title: 首届开源 AI 游戏挑战赛事结果
   author: ThomasSimonini
   thumbnail: /blog/assets/game-jam-first-edition-results/thumbnail.jpg
   date: July 21, 2023
   tags:
+    - ai-for-games
     - game-dev
 
-- local: agents-js
-  title: "Introducing Agents.js: Give tools to your LLMs using JavaScript"
-  author: nsarrazin
-  thumbnail: /blog/assets/agents-js/thumbnail.png
-  date: July 24, 2023
-  tags:
-    - agents
-    - javascript
-    - web
-
-- local: eu-ai-act-oss
-  title: "AI Policy @🤗: Open ML Considerations in the EU AI Act"
-  author: yjernite
-  thumbnail: /blog/assets/eu_ai_act_oss/thumbnailEU.png
-  date: July 24, 2023
-  tags:
-    - ethics
-
-- local: stable-diffusion-xl-coreml
-  title: "Stable Diffusion XL on Mac with Advanced Core ML Quantization"
-  author: pcuenq
-  thumbnail: /blog/assets/stable-diffusion-xl-coreml/thumbnail.png
-  date: July 27, 2023
-  tags:
-    - coreml
-    - stable-diffusion
-    - stable-diffusion-xl
-    - diffusers
-
-- local: sd_distillation
-  title: "Open-sourcing Knowledge Distillation Code and Weights of SD-Small and SD-Tiny"
-  author: harishsegmind
-  guest: true
-  thumbnail: /blog/assets/distill_sd/thumbnail.png
-  date: August 1, 2023
-  tags:
-    - stable-diffusion
-    - research
-    - diffusers
-
 - local: 3d-assets
-  title: "Practical 3D Asset Generation: A Step-by-Step Guide"
+  title: 手把手教你使用人工智能生成 3D 素材
   author: dylanebert
   thumbnail: /blog/assets/124_ml-for-games/thumbnail-3d.jpg
   date: August 01, 2023
@@ -2543,8 +864,19 @@
     - diffusion
     - game-dev
 
+- local: sd_distillation
+  title: 开源 SD-Small 和 SD-Tiny 知识蒸馏代码与权重
+  author: harishsegmind
+  guest: true
+  thumbnail: /blog/assets/distill_sd/thumbnail.png
+  date: August 1, 2023
+  tags:
+    - stable-diffusion
+    - research
+    - diffusers
+
 - local: encrypted-llm
-  title: "Towards Encrypted Large Language Models with FHE"
+  title: 使用 FHE 实现加密大语言模型
   author: RomanBredehoft
   guest: true
   thumbnail: /blog/assets/encrypted-llm/thumbnail.png
@@ -2557,7 +889,7 @@
     - llm
 
 - local: huggy-lingo
-  title: "Huggy Lingo: Using Machine Learning to Improve Language Metadata on the Hugging Face Hub"
+  title: Huggy Lingo：利用机器学习改进 Hugging Face Hub 上的语言元数据
   author: davanstrien
   thumbnail: /blog/assets/156_huggylingo/Huggy_Lingo.png
   date: August 2, 2023
@@ -2565,28 +897,8 @@
     - announcement
     - research
 
-- local: run-musicgen-as-an-api
-  title: "Deploy MusicGen in no time with Inference Endpoints"
-  author: reach-vb
-  thumbnail: /blog/assets/run-musicgen-as-an-api/thumbnail.png
-  date: August 4, 2023
-  tags:
-    - audio
-    - guide
-
-- local: swift-coreml-llm
-  title: "Releasing Swift Transformers: Run On-Device LLMs in Apple Devices"
-  author: pcuenq
-  thumbnail: /blog/assets/swift-coreml-llm/thumbnail.png
-  date: August 8, 2023
-  tags:
-    - guide
-    - coreml
-    - llm
-    - swift
-
 - local: dpo-trl
-  title: "Fine-tune Llama 2 with DPO"
+  title: 使用 DPO 微调 Llama 2
   author: kashif
   thumbnail: /blog/assets/157_dpo_trl/dpo_thumbnail.png
   date: August 8, 2023
@@ -2595,8 +907,19 @@
     - rlhf
     - nlp
 
+- local: optimizing-bark
+  title: 使用 🤗 Transformers 优化 Bark
+  author: ylacombe
+  thumbnail: /blog/assets/bark_optimization/thumbnail.png
+  date: August 9, 2023
+  tags:
+    - text-to-speech
+    - optimization
+    - benchmark
+    - bark
+
 - local: deploy-deepfloydif-using-bentoml
-  title: "Deploying Hugging Face Models with BentoML: DeepFloyd IF in Action"
+  title: 使用 BentoML 部署 🤗 Hugging Face 上的模型：DeepFloyd IF 实战
   author: Sherlockk
   guest: true
   thumbnail: /blog/assets/deploy-deepfloydif-using-bentoml/thumbnail.png
@@ -2608,30 +931,8 @@
     - guide
     - diffusers
 
-- local: optimizing-bark
-  title: "Optimizing Bark using 🤗 Transformers"
-  author: ylacombe
-  thumbnail: /blog/assets/bark_optimization/thumbnail.png
-  date: August 9, 2023
-  tags:
-    - text-to-speech
-    - optimization
-    - benchmark
-    - bark
-
-- local: aws-marketplace
-  title: "Hugging Face Platform on the AWS Marketplace: Pay with your AWS Account"
-  author: philschmid
-  thumbnail: /blog/assets/158_aws_marketplace/thumbnail.jpg
-  date: August 10, 2023
-  tags:
-    - guide
-    - announcement
-    - partnerships
-    - aws
-
 - local: idefics
-  title: "Introducing IDEFICS: An Open Reproduction of State-of-the-art Visual Language Model"
+  title: IDEFICS 简介：最先进视觉语言模型的开源复现
   author: VictorSanh
   thumbnail: /blog/assets/idefics/thumbnail.png
   date: August 22, 2023
@@ -2641,7 +942,7 @@
     - cv
 
 - local: safecoder
-  title: "Introducing SafeCoder"
+  title: 推介 SafeCoder
   author: jeffboudier
   thumbnail: /blog/assets/159_safecoder/thumbnail.jpg
   date: August 22, 2023
@@ -2652,7 +953,7 @@
     - bigcode
 
 - local: gptq-integration
-  title: "Making LLMs lighter with AutoGPTQ and transformers"
+  title: 使用 AutoGPTQ 和 transformers 让大语言模型更轻量化
   author: marcsun13
   thumbnail: /blog/assets/159_autogptq_transformers/thumbnail.jpg
   date: August 23, 2023
@@ -2662,7 +963,7 @@
     - quantization
 
 - local: password-git-deprecation
-  title: "Deprecation of Git Authentication using password"
+  title: Hub 上的 Git 操作不再支持使用密码验证
   author: Sylvestre
   thumbnail: /blog/assets/password-git-deprecation/thumbnail.png
   date: August 25, 2023
@@ -2671,7 +972,7 @@
     - security
 
 - local: codellama
-  title: "Code Llama: Llama 2 learns to code"
+  title: Code Llama：Llama 2 学会写代码了！
   author: philschmid
   thumbnail: /blog/assets/160_codellama/thumbnail.jpg
   date: August 25, 2023
@@ -2682,7 +983,7 @@
     - LLM
 
 - local: audioldm2
-  title: "AudioLDM 2, but faster ⚡️"
+  title: AudioLDM 2，加速⚡️！
   author: sanchit-gandhi
   thumbnail: /blog/assets/161_audioldm2/thumbnail.png
   date: Aug 30, 2023
@@ -2692,16 +993,8 @@
     - diffusers
     - diffusion
 
-- local: fetch-case-study
-  title: "Fetch Cuts ML Processing Latency by 50% Using Amazon SageMaker & Hugging Face"
-  author: Violette
-  thumbnail: /blog/assets/78_ml_director_insights/fetch.png
-  date: September 1, 2023
-  tags:
-    - case-studies
-
 - local: falcon-180b
-  title: "Spread Your Wings: Falcon 180B is here"
+  title: Falcon 180B 现已登陆 Hugging Face Hub
   author: philschmid
   thumbnail: /blog/assets/162_falcon_180b/thumbnail.jpg
   date: September 6, 2023
@@ -2712,7 +1005,7 @@
     - LLM
 
 - local: t2i-sdxl-adapters
-  title: "Efficient Controllable Generation for SDXL with T2I-Adapters"
+  title: 在 SDXL 上用 T2I-Adapter 实现高效可控的文生图
   author: Adapter
   guest: true
   thumbnail: /blog/assets/t2i-sdxl-adapters/thumbnail.png
@@ -2723,16 +1016,8 @@
     - diffusers
     - diffusion
 
-- local: safecoder-vs-closed-source-code-assistants
-  title: "SafeCoder vs. Closed-source Code Assistants"
-  author: julsimon
-  thumbnail: /blog/assets/safecoder-vs-closed-source-code-assistants/image.png
-  date: September 11, 2023
-  tags:
-    - bigcode
-
 - local: overview-quantization-transformers
-  title: "Overview of natively supported quantization schemes in 🤗 Transformers"
+  title: 🤗 Transformers 中原生支持的量化方案概述
   author: ybelkada
   thumbnail: /blog/assets/163_overview_quantization_transformers/thumbnail.jpg
   date: September 12, 2023
@@ -2745,7 +1030,7 @@
     - gptq
 
 - local: ram-efficient-pytorch-fsdp
-  title: "Fine-tuning Llama 2 70B using PyTorch FSDP"
+  title: 使用 PyTorch FSDP 微调 Llama 2 70B
   author: smangrul
   thumbnail: /blog/assets/160_fsdp_llama/thumbnail.jpg
   date: September 13, 2023
@@ -2754,18 +1039,8 @@
     - guide
     - nlp
 
-- local: wuerstchen
-  title: "Introducing Würstchen: Fast Diffusion for Image Generation"
-  author: dome272
-  thumbnail: /blog/assets/wuerstchen/thumbnail.jpg
-  date: September 13, 2023
-  tags:
-    - diffusion
-    - diffusers
-    - text-to-image
-
 - local: optimize-llm
-  title: "Optimizing your LLM in production"
+  title: 面向生产的 LLM 优化
   author: patrickvonplaten
   thumbnail: /blog/assets/163_optimize_llm/optimize_llm.png
   date: Sep 15, 2023
@@ -2774,21 +1049,8 @@
     - research
     - LLM
 
-- local: object-detection-leaderboard
-  title: "Object Detection Leaderboard"
-  author: rafaelpadilla
-  guest: true
-  thumbnail: /blog/assets/object-detection-leaderboard/thumbnail.png
-  date: September 18, 2023
-  tags:
-    - community
-    - guide
-    - cv
-    - leaderboard
-    - evaluation
-
 - local: gaussian-splatting
-  title: "Introduction to 3D Gaussian Splatting"
+  title: 3D 高斯点染简介
   author: dylanebert
   thumbnail: /blog/assets/124_ml-for-games/thumbnail-gaussian-splatting.png
   date: September 18, 2023
@@ -2798,41 +1060,8 @@
     - cv
     - game-dev
 
-- local: rocketmoney-case-study
-  title: "Rocket Money x Hugging Face: Scaling Volatile ML Models in Production"
-  author: nicokuzak
-  guest: true
-  thumbnail: /blog/assets/78_ml_director_insights/rocketmoney.png
-  date: September 19, 2023
-  tags:
-    - case-studies
-
-- local: inference-pro
-  title: "Inference for PROs"
-  author: osanseviero
-  thumbnail: /blog/assets/inference_pro/thumbnail.png
-  date: September 22, 2023
-  tags:
-    - community
-    - guide
-    - inference
-    - api
-    - llm
-    - stable-diffusion
-
-- local: llama-sagemaker-benchmark
-  title: "Llama 2 on Amazon SageMaker a Benchmark"
-  author: philschmid
-  thumbnail: /blog/assets/llama_sagemaker_benchmark/thumbnail.jpg
-  date: September 26, 2023
-  tags:
-    - guide
-    - inference
-    - llm
-    - aws
-
 - local: Llama2-for-non-engineers
-  title: "Non-engineers guide: Train a LLaMA 2 chatbot"
+  title: 非工程师指南：训练 LLaMA 2 聊天机器人
   author: 2legit2overfit
   thumbnail: /blog/assets/78_ml_director_insights/tuto.png
   date: September 28, 2023
@@ -2842,7 +1071,7 @@
     - nlp
 
 - local: trl-ddpo
-  title: "Finetune Stable Diffusion Models with DDPO via TRL"
+  title: 使用 DDPO 在 TRL 中微调 Stable Diffusion 模型
   author: metric-space
   guest: true
   thumbnail: /blog/assets/166_trl_ddpo/thumbnail.png
@@ -2853,28 +1082,8 @@
     - rl
     - rlhf
 
-- local: ethics-soc-5
-  title: "Ethics and Society Newsletter #5: Hugging Face Goes To Washington and Other Summer 2023 Musings"
-  author: meg
-  thumbnail: /blog/assets/164_ethics-soc-5/thumbnail.png
-  date: September 29, 2023
-  tags:
-    - ethics
-
-- local: ai-comic-factory
-  title: "Deploying the AI Comic Factory using the Inference API"
-  author: jbilcke-hf
-  thumbnail: /blog/assets/165_ai_comic_factory/thumbnail.jpg
-  date: October 2, 2023
-  tags:
-    - guide
-    - inference
-    - api
-    - llm
-    - stable-diffusion
-
 - local: chat-templates
-  title: "Chat Templates: An End to the Silent Performance Killer"
+  title: 聊天模板：无声性能杀手的终结
   author: rocketknight1
   thumbnail: /blog/assets/chat-templates/thumbnail.png
   date: October 3, 2023
@@ -2883,32 +1092,8 @@
     - nlp
     - community
 
-- local: sdxl_jax
-  title: "Accelerating Stable Diffusion XL Inference with JAX on Cloud TPU v5e"
-  author: pcuenq
-  thumbnail: /blog/assets/sdxl-jax/thumbnail.jpg
-  date: October 3, 2023
-  tags:
-    - sdxl
-    - jax
-    - stable diffusion
-    - guide
-    - tpu
-    - google
-
-- local: ort-accelerating-hf-models
-  title: "Accelerating over 130,000 Hugging Face models with ONNX Runtime"
-  author: sschoenmeyer
-  thumbnail: /blog/assets/ort_accelerating_hf_models/thumbnail.png
-  date: October 4, 2023
-  tags:
-    - open-source-collab
-    - onnxruntime
-    - onnx
-    - inference
-
 - local: gradio-lite
-  title: "Gradio-Lite: Serverless Gradio Running Entirely in Your Browser"
+  title: 'Gradio-Lite: 完全在浏览器里运行的无服务器 Gradio'
   author: abidlabs
   thumbnail: /blog/assets/167_gradio_lite/thumbnail.png
   date: October 19, 2023
@@ -2917,18 +1102,8 @@
     - open-source
     - serverless
 
-- local: simple_sdxl_optimizations
-  title: "Exploring simple optimizations for SDXL"
-  author: sayakpaul
-  thumbnail: /blog/assets/simple_sdxl_optimizations/thumbnail.png
-  date: October 24, 2023
-  tags:
-    - diffusers
-    - guide
-    - sdxl
-
 - local: the_n_implementation_details_of_rlhf_with_ppo
-  title: "The N Implementation Details of RLHF with PPO"
+  title: 使用 PPO 算法进行 RLHF 的 N 步实现细节
   author: vwxyzjn
   thumbnail: /blog/assets/167_the_n_implementation_details_of_rlhf_with_ppo/thumbnail.png
   date: October 24, 2023
@@ -2937,29 +1112,8 @@
     - rl
     - rlhf
 
-- local: inference-endpoints-embeddings
-  title: "Deploy Embedding Models with Hugging Face Inference Endpoints"
-  author: philschmid
-  thumbnail: /blog/assets/168_inference_endpoints_embeddings/thumbnail.jpg
-  date: October 24, 2023
-  tags:
-    - guide
-    - llm
-    - apps
-    - inference
-
-- local: scalable-data-inspection
-  title: "Interactively explore your Huggingface dataset with one line of code"
-  author: sps44
-  thumbnail: /blog/assets/scalable-data-inspection/thumbnail.png
-  date: October 25, 2023
-  tags:
-    - open-source-collab
-    - visualization
-    - data inspection
-
 - local: personal-copilot
-  title: "Personal Copilot: Train Your Own Coding Assistant"
+  title: 个人编程助手：训练你自己的编码助手
   author: smangrul
   thumbnail: /blog/assets/170_personal_copilot/thumbnail.png
   date: October 27, 2023
@@ -2970,19 +1124,8 @@
     - inference
     - guide
 
-- local: researcher-dataset-sharing
-  title: "Creating open machine learning datasets? Share them on the Hugging Face Hub!"
-  author: davanstrien
-  thumbnail: /blog/assets/researcher-dataset-sharing/thumbnail.png
-  date: October 30, 2023
-  tags:
-    - community
-    - research
-    - datasets
-    - guide
-
 - local: regions
-  title: "Introducing Storage Regions on the HF Hub"
+  title: HF Hub 现已加入存储区域功能
   author: julien-c
   thumbnail: /blog/assets/172_regions/thumbnail.png
   date: November 3, 2023
@@ -2992,7 +1135,7 @@
     - hub
 
 - local: Lora-for-sequence-classification-with-Roberta-Llama-Mistral
-  title: "Comparing the Performance of LLMs: A Deep Dive into Roberta, Llama 2, and Mistral for Disaster Tweets Analysis with Lora"
+  title: 在灾难推文分析场景上比较用 LoRA 微调 Roberta、Llama 2 和 Mistral 的过程及表现
   author: mehdiiraqui
   thumbnail: /blog/assets/Lora-for-sequence-classification-with-Roberta-Llama-Mistral/Thumbnail.png
   date: November 7, 2023
@@ -3002,30 +1145,8 @@
     - llm
     - peft
 
-- local: prodigy-hf
-  title: "Introducing Prodigy-HF: a direct integration with Hugging Face"
-  author: koaning
-  thumbnail: /blog/assets/171_prodigy_hf/thumbnail.png
-  date: November 7, 2023
-  tags:
-    - community
-    - nlp
-    - datasets
-    - guide
-
-- local: inferentia-llama2
-  title: "Make your llama generation time fly with AWS Inferentia2"
-  author: dacorvo
-  thumbnail: /blog/assets/inferentia-llama2/thumbnail.png
-  date: November 7, 2023
-  tags:
-    - guide
-    - text-generation
-    - llama2
-    - aws
-
 - local: lcm_lora
-  title: "SDXL in 4 steps with Latent Consistency LoRAs"
+  title: 使用 LCM LoRA 4 步完成 SDXL 推理
   author: pcuenq
   thumbnail: /blog/assets/lcm_sdxl/lcm_thumbnail.png
   date: November 9, 2023
@@ -3034,9 +1155,10 @@
     - lcm
     - stable diffusion
     - guide
+    - hub
 
 - local: open-llm-leaderboard-drop
-  title: "Open LLM Leaderboard: DROP deep dive"
+  title: 开放 LLM 排行榜：深入研究 DROP
   author: clefourrier
   thumbnail: /blog/assets/evaluating-mmlu-leaderboard/thumbnail.png
   date: December 1, 2023
@@ -3045,35 +1167,10 @@
     - research
     - nlp
     - evaluation
-    - open-llm-leaderboard
     - leaderboard
 
-- local: lora-adapters-dynamic-loading
-  title: "Goodbye cold boot - how we made LoRA inference 300% faster"
-  author: raphael-gl
-  thumbnail: /blog/assets/171_load_lora_adapters/thumbnail3.png
-  date: December 5, 2023
-  tags:
-    - diffusers
-    - lora
-    - models
-    - inference
-    - stable-diffusion
-
-- local: optimum-nvidia
-  title: "Optimum-NVIDIA - Unlock blazingly fast LLM inference in just 1 line of code"
-  author: laikh-nvidia
-  thumbnail: /blog/assets/optimum_nvidia/hf_nvidia_banner.png
-  date: December 5, 2023
-  tags:
-    - llm
-    - nvidia
-    - llama
-    - inference
-    - optimum
-
 - local: setfit-absa
-  title: "SetFitABSA: Few-Shot Aspect Based Sentiment Analysis using SetFit"
+  title: SetFitABSA：基于 SetFit 的少样本、方面级情感分析
   author: ronenlap
   guest: true
   thumbnail: /blog/assets/setfit-absa/intel_hf_logo_2.png
@@ -3082,22 +1179,8 @@
     - research
     - nlp
 
-- local: huggingface-and-optimum-amd
-  title: "AMD + 🤗: Large Language Models Out-of-the-Box Acceleration with AMD GPU"
-  author: huggingface-team
-  thumbnail: /blog/assets/optimum_amd/amd_hf_logo_fixed.png
-  date: December 5, 2023
-  tags:
-    - llm
-    - amd
-    - llama
-    - inference
-    - optimum
-    - rocm
-    - text-generation
-
 - local: moe
-  title: "Mixture of Experts Explained"
+  title: 混合专家模型（MoE）详解
   author: osanseviero
   thumbnail: /blog/assets/moe/thumbnail.png
   date: December 11, 2023
@@ -3108,7 +1191,7 @@
     - guide
 
 - local: mixtral
-  title: "Welcome Mixtral - a SOTA Mixture of Experts on Hugging Face"
+  title: 欢迎 Mixtral - 当前 Hugging Face 上最先进的 MoE 模型
   author: lewtun
   thumbnail: /blog/assets/mixtral/thumbnail.jpg
   date: December 11, 2023
@@ -3120,7 +1203,7 @@
     - transformers
 
 - local: 2023-in-llms
-  title: "2023, year of open LLMs"
+  title: 2023, 开源大模型之年
   thumbnail: /blog/assets/cv_state/thumbnail.png
   author: clefourrier
   date: December 18, 2023
@@ -3128,10 +1211,9 @@
     - research
     - nlp
     - llm
-    - guide
 
 - local: whisper-speculative-decoding
-  title: "Speculative Decoding for 2x Faster Whisper Inference"
+  title: 使用推测解码使 Whisper 实现2倍的推理加速
   author: sanchit-gandhi
   thumbnail: /blog/assets/whisper-speculative-decoding/thumbnail.png
   date: Dec 20, 2023
@@ -3141,7 +1223,7 @@
     - transformers
 
 - local: sdxl_lora_advanced_script
-  title: "LoRA training scripts of the world, unite!"
+  title: 全世界 LoRA 训练脚本，联合起来!
   author: LinoyTsaban
   thumbnail: /blog/assets/dreambooth_lora_sdxl/thumbnail.png
   date: January 2, 2024
@@ -3157,91 +1239,8 @@
     - community
     - sdxl
 
-- local: amused
-  title: "Welcome aMUSEd: Efficient Text-to-Image Generation"
-  author: Isamu136
-  guest: true
-  thumbnail: /blog/assets/amused/thumbnail.png
-  date: January 4, 2024
-  tags:
-    - guide
-    - vision
-    - research
-    - diffusers
-
-- local: unsloth-trl
-  title: "Faster fine-tuning using TRL & Unsloth"
-  author: danielhanchen
-  guest: true
-  thumbnail: /blog/assets/hf_unsloth/thumbnail.png
-  date: Jan 10, 2024
-  tags:
-    - sft
-    - optimization
-    - llm
-    - qlora
-
-- local: leaderboard-vectara
-  title: "A guide to setting up your own Hugging Face leaderboard: an end-to-end example with Vectara's hallucination leaderboard"
-  author: ofermend
-  guest: true
-  thumbnail: /blog/assets/leaderboards-on-the-hub/thumbnail_vectara.png
-  date: Jan 12, 2024
-  tags:
-    - leaderboard
-    - guide
-    - collaboration
-    - community
-
-- local: sdxl_ort_inference
-  title: "Accelerating SD Turbo and SDXL Turbo Inference with ONNX Runtime and Olive"
-  author: sschoenmeyer
-  guest: true
-  thumbnail: /blog/assets/optimum_onnxruntime-training/thumbnail.png
-  date: Jan 15, 2024
-  tags:
-    - stable-diffusion
-    - diffusion
-    - onnxruntime
-    - optimum
-    - collaboration
-    - community
-
-- local: pref-tuning
-  title: "Preference Tuning LLMs with Direct Preference Optimization Methods"
-  author: kashif
-  thumbnail: /blog/assets/pref-tuning/thumbnail.jpg
-  date: Jan 18, 2024
-  tags:
-    - rl
-    - rlhf
-    - nlp
-    - research
-
-- local: patchtsmixer
-  title: "PatchTSMixer in HuggingFace"
-  author: ajati
-  guest: true
-  thumbnail: /blog/assets/patchtsmixer/thumbnail.jpeg
-  date: January 19, 2024
-  tags:
-    - guide
-    - research
-    - time-series
-
-- local: fine-tune-w2v2-bert
-  title: "Fine-Tune W2V2-Bert for low-resource ASR with 🤗 Transformers"
-  author: ylacombe
-  thumbnail: /blog/assets/fine-tune-w2v2-bert/w2v_thumbnail.png
-  date: January 19, 2024
-  tags:
-    - guide
-    - audio
-    - asr
-    - low-resource
-
 - local: open-source-llms-as-agents
-  title: "Open-source LLMs as LangChain Agents"
+  title: 开源大语言模型作为 LangChain 智能体
   author: m-ric
   thumbnail: /blog/assets/open-source-llms-as-agents/thumbnail_open_source_agents.png
   date: January 24, 2024
@@ -3256,18 +1255,8 @@
     - langchain
     - benchmark
 
-- local: gcp-partnership
-  title: "Hugging Face and Google partner for open AI collaboration"
-  author: jeffboudier
-  thumbnail: /blog/assets/173_gcp-partnership/thumbnail.jpg
-  date: January 25, 2024
-  tags:
-    - partnerships
-    - gcp
-    - hardware
-
 - local: leaderboard-decodingtrust
-  title: "An Introduction to AI Secure LLM Safety Leaderboard"
+  title: 来自 AI Secure 实验室的 LLM 安全排行榜简介
   author: danielz01
   guest: true
   thumbnail: /blog/assets/leaderboards-on-the-hub/thumbnail_decodingtrust.png
@@ -3278,20 +1267,8 @@
     - collaboration
     - research
 
-- local: leaderboard-hallucinations
-  title: "The Hallucinations Leaderboard, an Open Effort to Measure Hallucinations in Large Language Models"
-  author: pminervini
-  guest: true
-  thumbnail: /blog/assets/leaderboards-on-the-hub/thumbnail.png
-  date: January 29, 2024
-  tags:
-    - leaderboard
-    - guide
-    - collaboration
-    - research
-
 - local: intel-starcoder-quantization
-  title: "Accelerate StarCoder with 🤗 Optimum Intel on Xeon: Q8/Q4 and Speculative Decoding"
+  title: 使用 🤗 Optimum Intel 在英特尔至强上加速 StarCoder：Q8/Q4 及投机解码
   author: ofirzaf
   guest: true
   thumbnail: /blog/assets/optimum_intel/intel_thumbnail.png
@@ -3305,7 +1282,7 @@
     - community
 
 - local: leaderboard-patronus
-  title: "Introducing the Enterprise Scenarios Leaderboard: a Leaderboard for Real World Use Cases"
+  title: 企业场景排行榜简介：现实世界用例排行榜
   thumbnail: /blog/assets/leaderboards-on-the-hub/thumbnail_patronus.png
   author: sunitha98
   guest: true
@@ -3315,86 +1292,8 @@
     - guide
     - collaboration
 
-- local: patchtst
-  title: "Patch Time Series Transformer in Hugging Face"
-  author: namctin
-  guest: true
-  thumbnail: /blog/assets/patchtst/thumbnail.png
-  date: February 1, 2024
-  tags:
-    - guide
-    - research
-    - time-series
-
-- local: text-generation-inference-on-inferentia2
-  title: "Hugging Face Text Generation Inference available for AWS Inferentia2"
-  author: philschmid
-  thumbnail: /blog/assets/175_text_generation_inference_on_inferentia2/thumbnail.jpg
-  date: Feb 1, 2024
-  tags:
-    - guide
-    - partnerships
-    - aws
-    - llm
-
-- local: constitutional_ai
-  title: "Constitutional AI with Open LLMs"
-  author: vwxyzjn
-  thumbnail: /blog/assets/175_constitutional_ai/thumbnail.png
-  date: Feburary 1, 2024
-  tags:
-    - research
-    - rl
-    - rlhf
-    - constitutional-ai
-
-- local: leaderboard-nphardeval
-  title: "NPHardEval Leaderboard: Unveiling the Reasoning Abilities of Large Language Models through Complexity Classes and Dynamic Updates"
-  author: lizhouf
-  guest: true
-  thumbnail: /blog/assets/leaderboards-on-the-hub/thumbnail_nphardeval.png
-  date: Feb 2, 2024
-  tags:
-    - leaderboard
-    - guide
-    - collaboration
-    - research
-
-- local: segmoe
-  title: "SegMoE: Segmind Mixture of Diffusion Experts"
-  author: Warlord-K
-  guest: true
-  thumbnail: /blog/assets/segmoe/thumbnail.png
-  date: February 3, 2024
-  tags:
-    - text-to-image
-    - stable-diffusion
-    - moe
-    - segmoe
-
-- local: tgi-messages-api
-  title: "From OpenAI to Open LLMs with Messages API"
-  author: andrewrreed
-  thumbnail: /blog/assets/tgi-messages-api/thumbnail.jpg
-  date: Feb 8, 2024
-  tags:
-    - guide
-    - llm
-    - nlp
-    - tgi
-
-- local: amd_pervasive_developer_ai_contest
-  title: "AMD Pervasive AI Developer Contest!"
-  author: guruprasadmp
-  guest: true
-  thumbnail: /blog/assets/amd_pervasive_developer_ai_contest/amd_developer_general_abstract.jpg
-  date: Feb 14, 2024
-  tags:
-    - partner
-    - amd
-
 - local: synthetic-data-save-costs
-  title: "Synthetic data: save money, time and carbon with open source"
+  title: 合成数据：利用开源技术节约资金、时间和减少碳排放
   author: MoritzLaurer
   thumbnail: /blog/assets/176_synthetic-data-save-costs/thumbnail.png
   date: Feb 16, 2024
@@ -3407,31 +1306,8 @@
     - inference-endpoints
     - autotrain
 
-- local: peft_merging
-  title: "🤗 PEFT welcomes new merging methods"
-  author: smangrul
-  thumbnail: /blog/assets/peft_merging/thumbnail.png
-  date: Feb 19, 2024
-  tags:
-    - guide
-    - llm
-    - nlp
-    - cv
-    - lora
-
-- local: leaderboard-upstage
-  title: "Introducing the Open Ko-LLM Leaderboard: Leading the Korean LLM Evaluation Ecosystem"
-  author: Chanjun
-  guest: true
-  thumbnail: /blog/assets/leaderboards-on-the-hub/thumbnail_upstage.png
-  date: Feb 20, 2024
-  tags:
-    - leaderboard
-    - guide
-    - collaboration
-
 - local: gemma
-  title: "Welcome Gemma - Google's new open LLM"
+  title: '欢迎 Gemma: Google 最新推出开放大语言模型'
   author: philschmid
   thumbnail: /blog/assets/gemma/thumbnail.jpg
   date: Feb 21, 2024
@@ -3442,16 +1318,8 @@
     - LLM
     - gcp
 
-- local: fetch-eap-case-study
-  title: "Fetch Consolidates AI Tools and Saves 30% Development Time with Hugging Face on AWS"
-  author: Violette
-  thumbnail: /blog/assets/78_ml_director_insights/fetch2.png
-  date: Feb 23, 2023
-  tags:
-    - case-studies
-
 - local: matryoshka
-  title: "🪆 Introduction to Matryoshka Embedding Models"
+  title: 🪆 俄罗斯套娃嵌入模型
   author: tomaarsen
   thumbnail: /blog/assets/matryoshka/thumbnail.png
   date: Feb 23, 2024
@@ -3460,19 +1328,8 @@
     - community
     - guide
 
-- local: leaderboard-haizelab
-  title: "Introducing the Red-Teaming Resistance Leaderboard"
-  author: steve-sli
-  guest: true
-  thumbnail: /blog/assets/leaderboards-on-the-hub/thumbnail_haizelab.png
-  date: Feb 23, 2024
-  tags:
-    - leaderboard
-    - guide
-    - collaboration
-
 - local: gemma-peft
-  title: "Fine-Tuning Gemma Models in Hugging Face"
+  title: 使用 Hugging Face 微调 Gemma 模型
   author: svaibhav
   guest: true
   thumbnail: /blog/assets/gemma-peft/thumbnail.png
@@ -3486,7 +1343,7 @@
     - peft
 
 - local: watermarking
-  title: "AI Watermarking 101: Tools and Techniques"
+  title: 人工智能水印技术入门：工具与技巧
   author: sasha
   thumbnail: /blog/assets/watermarking/thumbnail.png
   date: Feb 26, 2024
@@ -3497,7 +1354,7 @@
     - guide
 
 - local: arena-tts
-  title: "TTS Arena: Benchmarking Text-to-Speech Models in the Wild"
+  title: 'TTS 擂台: 文本转语音模型的自由搏击场'
   thumbnail: /blog/assets/arenas-on-the-hub/thumbnail.png
   author: mrfakename
   guest: true
@@ -3508,7 +1365,7 @@
     - collaboration
 
 - local: starcoder2
-  title: "StarCoder2 and The Stack v2"
+  title: StarCoder2 及 The Stack v2 数据集正式发布
   author: lvwerra
   thumbnail: /blog/assets/177_starcoder2/sc2-banner.png
   date: Feb 28, 2024
@@ -3519,7 +1376,7 @@
     - LLM
 
 - local: textgen-pipe-gaudi
-  title: "Text-Generation Pipeline on Intel® Gaudi® 2 AI Accelerator"
+  title: 基于英特尔® Gaudi® 2 AI 加速器的文本生成流水线
   author: siddjags
   guest: true
   thumbnail: /blog/assets/textgen-pipe-gaudi/thumbnail.png
@@ -3533,7 +1390,7 @@
     - inference
 
 - local: community-datasets
-  title: "Data is better together"
+  title: 数据好合
   author: davanstrien
   guest: true
   thumbnail: /blog/assets/community-datasets/thumbnail.png
@@ -3544,30 +1401,8 @@
     - collaboration
     - announcement
 
-- local: leaderboard-contextual
-  title: "Introducing ConTextual: How well can your Multimodal model jointly reason over text and image in text-rich scenes?"
-  author: rohan598
-  guest: true
-  thumbnail: /blog/assets/leaderboards-on-the-hub/thumbnail_contextual.png
-  date: Mar 5, 2024
-  tags:
-    - leaderboard
-    - collaboration
-    - research
-
-- local: websight
-  title: "Unlocking the conversion of Web Screenshots into HTML Code with the WebSight Dataset"
-  author: HugoLaurencon
-  thumbnail: /blog/assets/websight/thumbnail.png
-  date: Mar 15, 2024
-  tags:
-    - nlp
-    - cv
-    - data
-    - research
-
 - local: intel-fast-embedding
-  title: "CPU Optimized Embeddings with 🤗 Optimum Intel and fastRAG"
+  title: 利用 🤗 Optimum Intel 和 fastRAG 在 CPU 上优化文本嵌入
   author: peterizsak
   guest: true
   thumbnail: /blog/assets/optimum_intel/intel_thumbnail.png
@@ -3580,19 +1415,8 @@
     - collaboration
     - community
 
-- local: quanto-introduction
-  title: "quanto: a pytorch quantization toolkit"
-  author: dacorvo
-  thumbnail: /blog/assets/169_quanto_intro/thumbnail.png
-  date: March 18, 2024
-  tags:
-    - guide
-    - quantization
-    - transformers
-    - diffusers
-
 - local: train-dgx-cloud
-  title: "Easily Train Models with H100 GPUs on NVIDIA DGX Cloud"
+  title: 在 NVIDIA DGX Cloud上使用 H100 GPU 轻松训练模型
   author: philschmid
   thumbnail: /blog/assets/train-dgx-cloud/thumbnail.jpg
   date: March 18, 2024
@@ -3603,19 +1427,19 @@
     - llm
     - training
 
-- local: galore
-  title: "GaLore: Advancing Large Model Training on Consumer-grade Hardware"
-  author: Titus-von-Koeller
-  thumbnail: /blog/assets/galore_introduction/thumbnail.png
-  date: March 20, 2024
+- local: quanto-introduction
+  title: Quanto：PyTorch 量化工具包
+  author: dacorvo
+  thumbnail: /blog/assets/169_quanto_intro/thumbnail.png
+  date: March 18, 2024
   tags:
-    - galore
-    - peft
-    - llm
-    - training
+    - guide
+    - quantization
+    - transformers
+    - diffusers
 
 - local: cosmopedia
-  title: "Cosmopedia: how to create large-scale synthetic data for pre-training Large Language Models"
+  title: Cosmopedia：如何为大语言模型预训练构建大规模合成数据集
   author: loubnabnl
   thumbnail: /blog/assets/cosmopedia/thumbnail.png
   date: March 20, 2024
@@ -3627,7 +1451,7 @@
     - community
 
 - local: phi2-intel-meteor-lake
-  title: "A Chatbot on your Laptop: Phi-2 on Intel Meteor Lake"
+  title: 笔记本电脑上的聊天机器人：在英特尔 Meteor Lake 上运行 Phi-2
   author: juliensimon
   thumbnail: /blog/assets/phi2-intel-meteor-lake/02.jpg
   date: March 20, 2024
@@ -3636,19 +1460,8 @@
     - intel
     - llm
 
-- local: arena-lighthouz
-  title: "Introducing the Chatbot Guardrails Arena"
-  thumbnail: /blog/assets/arenas-on-the-hub/thumbnail_lighthouz.png
-  author: sonalipnaik
-  guest: true
-  date: Mar 21, 2024
-  tags:
-    - leaderboard
-    - arena
-    - collaboration
-
 - local: embedding-quantization
-  title: "Binary and Scalar Embedding Quantization for Significantly Faster & Cheaper Retrieval"
+  title: 用于显著提高检索速度和降低成本的二进制和标量嵌入量化
   author: aamirshakir
   guest: true
   thumbnail: /blog/assets/embedding-quantization/thumbnail.png
@@ -3661,7 +1474,7 @@
     - research
 
 - local: noob_intro_transformers
-  title: "Total noob’s intro to Hugging Face Transformers"
+  title: Hugging Face Transformers 萌新完全指南
   author: 2legit2overfit
   thumbnail: /blog/assets/78_ml_director_insights/guide.png
   date: March 22, 2024
@@ -3669,19 +1482,8 @@
     - guide
     - community
 
-- local: pollen-vision
-  title: "Pollen-Vision: Unified interface for Zero-Shot vision models in robotics"
-  author: apirrone
-  guest: true
-  thumbnail: /blog/assets/pollen-vision/thumbnail.jpg
-  date: March 25, 2024
-  tags:
-    - robotics
-    - vision
-    - object-detection
-
 - local: cloudflare-workers-ai
-  title: "Bringing serverless GPU inference to Hugging Face users"
+  title: 为 Hugging Face 用户带来无服务器 GPU 推理服务
   author: philschmid
   thumbnail: /blog/assets/cloudflare-workers-ai/thumbnail.jpg
   date: April 2, 2024
@@ -3691,16 +1493,8 @@
     - llm
     - inference
 
-- local: policy-blog
-  title: "Public Policy at Hugging Face"
-  author: irenesolaiman
-  thumbnail: /blog/assets/policy_docs/policy_blog_thumbnail.png
-  date: April 8, 2024
-  tags:
-    - ethics
-
 - local: setfit-optimum-intel
-  title: "Blazing Fast SetFit Inference with 🤗 Optimum Intel on Xeon"
+  title: 在英特尔至强 CPU 上使用 🤗 Optimum Intel 实现超快 SetFit 推理
   author: danielkorat
   guest: true
   thumbnail: /blog/assets/optimum_intel/intel_thumbnail.png
@@ -3714,39 +1508,16 @@
     - community
     - open-source-collab
 
-- local: duckdb-nsql-7b
-  title: "Text2SQL using Hugging Face Dataset Viewer API and Motherduck DuckDB-NSQL-7B"
-  author: asoria
-  thumbnail: /blog/assets/duckdb-nsql-7b/thumbnail.png
-  date: April 4, 2024
-  tags:
-    - guide
-    - text2sql
-    - datasets
-    - llm
-
 - local: hugging-face-wiz-security-blog
-  title: "Hugging Face partners with Wiz Research to Improve AI Security"
+  title: Hugging Face 与 Wiz Research 合作提高人工智能安全性
   author: JJoe206
   thumbnail: /blog/assets/wiz_security/security.png
   date: April 4, 2024
   tags:
     - security
 
-- local: codegemma
-  title: "CodeGemma - an official Google release for code LLMs"
-  author: pcuenq
-  thumbnail: /blog/assets/codegemma/thumbnail_b.png
-  date: April 9, 2024
-  tags:
-    - nlp
-    - community
-    - research
-    - LLM
-    - gcp
-
 - local: google-cloud-model-garden
-  title: "Making thousands of open LLMs bloom in the Vertex AI Model Garden"
+  title: 在 Google Cloud 上轻松部署开放大语言模型
   author: philschmid
   thumbnail: /blog/assets/173_gcp-partnership/thumbnail.jpg
   date: April 10, 2024
@@ -3756,7 +1527,7 @@
     - hardware
 
 - local: vlms
-  title: "Vision Language Models Explained"
+  title: 视觉语言模型详解
   author: merve
   thumbnail: /blog/assets/vlms_explained/thumbnail.png
   date: April 11, 2024
@@ -3768,7 +1539,7 @@
     - trl
 
 - local: idefics2
-  title: "Introducing Idefics2: A Powerful 8B Vision-Language Model for the community"
+  title: Idefics2 简介：为社区而生的强大 8B 视觉语言模型
   author: Leyo
   thumbnail: /blog/assets/idefics/thumbnail.png
   date: April 15, 2024
@@ -3780,39 +1551,15 @@
     - multimodal
 
 - local: ryght-case-study
-  title: "Ryght’s Journey to Empower Healthcare and Life Sciences with Expert Support from Hugging Face"
+  title: Ryght 在 Hugging Face 专家助力下赋能医疗保健和生命科学之旅
   author: andrewrreed
   thumbnail: /blog/assets/ryght-case-study/thumbnail.png
   date: April 16, 2024
   tags:
     - case-studies
 
-- local: fhe-endpoints
-  title: "Running Privacy-Preserving Inference on Hugging Face Endpoints"
-  author: binoua
-  guest: true
-  thumbnail: /blog/assets/fhe-endpoints/thumbnail.png
-  date: April 16, 2024
-  tags:
-    - guide
-    - privacy
-    - research
-    - FHE
-
-- local: leaderboard-livecodebench
-  title: "Introducing the LiveCodeBench Leaderboard - Holistic and Contamination-Free Evaluation of Code LLMs"
-  author: StringChaos
-  guest: true
-  thumbnail: /blog/assets/leaderboards-on-the-hub/thumbnail.png
-  date: Apr 16, 2024
-  tags:
-    - leaderboard
-    - research
-    - collaboration
-    - community
-
 - local: gradio-reload
-  title: "AI Apps in a Flash with Gradio's Reload Mode"
+  title: 使用 Gradio 的“热重载”模式快速开发 AI 应用
   author: freddyaboulton
   thumbnail: /blog/assets/gradio-reload/thumbnail_compressed.png
   date: April 16, 2024
@@ -3822,19 +1569,8 @@
     - guide
     - demo
 
-- local: leaderboard-medicalllm
-  title: "The Open Medical-LLM Leaderboard: Benchmarking Large Language Models in Healthcare"
-  author: aaditya
-  guest: true
-  thumbnail: /blog/assets/leaderboards-on-the-hub/thumbnail_medicalllm.png
-  date: Apr 19, 2024
-  tags:
-    - leaderboard
-    - collaboration
-    - research
-
 - local: llama3
-  title: "Welcome Llama 3 - Meta's new open LLM"
+  title: 欢迎 Llama 3：Meta 的新一代开源大语言模型
   author: philschmid
   thumbnail: /blog/assets/llama3/thumbnail.jpg
   date: April 18, 2024
@@ -3844,8 +1580,19 @@
     - research
     - LLM
 
+- local: leaderboard-medicalllm
+  title: 开源医疗大模型排行榜：健康领域大模型基准测试
+  author: aaditya
+  guest: true
+  thumbnail: /blog/assets/leaderboards-on-the-hub/thumbnail_medicalllm.png
+  date: Apr 19, 2024
+  tags:
+    - leaderboard
+    - collaboration
+    - research
+
 - local: jat
-  title: "Jack of All Trades, Master of Some, a Multi-Purpose Transformer Agent"
+  title: 万事通，专精部分领域的多功能 Transformer 智能体
   author: qgallouedec
   thumbnail: /blog/assets/jat/thumbnail.png
   date: April 22, 2024
@@ -3855,21 +1602,8 @@
     - transformers
     - generalist
 
-- local: leaderboard-cot
-  title: "Introducing the Open Chain of Thought Leaderboard"
-  author: ggbetz
-  guest: true
-  org: logikon
-  thumbnail: /blog/assets/leaderboards-on-the-hub/thumbnail_cot.png
-  date: Apr 23, 2024
-  tags:
-    - leaderboard
-    - research
-    - collaboration
-    - community
-
 - local: sc2-instruct
-  title: "StarCoder2-Instruct: Fully Transparent and Permissive Self-Alignment for Code Generation"
+  title: 'StarCoder2-Instruct: 完全透明和可自我对齐的代码生成'
   thumbnail: /blog/assets/sc2-instruct/sc2-instruct-banner.png
   author: yuxiang630
   guest: true
@@ -3880,20 +1614,8 @@
     - research
     - LLM
 
-- local: evaluation-structured-outputs
-  title: "Improving Prompt Consistency with Structured Generations"
-  author: willkurt
-  guest: true
-  thumbnail: /blog/assets/evaluating-mmlu-leaderboard/thumbnail.png
-  date: Apr 30, 2024
-  tags:
-    - evaluation
-    - collaboration
-    - research
-    - leaderboard
-
 - local: asr-diarization
-  title: "Powerful ASR + diarization + speculative decoding with Hugging Face Inference Endpoints"
+  title: 使用 Hugging Face 推理终端搭建强大的“语音识别 + 说话人分割 + 投机解码”工作流
   author: sergeipetrov
   thumbnail: /blog/assets/asr-diarization/thumbnail.png
   date: May 1, 2024
@@ -3902,32 +1624,8 @@
     - asr
     - inference
 
-- local: leaderboard-artificial-analysis
-  title: "Bringing the Artificial Analysis LLM Performance Leaderboard to Hugging Face"
-  thumbnail: /blog/assets/leaderboards-on-the-hub/thumbnail_artificialanalysis.png
-  author: mhillsmith
-  guest: true
-  date: May 3, 2024
-  tags:
-    - leaderboard
-    - research
-    - collaboration
-    - community
-
-- local: leaderboard-hebrew
-  title: "Introducing the Open Leaderboard for Hebrew LLMs!"
-  thumbnail: /blog/assets/leaderboards-on-the-hub/thumbnail_hebrew.png
-  author: Shaltiel
-  guest: true
-  date: May 05, 2024
-  tags:
-    - nlp
-    - research
-    - leaderboard
-    - LLM
-
 - local: cost-efficient-rag-applications-with-intel
-  title: "Building Cost-Efficient Enterprise RAG applications with Intel Gaudi 2 and Intel Xeon"
+  title: 利用英特尔 Gaudi 2 和至强 CPU 构建经济高效的企业级 RAG 应用
   author: juliensimon
   thumbnail: /blog/assets/cost_efficient_rag_applications_with_intel/main.jpg
   date: May 9, 2024
@@ -3936,19 +1634,8 @@
     - intel
     - llm
 
-- local: enterprise-hub-aws-marketplace
-  title: "Subscribe to Enterprise Hub with your AWS Account"
-  author: jeffboudier
-  thumbnail: /blog/assets/158_aws_marketplace/thumbnail.jpg
-  date: May 9, 2024
-  tags:
-    - guide
-    - announcement
-    - partnerships
-    - aws
-
 - local: agents
-  title: "License to Call: Introducing Transformers Agents 2.0"
+  title: '授权调用：介绍 Transformers 智能体 2.0  '
   thumbnail: /blog/assets/agents/thumbnail.png
   author: m-ric
   date: May 13, 2024
@@ -3963,20 +1650,8 @@
     - langchain
     - benchmark
 
-- local: leaderboard-arabic
-  title: "Introducing the Open Arabic LLM Leaderboard"
-  thumbnail: /blog/assets/leaderboards-on-the-hub/thumbnail_arabic.png
-  author: Ali-C137
-  guest: true
-  date: May 14, 2024
-  tags:
-    - nlp
-    - research
-    - leaderboard
-    - LLM
-
 - local: langchain
-  title: "Hugging Face x LangChain : A new partner package in LangChain"
+  title: Hugging Face x LangChain：全新 LangChain 合作伙伴包
   author: jofthomas
   thumbnail: /blog/assets/langchain_huggingface/thumbnail.png
   date: May 14, 2024
@@ -3987,7 +1662,7 @@
     - llm
 
 - local: paligemma
-  title: "PaliGemma – Google's Cutting-Edge Open Vision Language Model"
+  title: PaliGemma 正式发布 — Google 最新发布的前沿开放视觉语言模型
   thumbnail: /blog/assets/paligemma/Paligemma.png
   author: merve
   date: May 14, 2024
@@ -3996,65 +1671,8 @@
     - LLM
     - vision
 
-- local: microsoft-collaboration
-  title: "From cloud to developers: Hugging Face and Microsoft Deepen Collaboration"
-  thumbnail: /blog/assets/microsoft-collaboration/thumbnail.jpg
-  author: jeffboudier
-  date: May 21, 2024
-  tags:
-    - cloud
-    - azure
-    - partnership
-
-- local: huggingface-amd-mi300
-  title: "Hugging Face on AMD Instinct MI300 GPU"
-  thumbnail: /blog/assets/optimum_amd/amd_hf_logo_fixed.png
-  author: mfuntowicz
-  date: May 21, 2024
-  tags:
-    - llm
-    - amd
-    - llama
-    - inference
-    - optimum
-    - rocm
-    - text-generation
-
-- local: dell-enterprise-hub
-  title: "Build AI on premise with Dell Enterprise Hub"
-  thumbnail: /blog/assets/dell-enterprise-hub/thumbnail.jpg
-  author: jeffboudier
-  date: May 21, 2024
-  tags:
-    - announcement
-    - enterprise
-    - hub
-    - dell
-    - partnerships
-
-- local: spaces-dev-mode
-  title: "Introducing Spaces Dev Mode for a seamless developer experience"
-  thumbnail: /blog/assets/spaces-dev-mode/thumbnail.png
-  author: pagezyhf
-  date: May 21, 2024
-  tags:
-    - spaces
-    - azure
-    - partnership
-
-- local: inferentia-inference-endpoints
-  title: "Deploy models on AWS Inferentia2 from Hugging Face"
-  thumbnail: /blog/assets/inferentia-inference-endpoints/thumbnail.jpg
-  author: philschmid
-  date: May 22, 2024
-  tags:
-    - cloud
-    - aws
-    - partnership
-    - optimum
-
 - local: kv-cache-quantization
-  title: "Unlocking Longer Generation with Key-Value Cache Quantization"
+  title: 用 KV 缓存量化解锁长文本生成
   thumbnail: /blog/assets/kv_cache_quantization/thumbnail.png
   author: RaushanTurganbay
   date: May 16, 2024
@@ -4063,35 +1681,8 @@
     - LLM
     - quantization
 
-- local: leaderboard-llamaguard
-  title: "CyberSecEval 2 - A Comprehensive Evaluation Framework for Cybersecurity Risks and Capabilities of Large Language Models"
-  thumbnail: /blog/assets/leaderboards-on-the-hub/thumbnail_llamaguard.png
-  author: r34p3r1321
-  guest: true
-  date: May 24, 2024
-  tags:
-    - nlp
-    - research
-    - leaderboard
-    - LLM
-
-- local: falcon2-11b
-  title: "Falcon 2: An 11B parameter pretrained language model and VLM, trained on over 5000B tokens tokens and 11 languages"
-  author: Quent-01
-  guest: true
-  thumbnail: /blog/assets/179_falcon2-11b/thumbnail.jpg
-  date: May 24, 2024
-  tags:
-    - nlp
-    - community
-    - research
-    - LLM
-    - multimodal
-    - vision
-    - open-source
-
 - local: train-sentence-transformers
-  title: "Training and Finetuning Embedding Models with Sentence Transformers v3"
+  title: 用 Sentence Transformers v3 训练和微调嵌入模型
   author: tomaarsen
   thumbnail: /blog/assets/train-sentence-transformers/st-hf-thumbnail.png
   date: May 28, 2024
@@ -4102,7 +1693,7 @@
     - open-source
 
 - local: tgi-benchmarking
-  title: "Benchmarking Text Generation Inference"
+  title: TGI 基准测试
   thumbnail: /blog/assets/tgi-benchmarking/tgi-benchmarking-thumbnail.png
   author: derek-thomas
   date: May 29, 2024
@@ -4112,16 +1703,8 @@
     - guide
     - tgi
 
-- local: space-secrets-disclosure
-  title: "Space secrets security update"
-  thumbnail: /blog/assets/space-secrets-security-update/space-secrets-security-update.png
-  author: huggingface
-  date: May 31, 2024
-  tags:
-    - security
-
 - local: assisted-generation-support-gaudi
-  title: "Faster assisted generation support for Intel Gaudi"
+  title: 英特尔 Gaudi 加速辅助生成
   author: haimbarad
   thumbnail: /blog/assets/assisted-generation-support-gaudi/thumbnail.png
   date: June 4, 2024
@@ -4130,48 +1713,8 @@
     - intel
     - hardware
 
-- local: npc-gigax-cubzh
-  title: "Introducing NPC-Playground, a 3D playground to interact with LLM-powered NPCs"
-  thumbnail: /blog/assets/181_npc-gigax-cubzh/thumbnail.png
-  author: ThomasSimonini
-  date: June 5, 2024
-  tags:
-    - game-dev
-
-- local: leaderboard-artificial-analysis2
-  title: "Launching the Artificial Analysis Text to Image Leaderboard & Arena"
-  thumbnail: /blog/assets/leaderboards-on-the-hub/thumbnail_artificialanalysis.png
-  author: mhillsmith
-  guest: true
-  date: Jun 6, 2024
-  tags:
-    - leaderboard
-    - research
-    - collaboration
-    - community
-
-- local: sagemaker-huggingface-embedding
-  title: "Introducing the Hugging Face Embedding Container for Amazon SageMaker"
-  thumbnail: /blog/assets/sagemaker-huggingface-embedding/thumbnail.jpg
-  author: philschmid
-  date: Jun 7, 2024
-  tags:
-    - cloud
-    - aws
-    - partnership
-    - guide
-
-- local: transformers-docs-redesign
-  title: "Making sense of this mess"
-  thumbnail: /blog/assets/transformers-docs-redesign/thumbnail.png
-  author: stevhliu
-  date: June 7, 2024
-  tags:
-    - community
-    - open-source
-
 - local: putting_rl_back_in_rlhf_with_rloo
-  title: "Putting RL back in RLHF"
+  title: 将强化学习重新引入 RLHF
   thumbnail: /blog/assets/putting_rl_back_in_rlhf_with_rloo/thumbnail.png
   author: vwxyzjn
   date: June 12, 2024
@@ -4181,7 +1724,7 @@
     - rlhf
 
 - local: sd3
-  title: "🧨 Diffusers welcomes Stable Diffusion 3"
+  title: 欢迎 Stable Diffusion 3 加入 🧨 Diffusers
   author: diffusers
   thumbnail: /blog/assets/sd3/thumbnail.png
   date: June 12, 2024
@@ -4191,7 +1734,7 @@
     - sd3
 
 - local: deepspeed-to-fsdp-and-back
-  title: "From DeepSpeed to FSDP and Back Again with Hugging Face Accelerate"
+  title: 从 DeepSpeed 到 FSDP，再回到 Hugging Face Accelerate
   thumbnail: /blog/assets/deepspeed-to-fsdp-and-back/thumbnail.png
   author: muellerzr
   date: June 13, 2024
@@ -4201,46 +1744,8 @@
     - research
     - collaboration
 
-- local: leaderboard-bigcodebench
-  title: "BigCodeBench: Benchmarking Large Language Models on Solving Practical and Challenging Programming Tasks"
-  thumbnail: /blog/assets/leaderboards-on-the-hub/thumbnail_bigcode.png
-  author: terryyz
-  guest: true
-  date: Jun 18, 2024
-  tags:
-    - leaderboard
-    - research
-    - collaboration
-    - community
-
-- local: prezi-case-study
-  title: "Going multimodal: How Prezi is leveraging the Hub and the Expert Support Program to accelerate their ML roadmap"
-  author: Violette
-  thumbnail: /blog/assets/70_sempre_health/thumbnailprezi.jpg
-  date: June 19, 2024
-  tags:
-    - case-studies
-
-- local: dibt
-  title: "Data Is Better Together: A Look Back and Forward"
-  thumbnail: /blog/assets/dibt/thumbnail.png
-  author: sdiazlor
-  date: Jun 20, 2024
-  tags:
-    - collaboration
-    - community
-    - open-source
-
-- local: ethics-soc-6
-  title: "Ethics and Society Newsletter #6: Building Better AI: The Importance of Data Quality"
-  thumbnail: /blog/assets/182_ethics-soc-6/thumbnail.png
-  date: June 24, 2024
-  tags:
-    - ethics
-  author: evijit
-
 - local: finetune-florence2
-  title: "Fine-tuning Florence-2 - Microsoft's Cutting-edge Vision Language Models"
+  title: 微调 Florence-2 - 微软的尖端视觉语言模型
   thumbnail: /blog/assets/182_finetune-florence/thumbnail.png
   author: andito
   date: Jun 24, 2024
@@ -4250,19 +1755,11 @@
     - open-source
     - research
 
-- local: xlscout-case-study
-  title: "XLSCOUT Unveils ParaEmbed 2.0: a Powerful Embedding Model Tailored for Patents and IP with Expert Support from Hugging Face"
-  author: andrewrreed
-  thumbnail: /blog/assets/xlscout-case-study/thumbnail.png
-  date: June 25, 2024
-  tags:
-    - case-studies
-
 - local: gemma2
-  title: "Welcome Gemma 2 - Google's new open LLM"
+  title: Google 发布最新开放大语言模型 Gemma 2，现已登陆 Hugging Face Hub
   author: philschmid
   thumbnail: /blog/assets/gemma2/thumbnail.jpg
-  date: June 27, 2024
+  date: Jun 27, 2024
   tags:
     - nlp
     - community
@@ -4271,7 +1768,7 @@
     - gcp
 
 - local: beating-gaia
-  title: "Our Transformers Code Agent beats the GAIA benchmark!"
+  title: Transformers 代码智能体成功刷榜 GAIA
   author: m-ric
   thumbnail: /blog/assets/beating-gaia/thumbnail.jpeg
   date: July 1, 2024
@@ -4283,7 +1780,7 @@
     - leaderboard
 
 - local: intel-protein-language-model-protst
-  title: "Accelerating Protein Language Model ProtST on Intel Gaudi 2"
+  title: 在英特尔 Gaudi 2 上加速蛋白质语言模型 ProtST
   author: juliensimon
   thumbnail: /blog/assets/intel-protein-language-model-protst/01.jpeg
   date: July 3, 2024
@@ -4292,36 +1789,8 @@
     - intel
     - llm
 
-- local: datasets-filters
-  title: "Announcing New Dataset Search Features"
-  author: lhoestq
-  thumbnail: /blog/assets/datasets-filters/thumbnail.png
-  date: Jul 8, 2024
-  tags:
-    - datasets
-
-- local: sovereign-data-solution-case-study
-  title: "Banque des Territoires (CDC Group) x Polyconseil x Hugging Face: Enhancing a Major French Environmental Program with a Sovereign Data Solution"
-  author: florentgbelidji
-  thumbnail: /blog/assets/78_ml_director_insights/cdc_poly_hf.png
-  date: July 9, 2024
-  tags:
-    - case-studies
-
-- local: tpu-inference-endpoints-spaces
-  title: "Google Cloud TPUs made available to Hugging Face users"
-  thumbnail: /blog/assets/tpu-inference-endpoints-spaces/thumbnail.png
-  author: pagezyhf
-  date: July 9, 2024
-  tags:
-    - partnerships
-    - gcp
-    - spaces
-    - inference
-    - hardware
-
 - local: dpo_vlm
-  title: "Preference Optimization for Vision Language Models"
+  title: 为视觉语言多模态模型进行偏好优化
   author: qgallouedec
   thumbnail: /blog/assets/dpo_vlm/thumbnail.png
   date: July 10, 2024
@@ -4333,7 +1802,7 @@
     - dpo
 
 - local: presidio-pii-detection
-  title: "Experimenting with Automatic PII Detection on the Hub using Presidio"
+  title: 在 Hub 上使用 Presidio 进行自动 PII 检测实验
   author: lhoestq
   thumbnail: /blog/assets/presidio-pii-detection/thumbnail.png
   date: Jul 10, 2024
@@ -4341,17 +1810,8 @@
     - datasets
     - pii
 
-- local: keras-nlp-integration
-  title: "Announcing New Hugging Face and Keras NLP integration"
-  thumbnail: /blog/assets/keras-nlp-integration/thumbnail.png
-  author: ariG23498
-  date: Jul 10, 2024
-  tags:
-    - open-source-collab
-    - nlp
-
 - local: winning-aimo-progress-prize
-  title: "How NuminaMath Won the 1st AIMO Progress Prize"
+  title: NuminaMath 是如何荣膺首届 AIMO 进步奖的？
   author: yfleureau
   thumbnail: /blog/assets/winning-aimo-progress-prize/thumbnail.png
   date: July 11, 2024
@@ -4363,20 +1823,8 @@
     - leaderboard
     - open-science-collab
 
-- local: argilla-chatbot
-  title: "How we leveraged distilabel to create an Argilla 2.0 Chatbot"
-  thumbnail: /blog/assets/argilla-chatbot/thumbnail.png
-  author: plaguss
-  date: Jul 16, 2024
-  tags:
-    - nlp
-    - guide
-    - open-source
-    - spaces
-    - apps
-
 - local: smollm
-  title: "SmolLM - blazingly fast and remarkably powerful"
+  title: SmolLM：一个超快速、超高性能的小模型集合
   author: loubnabnl
   thumbnail: /blog/assets/smollm/banner.png
   date: July 16, 2024
@@ -4389,7 +1837,7 @@
     - community
 
 - local: multi-lora-serving
-  title: "TGI Multi-LoRA: Deploy Once, Serve 30 Models"
+  title: TGI 多-LoRA：部署一次，搞定 30 个模型的推理服务
   author: derek-thomas
   thumbnail: /blog/assets/multi-lora-serving/thumbnail.png
   date: Jul 18, 2024
@@ -4403,7 +1851,7 @@
     - guide
 
 - local: docmatix
-  title: "Docmatix - a huge dataset for Document Visual Question Answering"
+  title: Docmatix - 超大文档视觉问答数据集
   thumbnail: /blog/assets/183_docmatix/thumbnail_new.png
   author: andito
   date: Jul 18, 2024
@@ -4417,20 +1865,8 @@
     - announcement
     - research
 
-- local: mistral-coreml
-  title: "WWDC 24: Running Mistral 7B with Core ML"
-  thumbnail: /blog/assets/mistral-coreml/thumbnail.png
-  author: FL33TW00D-HF
-  date: Jul 22, 2024
-  tags:
-    - coreml
-    - guide
-    - llm
-    - swift
-    - wwdc
-
 - local: llama31
-  title: "Llama 3.1 - 405B, 70B & 8B with multilinguality and long context"
+  title: Llama 3.1：405B/70B/8B 模型的多语言与长上下文能力解析
   author: philschmid
   thumbnail: /blog/assets/llama31/thumbnail.jpg
   date: July 23, 2024
@@ -4441,7 +1877,7 @@
     - LLM
 
 - local: zero-shot-vqa-docmatix
-  title: "LAVE: Zero-shot VQA Evaluation on Docmatix with LLMs - Do We Still Need Fine-Tuning?"
+  title: LAVE：使用 LLM 对 Docmatix 进行零样本 VQA 评估 - 我们还需要微调吗？
   author: danaaubakirova
   thumbnail: /blog/assets/184_zero_shot_docmatix/thumb.001.jpeg
   date: Jul 25, 2024
@@ -4454,20 +1890,8 @@
     - zero-shot
     - research
 
-- local: inference-dgx-cloud
-  title: "Serverless Inference with Hugging Face and NVIDIA NIMs"
-  author: philschmid
-  thumbnail: /blog/assets/train-dgx-cloud/thumbnail.jpg
-  date: July 29, 2024
-  tags:
-    - partnerships
-    - hardware
-    - nvidia
-    - llm
-    - inference
-
 - local: quanto-diffusers
-  title: "Memory-efficient Diffusion Transformers with Quanto and Diffusers"
+  title: 基于 Quanto 和 Diffusers 的内存高效 transformer 扩散模型
   author: sayakpaul
   thumbnail: /blog/assets/quanto-diffusers/thumbnail.png
   date: July 30, 2024
@@ -4477,7 +1901,7 @@
     - diffusion-transformers
 
 - local: gemma-july-update
-  title: "Google releases Gemma 2 2B, ShieldGemma and Gemma Scope"
+  title: Google 最新发布：Gemma 2 2B、ShieldGemma 和 Gemma Scope
   author: Xenova
   thumbnail: /blog/assets/gemma-july-update/thumbnail.jpg
   date: July 31, 2024
@@ -4488,29 +1912,8 @@
     - LLM
     - gcp
 
-- local: doc_aug_hf_alb
-  title: "Introducing TextImage Augmentation for Document Images"
-  author: danaaubakirova
-  thumbnail: /blog/assets/185_albumentations/thumbnail.png
-  date: Aug 6, 2024
-  tags:
-    - document ai
-    - data augmentation
-    - synthetic-data
-    - albumentations
-    - research
-
-- local: 2024-security-features
-  title: 2024 Security Feature Highlights
-  author: jack-kumar
-  thumbnail: /blog/assets/2024-security-features/thumbnail.png
-  date: August 6, 2024
-  tags:
-    - security
-    - enterprise
-
 - local: xethub-joins-hf
-  title: "XetHub is joining Hugging Face!"
+  title: XetHub 加入 Hugging Face!
   author: julien-c
   thumbnail: /blog/assets/xethub-joins-hf/thumbnail.png
   date: August 8, 2024
@@ -4519,18 +1922,8 @@
     - enterprise
     - hub
 
-- local: unified-tool-use
-  title: "Tool Use, Unified"
-  author: rocketknight1
-  thumbnail: /blog/assets/unified-tool-use/thumbnail.png
-  date: August 12, 2024
-  tags:
-    - LLM
-    - nlp
-    - community
-
 - local: falconmamba
-  title: "Welcome FalconMamba: The first strong attention-free 7B model "
+  title: 'Falcon Mamba: 首个高效的无注意力机制 7B 模型'
   guest: true
   author: JingweiZuo
   thumbnail: /blog/assets/falconmamba/thumbnail.png
@@ -4543,7 +1936,7 @@
     - Mamba
 
 - local: introduction-to-ggml
-  title: "Introduction to ggml"
+  title: ggml 简介
   author: ngxson
   thumbnail: /blog/assets/introduction-to-ggml/cover.jpg
   date: August 13, 2024
@@ -4553,7 +1946,7 @@
     - ggml
 
 - local: infini-attention
-  title: "A failed experiment: Infini-Attention, and why we should keep trying?"
+  title: 一次失败的实验——无限注意力，我们为什么坚持实验
   author: neuralink
   thumbnail: /blog/assets/185_infini_attention/infini_attention_thumbnail.png
   date: August 14, 2024
@@ -4562,19 +1955,8 @@
     - infini-attention
     - memory-compression
 
-- local: llama31-on-vertex-ai
-  title: "Deploy Meta Llama 3.1 405B on Google Cloud Vertex AI"
-  author: alvarobartt
-  thumbnail: /blog/assets/llama31-on-vertex-ai/thumbnail.png
-  date: August 19, 2024
-  tags:
-    - nlp
-    - partnerships
-    - gcp
-    - vertex
-    
 - local: packing-with-FA2
-  title: "Improving Hugging Face Training Efficiency Through Packing with Flash Attention"
+  title: 通过打包 Flash Attention 来提升 Hugging Face 训练效率
   author: lwtr
   thumbnail: /blog/assets/packing-with-FA2/thumbnail.png
   date: August 21, 2024
@@ -4583,29 +1965,12 @@
     - packing
     - Flash Attention 2
 
-- local: unsung-heroes
-  title: "The 5 Most Under-Rated Tools on Hugging Face"
-  author: derek-thomas
-  thumbnail: /blog/assets/unsung-heroes/new-thumbnail.png
-  date: August 22, 2024
+- local: trufflesecurity-partnership
+  title: Hugging Face 与 TruffleHog 合作
+  author: mcpotato
+  thumbnail: /blog/assets/trufflesecurity-partnership/thumbnail.png
+  date: September 4, 2024
   tags:
     - hub
-    - api
-    - apps
-    - datasets
-    - enterprise
-    - nlp
-    - visualization
-    - nomic
-    - atlas
-    - guide
-
-- local: video-encoding
-  title: "Scaling robotics datasets with video encoding"
-  author: aliberts
-  thumbnail: /blog/assets/video-encoding/thumbnail.png
-  date: August 27, 2024
-  tags:
-    - video
-    - datasets
-    - robotics
+    - partnerships
+    - security
