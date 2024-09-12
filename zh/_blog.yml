@@ -1955,6 +1955,8 @@
     - infini-attention
     - memory-compression
 
+
+
 - local: packing-with-FA2
   title: 通过打包 Flash Attention 来提升 Hugging Face 训练效率
   author: lwtr
@@ -1964,3 +1966,4 @@
     - padding
     - packing
     - Flash Attention 2
+
