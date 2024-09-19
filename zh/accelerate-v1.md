@@ -7,8 +7,6 @@ authors:
 - user: BenjaminB
 translators:
 - user: hugging-hoi2022
-- user:
-  proofreader:
 ---
 
 # Accelerate 1.0.0
@@ -45,7 +43,7 @@ translators:
 * 集成 `torch.distributed.pipelining` 作为 [替代的分布式推理机制](https://huggingface.co/docs/accelerate/main/en/usage_guides/distributed_inference#memory-efficient-pipeline-parallelism-experimental)
 * 集成 `torchdata.StatefulDataLoader` 作为 [替代的数据载入机制](https://github.com/huggingface/accelerate/blob/main/examples/by_feature/checkpointing.py)
 
-通过在 1.0 版本中作出的改动，Accelerate 已经有能力在不改变用户 API 界面的情况下不断融入新的技术能力了。
+通过在 1.0 版本中作出的改动，Accelerate 已经有能力在不改变用户 API 接口的情况下不断融入新的技术能力了。
 
 ## Accelerate 的未来发展
 
