@@ -1438,6 +1438,18 @@
     - transformers
     - diffusers
 
+- local: cosmopedia
+  title: Cosmopedia：如何为大语言模型预训练构建大规模合成数据集
+  author: loubnabnl
+  thumbnail: /blog/assets/cosmopedia/thumbnail.png
+  date: March 20, 2024
+  tags:
+    - guide
+    - nlp
+    - synthetic-data
+    - llm
+    - community
+
 - local: phi2-intel-meteor-lake
   title: 笔记本电脑上的聊天机器人：在英特尔 Meteor Lake 上运行 Phi-2
   author: juliensimon
@@ -1712,7 +1724,7 @@
     - rlhf
 
 - local: sd3
-  title: "欢迎 Stable Diffusion 3 加入 🧨 Diffusers"
+  title: 欢迎 Stable Diffusion 3 加入 🧨 Diffusers
   author: diffusers
   thumbnail: /blog/assets/sd3/thumbnail.png
   date: June 12, 2024
@@ -1720,3 +1732,262 @@
     - diffusers
     - guide
     - sd3
+
+- local: deepspeed-to-fsdp-and-back
+  title: 从 DeepSpeed 到 FSDP，再回到 Hugging Face Accelerate
+  thumbnail: /blog/assets/deepspeed-to-fsdp-and-back/thumbnail.png
+  author: muellerzr
+  date: June 13, 2024
+  tags:
+    - open-source
+    - guide
+    - research
+    - collaboration
+
+- local: finetune-florence2
+  title: 微调 Florence-2 - 微软的尖端视觉语言模型
+  thumbnail: /blog/assets/182_finetune-florence/thumbnail.png
+  author: andito
+  date: Jun 24, 2024
+  tags:
+    - collaboration
+    - community
+    - open-source
+    - research
+
+- local: gemma2
+  title: Google 发布最新开放大语言模型 Gemma 2，现已登陆 Hugging Face Hub
+  author: philschmid
+  thumbnail: /blog/assets/gemma2/thumbnail.jpg
+  date: Jun 27, 2024
+  tags:
+    - nlp
+    - community
+    - research
+    - LLM
+    - gcp
+
+- local: beating-gaia
+  title: Transformers 代码智能体成功刷榜 GAIA
+  author: m-ric
+  thumbnail: /blog/assets/beating-gaia/thumbnail.jpeg
+  date: July 1, 2024
+  tags:
+    - agents
+    - nlp
+    - community
+    - research
+    - leaderboard
+
+- local: intel-protein-language-model-protst
+  title: 在英特尔 Gaudi 2 上加速蛋白质语言模型 ProtST
+  author: juliensimon
+  thumbnail: /blog/assets/intel-protein-language-model-protst/01.jpeg
+  date: July 3, 2024
+  tags:
+    - partnerships
+    - intel
+    - llm
+
+- local: dpo_vlm
+  title: 为视觉语言多模态模型进行偏好优化
+  author: qgallouedec
+  thumbnail: /blog/assets/dpo_vlm/thumbnail.png
+  date: July 10, 2024
+  tags:
+    - vlm
+    - multimodal
+    - trl
+    - rlhf
+    - dpo
+
+- local: presidio-pii-detection
+  title: 在 Hub 上使用 Presidio 进行自动 PII 检测实验
+  author: lhoestq
+  thumbnail: /blog/assets/presidio-pii-detection/thumbnail.png
+  date: Jul 10, 2024
+  tags:
+    - datasets
+    - pii
+
+- local: winning-aimo-progress-prize
+  title: NuminaMath 是如何荣膺首届 AIMO 进步奖的？
+  author: yfleureau
+  thumbnail: /blog/assets/winning-aimo-progress-prize/thumbnail.png
+  date: July 11, 2024
+  tags:
+    - ai4math
+    - nlp
+    - community
+    - research
+    - leaderboard
+    - open-science-collab
+
+- local: smollm
+  title: SmolLM：一个超快速、超高性能的小模型集合
+  author: loubnabnl
+  thumbnail: /blog/assets/smollm/banner.png
+  date: July 16, 2024
+  tags:
+    - llm
+    - nlp
+    - synthetic-data
+    - research
+    - datasets
+    - community
+
+- local: multi-lora-serving
+  title: TGI 多-LoRA：部署一次，搞定 30 个模型的推理服务
+  author: derek-thomas
+  thumbnail: /blog/assets/multi-lora-serving/thumbnail.png
+  date: Jul 18, 2024
+  tags:
+    - nlp
+    - tgi
+    - LLM
+    - lora
+    - peft
+    - open-source
+    - guide
+
+- local: docmatix
+  title: Docmatix - 超大文档视觉问答数据集
+  thumbnail: /blog/assets/183_docmatix/thumbnail_new.png
+  author: andito
+  date: Jul 18, 2024
+  tags:
+    - community
+    - datasets
+    - synthetic-data
+    - open-source
+    - cv
+    - vlm
+    - announcement
+    - research
+
+- local: llama31
+  title: Llama 3.1：405B/70B/8B 模型的多语言与长上下文能力解析
+  author: philschmid
+  thumbnail: /blog/assets/llama31/thumbnail.jpg
+  date: July 23, 2024
+  tags:
+    - nlp
+    - community
+    - research
+    - LLM
+
+- local: zero-shot-vqa-docmatix
+  title: LAVE：使用 LLM 对 Docmatix 进行零样本 VQA 评估 - 我们还需要微调吗？
+  author: danaaubakirova
+  thumbnail: /blog/assets/184_zero_shot_docmatix/thumb.001.jpeg
+  date: Jul 25, 2024
+  tags:
+    - community
+    - evaluation
+    - synthetic-data
+    - vqa
+    - vlm
+    - zero-shot
+    - research
+
+- local: quanto-diffusers
+  title: 基于 Quanto 和 Diffusers 的内存高效 transformer 扩散模型
+  author: sayakpaul
+  thumbnail: /blog/assets/quanto-diffusers/thumbnail.png
+  date: July 30, 2024
+  tags:
+    - diffusers
+    - guide
+    - diffusion-transformers
+
+- local: gemma-july-update
+  title: Google 最新发布：Gemma 2 2B、ShieldGemma 和 Gemma Scope
+  author: Xenova
+  thumbnail: /blog/assets/gemma-july-update/thumbnail.jpg
+  date: July 31, 2024
+  tags:
+    - nlp
+    - community
+    - research
+    - LLM
+    - gcp
+
+- local: xethub-joins-hf
+  title: XetHub 加入 Hugging Face!
+  author: julien-c
+  thumbnail: /blog/assets/xethub-joins-hf/thumbnail.png
+  date: August 8, 2024
+  tags:
+    - announcement
+    - enterprise
+    - hub
+
+- local: unified-tool-use
+  title: 对 LLM 工具使用进行统一
+  author: rocketknight1
+  thumbnail: /blog/assets/unified-tool-use/thumbnail.png
+  date: August 12, 2024
+  tags:
+    - LLM
+    - nlp
+    - community
+
+- local: falconmamba
+  title: "Falcon Mamba: 首个高效的无注意力机制 7B 模型"
+  guest: true
+  author: JingweiZuo
+  thumbnail: /blog/assets/falconmamba/thumbnail.png
+  date: August 12, 2024
+  tags:
+    - nlp
+    - community
+    - research
+    - LLM
+    - Mamba
+
+- local: introduction-to-ggml
+  title: ggml 简介
+  author: ngxson
+  thumbnail: /blog/assets/introduction-to-ggml/cover.jpg
+  date: August 13, 2024
+  tags:
+    - guide
+    - community
+    - ggml
+
+- local: infini-attention
+  title: 一次失败的实验——无限注意力，我们为什么坚持实验
+  author: neuralink
+  thumbnail: /blog/assets/185_infini_attention/infini_attention_thumbnail.png
+  date: August 14, 2024
+  tags:
+    - long-context
+    - infini-attention
+    - memory-compression
+
+- local: packing-with-FA2
+  title: 通过打包 Flash Attention 来提升 Hugging Face 训练效率
+  author: lwtr
+  thumbnail: /blog/assets/packing-with-FA2/thumbnail.png
+  date: August 21, 2024
+  tags:
+    - padding
+    - packing
+    - Flash Attention 2
+
+- local: accelerate-v1
+  title: "Accelerate 1.0.0"
+  author: muellerzr
+  thumbnail: /blog/assets/186_accelerate_v1/accelerate_v1_thumbnail.png
+  date: September 13, 2024
+  tags:
+    - guide
+    
+- local: daily-papers
+  title: "Hugging Face 论文平台 Daily Papers 功能全解析"
+  author: AdinaY
+  thumbnail: /blog/assets/daily-papers/thumbnail.png
+  date: September 23, 2024
+  tags:
+    - research
+    - community
