@@ -1991,3 +1991,13 @@
   tags:
     - research
     - community
+
+- local: fine-video
+  title: "FineVideo数据集制作的幕后故事"
+  author: mfarre
+  thumbnail: /blog/assets/186_fine_video/thumbnail.png
+  date: September 23, 2024
+  tags:
+    - video
+    - datasets
+    - multimodal   
