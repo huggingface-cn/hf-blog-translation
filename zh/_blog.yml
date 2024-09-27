@@ -2001,3 +2001,13 @@
     - nlp
     - research
     - community
+
+- local: fine-video
+  title: "揭秘FineVideo数据集构建的背后的秘密"
+  author: mfarre
+  thumbnail: /blog/assets/186_fine_video/thumbnail.png
+  date: September 23, 2024
+  tags:
+    - video
+    - datasets
+    - multimodal   
