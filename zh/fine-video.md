@@ -1,3 +1,17 @@
+---
+title: "揭秘FineVideo数据集构建的背后的秘密"
+thumbnail: /blog/assets/186_fine_video/thumbnail.png
+authors:
+- user: mfarre
+- user: andito
+- user: lewtun
+- user: lvwerra
+- user: pcuenq
+- user: thomwolf
+translators:
+- user: roseking
+---
+
 <center>
     <img src="https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/finevideo/logo.png" alt="FineVideo logo" style="width: 50%;"><br>
 </center>
