@@ -30,19 +30,19 @@ Llama 3.2 还包括可以在设备上运行的小型仅文本语言模型。它�
 
 ## 目录
 
-- [什么是 Llama 3.2 视觉模型？](#什么是Llama32视觉模型)
-- [Llama 3.2 许可变更。抱歉，欧盟](#Llama-32-许可变更-抱歉-欧盟用户)
-- [Llama 3.2 1B 和 3B 的特别之处？](#Llama-32-1B和3B有什么特别之处)
+- [什么是Llama3.2 Vision 模型？](#什么是Llama32-Vision-模型)
+- [Llama 3.2 许可证变更。对不起，欧盟 :(](#Llama-32-许可证变更-对不起-欧盟-)
+- [Llama 3.2 1B 和 3B 有什么特别之处？](#Llama-32-1B-和-3B-有什么特别之处)
 - [演示](#演示)
-- [使用 Hugging Face Transformers](#使用Hugging-Face-Transformers)
+- [使用 Hugging Face Transformers](#使用-Hugging-Face-Transformers)
 - [Llama 3.2 1B 和 3B 语言模型](#Llama-32-1B和3B语言模型)
-- [Llama 3.2 视觉模型](#Llama-32-视觉模型)
+- [Llama 3.2 Vision 模型](#Llama-32-Vision-模型)
 - [设备端部署](#设备端部署)
 - [Llama.cpp 和 Llama-cpp-python](#llamacpp--llama-cpp-python)
 - [Transformers.js](#transformersjs)
 - [微调 Llama 3.2](#微调-llama-32)
 - [Hugging Face 合作伙伴集成](#Hugging-Face-合作伙伴集成)
-- [其他资源](#额外资源)
+- [额外资源](#额外资源)
 - [致谢](#鸣谢)
 
 ## 什么是Llama3.2 Vision 模型？
@@ -205,7 +205,7 @@ print(response)
 
 - 默认情况下，transformers 使用与原始 Meta 代码库相同的采样参数（temperature=0.6 和 top_p=0.9）。我们尚未进行广泛测试，请随意探索！
 
-## Llama 3.2 视觉模型
+## Llama 3.2 Vision 模型
 
 Vision 模型更大，因此比小型文本模型需要更多的内存来运行。作为参考，11B Vision 模型在 4 位模式下进行推理大约需要 10 GB 的 GPU RAM。
 
