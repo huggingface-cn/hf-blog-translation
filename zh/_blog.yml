@@ -2041,4 +2041,14 @@
   date: October 3, 2024
   tags:
     - research
-    - community 
+    - community
+
+- local: sql-console
+  title: 为数据集而生的SQL控制台
+  author: cfahlgren1
+  thumbnail: /blog/assets/sql_console/thumbnail.png
+  date: September 17, 2024
+  tags:
+    - datasets
+    - sql
+    - duckdb
