@@ -2097,3 +2097,14 @@
     - llm
     - watermarking
     - open-source
+
+- local: pycharm-integration
+  title: Hugging Face 和 PyCharm 一起更好用啦
+  author: rocketknight1
+  thumbnail: /blog/assets/pycharm-integration/thumbnail.png
+  date: November 5, 2024
+  tags:
+    - announcement
+    - open-source
+    - community
+    - collaboration
