@@ -1,5 +1,5 @@
 ---
-title: "Hugging Face 与 PyCharm 深度集成：轻松引入地表最强 AI 模型"
+title: "Hugging Face 与 PyCharm 深度集成：轻松引入丰富的 AI 模型"
 thumbnail: /blog/assets/pycharm-integration/thumbnail.png
 authors:
 - user: rocketknight1
@@ -7,7 +7,7 @@ translators:
 - user: chenglu
 ---
 
-# Hugging Face 与 PyCharm 深度集成：轻松引入地表最强 AI 模型
+# Hugging Face 与 PyCharm 深度集成：轻松引入丰富的 AI 模型
 
 这是一个平平无奇的星期二早晨，作为一名 Transformers 库的维护者，我照例做着每天工作日早上都要做的事情：打开 [PyCharm](https://jb.gg/get-pycharm-hf)，加载 Transformers 代码库，充满感情地浏览 [聊天模板文档](https://huggingface.co/docs/transformers/main/chat_templating)，并努力“无视”当天有 50 个用户问题在等我处理。但今天有些不一样的地方：
 
