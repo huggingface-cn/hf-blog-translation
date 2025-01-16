@@ -2087,7 +2087,7 @@
     - open-source
 
 - local: sd3-5
-  title: "欢迎 Stable Diffusion 3.5 Large 加入 🧨 Diffusers"
+  title: "欢迎 Stable Diffusion 3.5 Large 加入 🧨\_Diffusers"
   author: diffusers
   thumbnail: /blog/assets/sd3-5/thumbnail.png
   date: October 22, 2024
@@ -2132,7 +2132,7 @@
     - collaboration
 
 - local: researcher-dataset-sharing
-  title: "在 Hugging Face Hub 上分享你的开源数据集"
+  title: 在 Hugging Face Hub 上分享你的开源数据集
   author: davanstrien
   thumbnail: /blog/assets/researcher-dataset-sharing/thumbnail.png
   date: November 12, 2024
@@ -2143,7 +2143,7 @@
     - guide
 
 - local: designing-positional-encoding
-  title: "设计位置编码"
+  title: 设计位置编码
   author: FL33TW00D-HF
   thumbnail: /blog/assets/designing-positional-encoding/thumbnail_posenc.png
   date: November 25, 2024
@@ -2153,7 +2153,7 @@
     - tutorial
 
 - local: eu-ai-act-for-oss-developers
-  title: "开源开发者指南：欧盟《人工智能法案》解读"
+  title: 开源开发者指南：欧盟《人工智能法案》解读
   author: brunatrevelin
   thumbnail: /blog/assets/189_eu-ai-act-for-oss-developers/thumbnail.png
   date: December 2, 2024
@@ -2162,20 +2162,8 @@
     - guide
     - ethics
 
-
-- local: layerskip
-  title: 自推测解码实现更快文本生成
-  author: ariG23498
-  thumbnail: /blog/assets/layerskip/thumbnail.png
-  date: November 20, 2024
-  tags:
-    - research
-    - nlp
-    - open-source
-    - collaboration
-
 - local: paligemma2
-  title: "欢迎 PaliGemma 2 – 来自 Google 的新视觉语言模型"
+  title: 欢迎 PaliGemma 2 – 来自 Google 的新视觉语言模型
   author: merve
   thumbnail: /blog/assets/paligemma/Paligemma2.png
   date: December 05, 2024
@@ -2186,3 +2174,12 @@
     - vision
     - VLM
     - research
+
+- local: ethics-soc-7
+  title: AI 代理已经到来，接下来呢？
+  author: meg
+  thumbnail: /blog/assets/190_ethics-soc-7/thumbnail.png
+  date: January 13, 2025
+  tags:
+    - ethics
+    - agents
