@@ -158,7 +158,7 @@ Apache 2.0协议开源的[YuE](https://huggingface.co/m-a-p/YuE-s1-7B-anneal-en-
        alt="YuE歌曲演示"
        autobuffer playsinline
      >
-     <source src="https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/blog/ai_art_newsletter_1/My first YuE (open source Suno) AI generated full song.mp4" type="video/mp3">
+     <source src="https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/blog/ai_art_newsletter_1/My first YuE (open source Suno) AI generated full song.mp4" type="video/mp4">
    </video>
  </figure>
 
