@@ -66,7 +66,7 @@ Let's break down this graph into key parts:
 
 5. **Forward Pass (2nd Loop)**: Memory increases by 1 GB for the new output tensor, calculated as in step 3.
 
-6. **Release 1st Loop Activation**: After the second loop’s forward pass, the input tensor from the first loop (step 2) can be freed. The model's activations, which hold the first input tensor, are overwritten by the second loop's input. Once the second loop completes, the first tensor is no longer referenced and its memory can be released
+6. **Release 1st Loop Activation**: After the second loop’s forward pass, the input tensor from the first loop (step 2) can be freed. The model's activations, which hold the first input tensor, are overwritten by the second loop's input. Once the second loop completes, the first tensor is no longer referenced and its memory can be released.
 
 7. **Update `output`**: The output tensor from step 3 is reassigned to the variable `output`. The previous tensor is no longer referenced and is deleted, freeing its memory.
 
@@ -134,7 +134,7 @@ Training profiles like this typically follow a consistent pattern, which makes t
 
 ## 📐 Estimating Memory Requirements
 
-From the above section, estimating GPU memory requirements seems simple. The total memory needed should correspond to the highest peak in the memory profile, which occurs during the **forward pass**. In that case, the memory requirement is (blue + greeen + orange):
+From the above section, estimating GPU memory requirements seems simple. The total memory needed should correspond to the highest peak in the memory profile, which occurs during the **forward pass**. In that case, the memory requirement is (blue + green + orange):
 
 \\( \text{Model Parameters} + \text{Optimizer State} + \text{Activations} \\)
 
@@ -239,7 +239,7 @@ Not directly, as the number of activations per token depends on the model archit
 
 This linear relationship allows us to estimate activations using the heuristic:
 
-\\( A = 4.6894 \times 10^{4} \times N + 1.8494 \times 10^{6} \\)
+\\( A = 4.6894 \times 10^{-4} \times N + 1.8494 \times 10^{6} \\)
 
 Though this is an approximation, it provides a practical way to estimate activation memory without needing to perform complex calculations for each model.
 
@@ -267,7 +267,7 @@ with the following components:
 - **Optimizer State**: \\( 2 \times N \times P \\)
 - **Gradients**: \\( N \times P \\)
 - **Optimizer Intermediates**: \\( N \times P \\)
-- **Activations**: \\( A \times B \times L \times P \\), estimated using the heuristic \\( A = 4.6894 \times 10^{4} \times N + 1.8494 \times 10^{6} \\)
+- **Activations**: \\( A \times B \times L \times P \\), estimated using the heuristic \\( A = 4.6894 \times 10^{-4} \times N + 1.8494 \times 10^{6} \\)
 
 To make this calculation easier, I created a small tool for you:
 
