@@ -5,7 +5,7 @@ authors:
 - user: multimodalart
 - user: cbensimon
 translators:
-- user:  evinci
+- user: evinci
 ---
 
 # 在 Hugging Face Spaces 上使用 Gradio 免费运行 ComfyUI 工作流
