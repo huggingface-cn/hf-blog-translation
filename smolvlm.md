@@ -45,6 +45,7 @@ This release comes with open-source models integrated into transformers, [a demo
   * [Context extension](#context-extension)
   * [Checkpoint selection](#checkpoint-selection)
 - [Fine-Tuning](#fine-tuning)
+- [Citation information](#citation-information)
 - [Wrapping up](#wrapping-up) 
 
 
@@ -146,7 +147,7 @@ SmolVLM's tiny memory footprint also implies that it requires far fewer computat
 
 Given SmolVLM's long context and the possibility of tweaking the internal frame resizing of the model, we explored its suitability as an accessible option for basic video analysis tasks, particularly when computational resources are limited.
 
-In our evaluation of SmolVLM's video understanding capabilities, we implemented a straightforward [video processing pipeline code](https://github.com/huggingface/smollm/blob/main/inference/smolvlm/SmolVLM_video_inference.py), extracting up to 50 evenly sampled frames from each video while avoiding internal frame resizing.
+In our evaluation of SmolVLM's video understanding capabilities, we implemented a straightforward [video processing pipeline code](https://github.com/huggingface/smollm/blob/7dfcd81c046a946031291c11451e9398609a0aeb/tools/smolvlm_local_inference/SmolVLM_video_inference.py), extracting up to 50 evenly sampled frames from each video while avoiding internal frame resizing.
 This simple approach yielded surprisingly competitive results on the CinePile benchmark, with a score of 27.14%, a performance that positions the model between InternVL2 (2B) and Video LlaVa (7B).
 
 
@@ -211,7 +212,7 @@ from transformers.image_utils import load_image
 
 # Load images
 image1 = load_image("https://huggingface.co/spaces/HuggingFaceTB/SmolVLM/resolve/main/example_images/rococo.jpg")
-image2 = load_image("https://huggingface.co/spaces/HuggingFaceTB/SmolVLM/blob/main/example_images/rococo_1.jpg")
+image2 = load_image("https://huggingface.co/spaces/HuggingFaceTB/SmolVLM/resolve/main/example_images/rococo_1.jpg")
 
 # Create input messages
 messages = [
@@ -277,7 +278,7 @@ To select the optimal checkpoint, we created a single metric by combining these 
 
 You can fine-tune SmolVLM using transformers and apply alignment techniques using TRL 🚀
 
-We provide a [notebook](https://github.com/huggingface/smollm/blob/main/finetuning/Smol_VLM_FT.ipynb) to fine-tune it on the VQAv2 dataset, optionally using  LoRA, QLoRA or full fine-tuning. In the notebook, you can find some tricks to save up even more memory and have a larger batch size to fit SmolVLM inside consumer GPUs, like L4, for training. With batch sizes of 4, 8-bit loading with QLoRA and gradient checkpointing we can fine-tune in L4, and it consumes around ~16 GBs of VRAM. This makes it possible to fine-tune your SmolVLM using Colab! You can play around with the parameters to get a nice point in training duration-memory trade-off. 
+We provide a [notebook](https://github.com/huggingface/smollm/blob/main/vision/finetuning/Smol_VLM_FT.ipynb) to fine-tune it on the VQAv2 dataset, optionally using  LoRA, QLoRA or full fine-tuning. In the notebook, you can find some tricks to save up even more memory and have a larger batch size to fit SmolVLM inside consumer GPUs, like L4, for training. With batch sizes of 4, 8-bit loading with QLoRA and gradient checkpointing we can fine-tune in L4, and it consumes around ~16 GBs of VRAM. This makes it possible to fine-tune your SmolVLM using Colab! You can play around with the parameters to get a nice point in training duration-memory trade-off. 
 
 SmolVLM also comes with TRL integration so you can apply Direct Preference Optimization (DPO) easily through the CLI. Get started by running `pip install trl accelerate peft` and then run the following command to fine-tune on [RLAIF-V](https://huggingface.co/datasets/HuggingFaceH4/rlaif-v_formatted) dataset: 
 
@@ -295,6 +296,17 @@ accelerate launch \
 ```
 The resulting LoRA adapter weights are [SmolVLM-Instruct-DPO](https://huggingface.co/HuggingFaceTB/SmolVLM-Instruct-DPO). A detailed tutorial on preference tuning vision-based LLM can be found here: [dpo_vlm](https://huggingface.co/blog/dpo_vlm).
 
+## Citation information
+
+You can cite us in the following way:
+```bibtex
+@unpublished{marafioti2025smolvlm,
+  title = {SmolVLM: Redefining small and efficient multimodal models},
+  author = {Marafioti, Andr\'{e}s and Zohar, Orr and Farr\'{e}, Miquel and Noyan, Merve and Bakouch, Elie and Cuenca, Pedro and Zakka, Cyril and Ben Allal, Loubna and Lozhkov, Anton and Tazi, Nouamane and Srivastav, Vaibhav and Lochner, Joshua and Larcher, Hugo and Morlon, Mathieu and Tunstall, Lewis and von Werra, Leandro and Wolf, Thomas},
+  year = {2025},
+}
+```
+
 ## Wrapping Up
 
 We introduced SmolVLM, a fully open, small, and mighty VLM for the community! We also provide tools for the community to use and customize it. We are looking forward to seeing what you will create with SmolVLM.
@@ -302,5 +314,5 @@ We introduced SmolVLM, a fully open, small, and mighty VLM for the community! We
 Below are some resources if you would like to read more about all things related to SmolVLM.
 
 - Start playing with SmolVLM using [this demo](https://huggingface.co/spaces/HuggingFaceTB/SmolVLM).
-- Learn how to fine-tune SmolVLM on VQAv2 using [this notebook](https://github.com/huggingface/smollm/blob/main/finetuning/Smol_VLM_FT.ipynb) 
+- Learn how to fine-tune SmolVLM on VQAv2 using [this notebook](https://github.com/huggingface/smollm/blob/main/vision/finetuning/Smol_VLM_FT.ipynb) 
 - Learn more about [vision language models](https://huggingface.co/blog/vlms)
