@@ -2264,3 +2264,34 @@
     - llm
     - nlp
     - vision
+
+- local: open-r1-update1
+  title: "Open R1 项目进展第一期"
+  author: lvwerra
+  thumbnail: /blog/assets/open-r1/thumbnails_update1.png
+  date: Feb 02, 2025
+  tags:
+    - llms
+    - reasoning
+    - research
+
+- local: open-r1-update2
+  title: "Open R1 项目进展第二期"
+  author: lewtun
+  thumbnail: /blog/assets/open-r1/thumbnails_update2.png
+  date: Feb 10, 2025
+  tags:
+    - llms
+    - reasoning
+    - research
+
+- local: open-r1-update3
+  title: "Open R1 项目进展第三期"
+  author: guipenedo
+  thumbnail: /blog/assets/open-r1/thumbnails_update3.png
+  date: March 11, 2025
+  tags:
+    - llms
+    - reasoning
+    - research
+
