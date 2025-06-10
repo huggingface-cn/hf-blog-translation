@@ -5899,7 +5899,6 @@
     - api
     - development
     - production
-
 - local: autoround
   title: "Introducing AutoRound: Intel’s Advanced Quantization for LLMs and VLMs"
   author: wenhuach
@@ -5951,3 +5950,190 @@
     - gradio
     - tool
     - llm
+    
+- local: lerobot-datasets
+  title: "LeRobot Community Datasets: The “ImageNet” of Robotics — When and How?"
+  author: danaaubakirova
+  thumbnail: /blog/assets/195_lerobot_datasets/1.png
+  date: May 11, 2025
+  tags:
+    - lerobot
+    - community
+    - datasets
+    - hub
+
+- local: vlms-2025
+  title: "Vision Language Models (Better, Faster, Stronger)"
+  author: merve
+  thumbnail: /blog/assets/vlms2/vlms2.png
+  date: May 12, 2025
+  tags:
+    - vlm
+    - vision
+    - multimodal
+    - community
+    - research
+
+- local: fast-whisper-endpoints
+  title: "Blazingly fast whisper transcriptions with Inference Endpoints"
+  author: mfuntowicz
+  thumbnail: /blog/assets/fast-whisper-endpoints/thumbnail.png
+  date: May 13, 2025
+  tags:
+    - guide
+    - cloud
+    - inference
+    - audio
+    - transcription
+    - whisper
+
+- local: kaggle-integration
+  title: "Improving Hugging Face Model Access for Kaggle Users"
+  author: roseberryv
+  thumbnail: /blog/assets/kaggle-integration/thumbnail.png
+  date: May 14, 2025
+  tags:
+    - community
+    - announcement
+
+- local: transformers-model-definition
+  title: "The Transformers Library: standardizing model definitions"
+  author: lysandre
+  thumbnail: /blog/assets/transformers-model-definition/transformers-thumbnail.png
+  date: May 15, 2025
+  tags:
+    - community
+    - announcement
+    - transformers
+
+- local: azure-ai-foundry
+  title: "Microsoft and Hugging Face expand collaboration"
+  author: jeffboudier
+  thumbnail: /blog/assets/azure-ai-foundry/satya-hf-build-compressed.png
+  date: May 19, 2025
+  tags:
+    - partnership
+    - announcement
+    - azure
+
+- local: nanovlm
+  title: "nanoVLM: The simplest repository to train your VLM in pure PyTorch"
+  author: ariG23498
+  thumbnail: /blog/assets/nanovlm/thumbnail.png
+  date: May 21, 2025
+  tags:
+    - vlm
+    - vision
+    - llm
+    - nanovlm
+    - research
+    - community
+    - open
+
+- local: diffusers-quantization
+  title: "Exploring Quantization Backends in Diffusers"
+  thumbnail: /blog/assets/diffusers-quantization/thumbnail.png
+  author: derekl35
+  date: May 21, 2025
+  tags:
+    - guide
+    - diffusers
+    - quantization
+    - flux
+
+- local: python-tiny-agents 
+  title: "Tiny Agents in Python: a MCP-powered agent in ~70 lines of code"
+  author: celinah
+  thumbnail: /blog/assets/python-tiny-agents/thumbnail.png
+  date: May 23, 2025
+  tags:
+    - agents
+    - hub
+    - inference
+    - mcp
+
+- local: dell-ai-applications
+  title: "Dell Enterprise Hub is all you need to build AI on premises"
+  author: jeffboudier
+  thumbnail: /blog/assets/dell-ai-applications/dell-post-thumbnail.png
+  date: May 23, 2025
+  tags:
+    - dell
+    - enterprise
+    - partnerships
+
+- local: liger-grpo
+  title: "🐯 Liger GRPO meets TRL"
+  author: shisahni
+  guest: true
+  thumbnail: /blog/assets/liger-grpo/thumbnail.png
+  date: May 25, 2025
+  tags:
+    - liger
+    - grpo
+    - trl
+    - partnership
+    - llm
+
+- local: structured-codeagent
+  title: "CodeAgents + Structure: A Better Way to Execute Actions"
+  author: akseljoonas
+  thumbnail: /blog/assets/structured-codeagent/thumbnail-codeagent.png
+  date: May 28, 2025
+  tags:
+    - agents
+    - smolagents
+    - open-source
+    - nlp
+    - tools
+    - community
+
+- local: vllm-colocate
+  title: "No GPU left behind: Unlocking Efficiency with Co-located vLLM in TRL"
+  author: toslali-ibm
+  guest: true
+  thumbnail: /blog/assets/vllm-colocate/thumbnail.png
+  date: June 3, 2025
+  tags:
+    - vllm
+    - grpo
+    - trl
+    - llm
+    - rlhf
+
+- local: smolvla
+  title: "SmolVLA: Efficient Vision-Language-Action Model trained on Lerobot Community Data"
+  author: danaaubakirova
+  thumbnail: /blog/assets/smolvla/SmolVLA_thumbnail.png
+  date: Jun 3, 2025
+  tags:
+    - smolvla
+    - lerobot
+    - robotics
+    - open-source
+    - models
+    - community
+
+- local: kv-cache
+  title: "KV Cache from scratch in nanoVLM"
+  author: ariG23498
+  thumbnail: /blog/assets/kv-cache/thumbnail.png
+  date: Jun 4, 2025
+  tags:
+    - generate
+    - open-source
+    - nlp
+    - vlm
+    - nanovlm
+
+- local: screensuite
+  title: "ScreenSuite - The most comprehensive evaluation suite for GUI Agents!"
+  author: a-mahla
+  thumbnail: /blog/assets/screensuite/thumbnail.png
+  date: Jun 6, 2025
+  tags:
+    - screensuite
+    - gui-agents
+    - agents
+    - smolagents
+    - vlm
