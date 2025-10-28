@@ -1,5 +1,5 @@
 ---
-title: "LeRobot v0.4.0 正式发布：赋能开源机器人学习"
+title: "LeRobot v0.4.0：全面提升开源机器人的学习能力"
 thumbnail: /blog/assets/lerobot-release-v040/thumbnail.png
 authors:
 - user: imstevenpmwork
@@ -15,67 +15,69 @@ translators:
 - user: chenglu
 ---
 
-# LeRobot v0.4.0: Super Charging OSS Robotics Learning
+# LeRobot v0.4.0：全面提升开源机器人的学习能力
 
-We're thrilled to announce a series of significant advancements across LeRobot, designed to make open-source robot learning more powerful, scalable, and user-friendly than ever before! From revamped datasets to versatile editing tools, new simulation environments, and a groundbreaking plugin system for hardware, LeRobot is continuously evolving to meet the demands of cutting-edge embodied AI.
+我们非常高兴地宣布，LeRobot 迎来一系列重大升级，让开源的机器人学习比以往更强大、更可扩展、也更易用！从重构的数据集到灵活的编辑工具、新的仿真环境，以及面向硬件的全新插件系统，LeRobot 正在持续演进，以满足前沿具身智能（Embodied AI）不断发展的需求。
 
-## TL;DR
-LeRobot v0.4.0 delivers a major upgrade for open-source robotics, introducing scalable Datasets v3.0, powerful new VLA models like PI0.5 and GR00T N1.5, and a new plugin system for easier hardware integration. The release also adds support for LIBERO and Meta-World simulations, simplified multi-GPU training, and a new Hugging Face Robot Learning Course.
+## 简要总结
+LeRobot v0.4.0 为开源机器人领域带来重要升级：引入可扩展的 Datasets v3.0、强大的新 VLA（视觉-语言-动作）模型如 PI0.5 与 GR00T N1.5，以及全新的插件系统，简化硬件集成。该版本还新增对 LIBERO 与 Meta-World 仿真的支持、简化多 GPU 训练，并上线全新的 Hugging Face 机器人学习课程。
 
-## Table-of-Contents
+## 目录
 
-- [LeRobot v0.4.0: Super Charging OSS Robotics Learning](#lerobot-v040-super-charging-oss-robotics-learning)
-  - [TL;DR](#tldr)
-  - [Table-of-Contents](#table-of-contents)
-  - [Datasets: Ready for the Next Wave of Large-Scale Robot Learning](#datasets-ready-for-the-next-wave-of-large-scale-robot-learning)
-    - [What's New in Datasets v3.0?](#whats-new-in-datasets-v30)
-    - [New Feature: Dataset Editing Tools!](#new-feature-dataset-editing-tools)
-  - [Simulation Environments: Expanding Your Training Grounds](#simulation-environments-expanding-your-training-grounds)
-    - [LIBERO Support](#libero-support)
-    - [Meta-World Integration](#meta-world-integration)
-  - [Codebase: Powerful Tools For Everyone](#codebase-powerful-tools-for-everyone)
-    - [The New Pipeline for Data Processing](#the-new-pipeline-for-data-processing)
-    - [Multi-GPU Training Made Easy](#multi-gpu-training-made-easy)
-  - [Policies: Unleashing Open-World Generalization](#policies-unleashing-open-world-generalization)
-    - [PI0 and PI0.5](#pi0-and-pi05)
-    - [GR00T N1.5](#gr00t-n15)
-  - [Robots: A New Era of Hardware Integration with the Plugin System](#robots-a-new-era-of-hardware-integration-with-the-plugin-system)
-    - [Key Benefits](#key-benefits)
-    - [Reachy 2 Integration](#reachy-2-integration)
-    - [Phone Integration](#phone-integration)
-  - [The Hugging Face Robot Learning Course](#the-hugging-face-robot-learning-course)
-    - [Deep Dive: The Modern Robot Learning Tutorial](#deep-dive-the-modern-robot-learning-tutorial)
-  - [Final thoughts from the team](#final-thoughts-from-the-team)
+- [LeRobot v0.4.0：全面提升开源机器人的学习能力](#LeRobot v0.4.0：全面提升开源机器人的学习能力)
+- [简要总结](#简要总结)
+- [数据集：为下一波大规模机器人学习做好准备](#数据集为下一波大规模机器人学习做好准备)
+  - [Datasets v3.0 有何新变化？](#datasets-v30-有何新变化)
+  - [新特性：数据集编辑工具！](#新特性数据集编辑工具)
+- [仿真环境：扩展你的训练场](#仿真环境扩展你的训练场)
+  - [LIBERO 支持](#libero-支持)
+  - [Meta-World 集成](#meta-world-集成)
+- [代码库：人人可用的强力工具](#代码库人人可用的强力工具)
+  - [全新的数据处理 Pipeline](#全新的数据处理-pipeline)
+  - [多 GPU 训练更简单](#多-gpu-训练更简单)
+- [策略：释放开放世界泛化能力](#策略释放开放世界泛化能力)
+  - [PI0 与 PI0.5](#pi0-与-pi05)
+  - [GR00T N1.5](#gr00t-n15)
+- [机器人：插件系统引领硬件集成新纪元](#机器人插件系统引领硬件集成新纪元)
+  - [核心优势](#核心优势)
+  - [Reachy 2 集成](#reachy-2-集成)
+  - [手机集成](#手机集成)
+- [Hugging Face 机器人学习课程](#hugging-face-机器人学习课程)
+  - [深入讲解：现代机器人学习教程](#深入讲解现代机器人学习教程)
+- [团队总结](#团队总结)
 
+## 数据集：为下一波大规模机器人学习做好准备
 
-## Datasets: Ready for the Next Wave of Large-Scale Robot Learning
-We've completely overhauled our dataset infrastructure with **LeRobotDataset v3.0**, featuring a new chunked episode format and streaming capabilities. This is a game-changer for handling massive datasets like [OXE](https://huggingface.co/collections/lerobot/open-x-embodiment) (Open X Embodiment) and [Droid](https://huggingface.co/datasets/lerobot/droid_1.0.1), bringing unparalleled efficiency and scalability.
+我们彻底重构了数据集基础设施，推出 **LeRobotDataset v3.0**，采用全新的分块式 Episode 格式与流式读取能力。这对于处理超大规模数据集（如 [OXE](https://huggingface.co/collections/lerobot/open-x-embodiment)（Open X Embodiment）与 [Droid](https://huggingface.co/datasets/lerobot/droid_1.0.1)）是一次范式跃迁，带来前所未有的效率与可扩展性。
 
-### What's New in Datasets v3.0?
-* Chunked Episodes for Massive Scale: Our new format supports datasets at the OXE-level (> 400GB), enabling unprecedented scalability.
-* Efficient Video Storage + Streaming: Enjoy faster loading times and seamless streaming of video data.
-* Unified Parquet Metadata: Say goodbye to scattered JSONs! All episode metadata is now stored in unified, structured Parquet files for easier management and access.
-* Faster Loading & Better Performance: Experience significantly reduced dataset initialization times and more efficient memory usage.
+### Datasets v3.0 有何新变化？
 
-We've also provided a conversion script to easily migrate your existing v2.1 datasets to the new v3.0 format, ensuring a smooth transition. Read more about it in our previous [blog post](https://huggingface.co/blog/lerobot-datasets-v3). Open-source robotics keeps leveling up!
+* **分块式 Episodes，面向超大规模**：新格式支持 OXE 量级（> 400 GB）的数据集，显著提升可扩展性。
+* **高效视频存储与流式读取**：更快的加载速度与顺畅的视频数据流式访问。
+* **统一的 Parquet 元数据**：告别分散的 JSON！所有 Episode 的元数据现统一存放于结构化的 Parquet 文件中，便于管理与访问。
+* **更快的加载与更好的性能**：显著缩短数据集初始化时间，内存使用更高效。
 
-### New Feature: Dataset Editing Tools!
-Working with LeRobot datasets just got a whole lot easier! We've introduced a powerful set of utilities for flexible dataset editing.
+我们还提供了转换脚本，帮助你将现有 v2.1 数据集一键迁移到新的 v3.0 格式，确保平滑过渡。更多细节可阅读我们此前的 [博客文章](https://huggingface.co/blog/lerobot-datasets-v3)。开源机器人的学习能力持续升级中！
 
-With our new `lerobot-edit-dataset` CLI, you can now:
-* Delete specific episodes from existing datasets.
-* Split datasets by fractions or episode indices.
-* Add or remove features with ease.
-* Merge multiple datasets into one unified set.
+### 新特性：数据集编辑工具！
+
+使用 LeRobot 数据集从未如此轻松！我们新增了一套强大的数据集灵活编辑工具。
+
+借助全新的命令行工具 `lerobot-edit-dataset`，你可以：
+
+* 从现有数据集中删除指定的 Episodes。
+* 按比例或 Episode 索引拆分数据集。
+* 轻松添加或移除特征字段。
+* 将多个数据集合并为一个统一数据集。
 
 ```bash
-# Merge multiple datasets into a single dataset.
+# 将多个数据集合并为单一数据集
 lerobot-edit-dataset \
     --repo_id lerobot/pusht_merged \
     --operation.type merge \
     --operation.repo_ids "['lerobot/pusht_train', 'lerobot/pusht_val']"
 
-# Delete episodes and save to a new dataset (preserves original dataset)
+# 删除部分 episodes 并保存为新数据集（保留原数据集）
 lerobot-edit-dataset \
     --repo_id lerobot/pusht \
     --new_repo_id lerobot/pusht_after_deletion \
@@ -83,59 +85,63 @@ lerobot-edit-dataset \
     --operation.episode_indices "[0, 2, 5]"
 ```
 
-These tools streamline your workflow, allowing you to curate and optimize your robot datasets like never before. Check out the [docs](https://huggingface.co/docs/lerobot/using_dataset_tools) for more details!
+这些工具将大幅简化你的工作流，让你以前所未有的方式策划与优化机器人数据集。更多详情请查阅 [文档](https://huggingface.co/docs/lerobot/using_dataset_tools)！
 
-## Simulation Environments: Expanding Your Training Grounds
-We're continuously expanding LeRobot's simulation capabilities to provide richer and more diverse training environments for your robotic policies.
+## 仿真环境：扩展你的训练场
+
+我们持续扩展 LeRobot 的仿真能力，为你的机器人策略提供更丰富、更多样化的训练环境。
 
 ![libero-demo](https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/lerobot-blog/release-v0.4.0/lerobot-libero-groot-v040.gif)
 
-### LIBERO Support
-LeRobot now officially supports [LIBERO](https://libero-project.github.io/intro.html), one of the largest open benchmarks for Vision-Language-Action (VLA) policies, boasting over 130 tasks! This is a huge step toward building the go-to evaluation hub for VLAs, enabling easy integration and a unified setup for evaluating any VLA policy.
+### LIBERO 支持
 
-Check out the [LIBERO dataset](https://huggingface.co/datasets/HuggingFaceVLA/libero) and our [docs](https://huggingface.co/docs/lerobot/en/libero) to get started!
+LeRobot 现已正式支持 [LIBERO](https://libero-project.github.io/intro.html)——这是 VLA（视觉-语言-动作）策略中规模最大的开源基准之一，涵盖超过 130 个任务！这一步为打造 VLA 策略的首选评测枢纽奠定了基础，提供便捷的集成方式与统一的评测配置。
 
-### Meta-World Integration
-We've integrated [Meta-World](https://meta-world.github.io), a premier benchmark for testing multi-task and generalization abilities in robotic manipulation, featuring over 50 diverse manipulation tasks. This integration, along with our standardized use of `gymnasium ≥ 1.0.0` and `mujoco ≥ 3.0.0`, ensures deterministic seeding and a robust simulation foundation.
+前往查看 [LIBERO 数据集](https://huggingface.co/datasets/HuggingFaceVLA/libero) 与我们的 [文档](https://huggingface.co/docs/lerobot/en/libero) 开始上手！
 
-Train your policies with the [Meta-World dataset](https://huggingface.co/datasets/lerobot/metaworld_mt50) today!
+### Meta-World 集成
 
-## Codebase: Powerful Tools For Everyone
-We're making robot control more flexible and accessible, enabling new possibilities for data collection and model training.
+我们已集成 [Meta-World](https://meta-world.github.io)，它是评测机器人操作多任务与泛化能力的一流基准，包含 50+ 种多样化的操作任务。配合我们对 `gymnasium ≥ 1.0.0` 与 `mujoco ≥ 3.0.0` 的标准化使用，这一集成为确定性的随机种子与稳健的仿真基础提供了保障。
 
-### The New Pipeline for Data Processing
+立即使用 [Meta-World 数据集](https://huggingface.co/datasets/lerobot/metaworld_mt50) 训练你的策略吧！
 
-Getting data from a robot to a model (and back!) is tricky. Raw sensor data, joint positions, and language instructions don't match what AI models expect. Models need normalized, batched tensors on the right device, while your robot hardware needs specific action commands.
+## 代码库：人人可用的强力工具
 
-We're excited to introduce **Processors**: a new, modular pipeline that acts as a universal translator for your data. Think of it as an assembly line where each `ProcessorStep` handles one specific job—like normalizing, tokenizing text, or moving data to the GPU.
+我们让机器人控制更加灵活与易用，解锁数据采集与模型训练的新可能。
 
-You can chain these steps together into a powerful pipeline to perfectly manage your data flow. We've even created two distinct types to make life easier:
+### 全新的数据处理 Pipeline
 
-* `PolicyProcessorPipeline`: Built for models. It expertly handles batched tensors for high-performance training and inference.
-* `RobotProcessorPipeline`: Built for hardware. It processes individual data points (like a single observation or action) for real-time robot control.
+让数据从机器人流向模型（再流回去！）并不容易。原始传感器数据、关节位置与语言指令，与人工智能模型期望的输入并不一致。模型需要在正确设备上的规范化、按批次的张量，而你的机器人硬件则需要特定格式的动作命令。
+
+我们很高兴地推出 **Processors**：一个模块化的数据处理 Pipeline，可充当通用的“数据翻译器”。你可以把它想象为一条装配线，每个 `ProcessorStep` 只处理一个明确的工序——例如归一化、文本 Token 化、或将数据移到 GPU。
+
+你可以将这些步骤串联起来，构建强大的 Pipeline，精准管理你的数据流。我们还提供了两类开箱即用的 Pipeline，进一步降低使用门槛：
+
+* `PolicyProcessorPipeline`：面向模型。专为高性能训练与推理处理按批次的张量。
+* `RobotProcessorPipeline`：面向硬件。以单条数据（如单次观测或动作）为粒度，服务于实时机器人控制。
 
 ```python
-# Get environment state
+# 获取环境状态
 obs = robot.get_observation()
 
-# Rename, Batch, Normalize, Tokenize, Move Device ... 
+# 重命名、打批、归一化、文本分词、移动到设备 ...
 obs_processed = preprocess(obs)
 
-# Run inference
+# 推理
 action = model.select_action(obs_processed)
 
-# Unnormalize, Move Device ...
+# 反归一化、移动设备 ...
 action_processed = postprocess(action)
 
-# Execute action
+# 执行动作
 robot.send_action(action_processed)
 ```
 
-This system makes it simple to connect any policy to any robot, ensuring your data is always in the perfect format for every step of the way. Learn more about it in our [Introduction to Processors documentation](https://huggingface.co/docs/lerobot/introduction_processors).
+这个系统让任何策略与任何机器人都能简单互联，确保你的数据在每一步都处于“刚刚好”的格式。详情可阅读我们的 [Processors 入门文档](https://huggingface.co/docs/lerobot/introduction_processors)。
 
-### Multi-GPU Training Made Easy
+### 多 GPU 训练更简单
 
-Training large robot policies just got a lot faster\! We've integrated [Accelerate](https://github.com/huggingface/accelerate) directly into our training pipeline, making it incredibly simple to scale your experiments across multiple GPUs with just **one command**:
+大规模机器人策略的训练现在更快了！我们将 [Accelerate](https://github.com/huggingface/accelerate) 直接整合进训练 Pipeline，只需 **一条命令** 即可在多块 GPU 上无缝扩展你的实验：
 
 ```bash
 accelerate launch \
@@ -145,83 +151,88 @@ accelerate launch \
   --dataset.repo_id=${HF_USER}/my_dataset \
   --policy.repo_id=${HF_USER}/my_trained_policy \
   --policy.type=$POLICY_TYPE \
-  # ... More training configuration flags
+  # ... 更多训练配置参数
 ```
 
-Whether you're fine-tuning a policy or running large-scale experiments, LeRobot now handles all the complexities of distributed training for you. This means you can drastically reduce training time, cutting it in half with 2 GPUs, down to a third with 3 GPUs, and beyond.
+无论是对策略进行微调，还是开展大规模实验，LeRobot 现在都能替你处理分布式训练的全部复杂性。这意味着你可以大幅缩短训练时间：约 2 块 GPU 可减半，约 3 块 GPU 可降至三分之一，更多 GPU 效率更高。
 
-Check out the [documentation](https://huggingface.co/docs/lerobot/multi_gpu_training) to accelerate your robot learning\!
+查阅 [文档](https://huggingface.co/docs/lerobot/multi_gpu_training) 加速你的机器人学习！
 
-## Policies: Unleashing Open-World Generalization
+## 策略：释放开放世界泛化能力
 
 ![groot-demo](https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/lerobot-blog/release-v0.4.0/lerobot-libero-groot2-v040.gif)
 
-### PI0 and PI0.5
-In a major milestone for open-source robotics, we've integrated **pi0** and **pi0.5** policies by Physical Intelligence into LeRobot! These Vision-Language-Action (VLA) models represent a significant leap towards addressing open-world generalization in robotics. But what makes π₀.₅ revolutionary?
+### PI0 与 PI0.5
 
-* Open-World Generalization: Designed to adapt to entirely new environments and situations, generalizing across physical, semantic, and environmental levels.
-* Co-training on Heterogeneous Data: Learns from a diverse mix of multimodal web data, verbal instructions, subtask commands, and multi-environment robot data.
-* Physical Intelligence Collaboration: Huge thanks to the [Physical Intelligence team](https://huggingface.co/physical-intelligence) for their groundbreaking work!
+在开源机器人领域的一个重要里程碑中，我们将 Physical Intelligence 的 **pi0** 与 **pi0.5** 策略集成进了 LeRobot！这些 VLA（视觉-语言-动作）模型在解决开放世界泛化问题上迈出了重要一步。那么，π0.5 的革命性体现在哪里？
 
-You can find the models on the Hugging Face Hub: [pi0.5_base](https://huggingface.co/lerobot/pi05_base), [pi0_base](https://huggingface.co/lerobot/pi0_base), and their Libero-tuned counterparts. For more details, checkout the [Physical Intelligence Reasearch](https://www.physicalintelligence.company/blog/pi05)
+* **开放世界泛化**：能够适应完全陌生的环境与情境，在物理、语义与环境层面实现跨域泛化。
+* **异构数据共训练**：从多模态网页数据、自然语言指令、子任务命令与多环境机器人数据的多样组合中学习。
+* **Physical Intelligence 合作**：特别感谢 [Physical Intelligence 团队](https://huggingface.co/physical-intelligence) 的开创性工作！
+
+你可以在 Hugging Face Hub 上找到这些模型：[pi0.5_base](https://huggingface.co/lerobot/pi05_base)、[pi0_base](https://huggingface.co/lerobot/pi0_base) 及它们的 Libero 微调版本。更多细节请参考 [Physical Intelligence 的研究博客](https://www.physicalintelligence.company/blog/pi05)。
 
 ### GR00T N1.5
-In another exciting development, we've integrated **NVIDIA's GR00T N1.5** into LeRobot, thanks to a fantastic collaboration with the NVIDIA robotics team! This open foundation model is a powerhouse for generalized robot reasoning and skills. As a cross-embodiment model, it takes multimodal input (like language and images) to perform complex manipulation tasks in diverse environments, marking another major leap in generalized robotics. But what makes GR00T N1.5 a game-changer?
 
-* Generalized Reasoning & Skills: Designed as a cross-embodiment foundation model, GR00T N1.5 excels at generalized reasoning and manipulation tasks, with improved language-following ability.
-* Expansive Heterogeneous Training: It learns from a massive dataset combining real captured humanoid data, synthetic data generated by NVIDIA Isaac GR00T Blueprint, and internet-scale video data.
-* NVIDIA Collaboration: We're thrilled to partner with the [NVIDIA team](https://huggingface.co/nvidia) to bring this state-of-the-art model to the open-source LeRobot community!
+另一项令人振奋的进展是，我们与 NVIDIA 机器人团队携手，将 **GR00T N1.5** 集成进 LeRobot！这是一款面向泛化的开源基础模型，能够进行跨本体的推理与技能迁移。它接收多模态输入（如语言与图像），可在多样环境中执行复杂的操作任务，标志着通用机器人又一大步。GR00T N1.5 为何与众不同？
 
-You can find the model on the Hugging Face Hub: [GR00T-N1.5-3B](https://huggingface.co/nvidia/GR00T-N1.5-3B). For more details, check out the [NVIDIA research page](https://research.nvidia.com/labs/gear/gr00t-n1_5/) and the [official GitHub repository](https://github.com/NVIDIA/Isaac-GR00T).
+* **泛化推理与技能**：作为跨本体的基础模型，GR00T N1.5 擅长泛化推理与操作任务，并提升了语言跟随能力。
+* **大规模异构训练**：训练数据覆盖真实人形机器人采集数据、NVIDIA Isaac GR00T Blueprint 生成的合成数据，以及互联网规模的视频数据。
+* **与 NVIDIA 合作**：我们很高兴与 [NVIDIA 团队](https://huggingface.co/nvidia) 合作，将这一前沿模型带给开源的 LeRobot 社区！
 
-The native integration of these policies in `lerobot` is a huge step forward in making robot learning as open and reproducible as it can be. Try them out today, share your runs, and let's push forward the frontier of embodied AI together!
+你可以在 Hugging Face Hub 上找到该模型：[GR00T-N1.5-3B](https://huggingface.co/nvidia/GR00T-N1.5-3B)。更多信息请查看 [NVIDIA 的研究页面](https://research.nvidia.com/labs/gear/gr00t-n1_5/) 与 [官方 GitHub 仓库](https://github.com/NVIDIA/Isaac-GR00T)。
 
-## Robots: A New Era of Hardware Integration with the Plugin System
-Big news for hardware enthusiasts! We've launched a brand-new plugin system to revolutionize how you integrate third-party hardware with LeRobot. Now, connecting any robot, camera, or teleoperator is as simple as a `pip install`, eliminating the need to modify the core library.
+这些策略在 `lerobot` 中的原生集成，让机器人学习更开放、更可复现。立即试用、分享你的训练运行结果，让我们共同推动具身智能的前沿！
 
-### Key Benefits
-* Extensibility: Develop and integrate custom hardware in separate Python packages.
-* Scalability: Supports a growing ecosystem of devices without bloating the core library.
-* Community-Friendly: Lowers the barrier to entry for community contributions, fostering a more collaborative environment.
+## 机器人：插件系统引领硬件集成新纪元
 
-Learn how to create your own plugin in our [documentation](https://huggingface.co/docs/lerobot/integrate_hardware#using-your-own-lerobot-devices-).
+对硬件爱好者而言的重磅消息！我们发布了全新的插件系统，彻底改造了第三方硬件与 LeRobot 的集成方式。现在，只需一次 `pip install`，就能连接任意机器人、相机或遥操作设备，无需修改核心库。
+
+### 核心优势
+
+* **可扩展性**：在独立的 Python 包中开发并集成自定义硬件。
+* **规模化**：支持不断增长的设备生态，而不会“增肥”核心库。
+* **社区友好**：降低社区贡献门槛，促进更高效的协作。
+
+想要创建自己的插件？请阅读我们的 [文档](https://huggingface.co/docs/lerobot/integrate_hardware#using-your-own-lerobot-devices-)。
 
 ```bash
 pip install lerobot_teleoperator_my_awesome_teleop
 lerobot-teleoperate --teleop.type=my_awesome_teleop
 ```
 
-### Reachy 2 Integration
-Thanks to our new plugin system, we've also added [Reachy 2](https://www.pollen-robotics.com/reachy/) from Pollen Robotics to LeRobot! Reachy 2 is available for both real robot control and simulation, enabling you to experiment with teleoperation and autonomous demos right away.
+### Reachy 2 集成
 
-### Phone Integration
-Thanks to our powerful new pipeline system, you can now teleoperate your follower arm **right from your phone** (iOS/Android). The phone acts as a teleoperator device, and our `RobotProcessor` pipeline handles all the transformations, allowing you to drive robots in different action spaces (like end-effector space) with ease. [Check out the examples!](https://github.com/huggingface/lerobot/tree/main/examples/phone_to_so100)
+得益于全新插件系统，我们已将 Pollen Robotics 的 [Reachy 2](https://www.pollen-robotics.com/reachy/) 集成到 LeRobot 中！Reachy 2 同时支持真实机器人控制与仿真，让你可以立即开展遥操作与自主演示实验。
 
-## The Hugging Face Robot Learning Course
+### 手机集成
 
-We're launching a comprehensive, self-paced, and entirely **open-source course** designed to make robot learning accessible to everyone! If you're curious about how real-world robots learn, this is the perfect place to start.
+得益于强大的新 Pipeline 系统，你现在可以**直接用手机**（iOS/Android）遥操作你的从动机械臂。手机作为遥操作设备，`RobotProcessor` Pipeline 负责全部数据变换，让你轻松在不同动作空间（如末端执行器空间）驱动机器人。[查看示例](https://github.com/huggingface/lerobot/tree/main/examples/phone_to_so100)。
 
-In this course, you’ll learn how to:
+## Hugging Face 机器人学习课程
 
-  * Understand the fundamentals of classical robotics.
-  * Use generative models for imitation learning (VAEs, diffusion, etc.).
-  * Apply Reinforcement Learning to real-world robots.
-  * Explore the latest generalist robot policies like PI0 and SmolVLA.
+我们上线了一门全面、可自学、且完全**开源**的课程，旨在让机器人学习真正“人人可学”！如果你对真实世界中的机器人如何学习感兴趣，这是绝佳的起点。
 
-Join the [Hugging Face Robotics organization](https://huggingface.co/robotics-course) to follow along and start your journey\!
+在这门课程中，你将学到：
 
-### Deep Dive: The Modern Robot Learning Tutorial
+* 理解经典机器人学的基础知识。
+* 使用生成式模型进行模仿学习（VAE、扩散模型等）。
+* 将强化学习应用于真实机器人。
+* 探索最新的通用机器人策略，如 PI0 与 SmolVLA。
 
-For those who want to go deeper, we've also published a **hands-on tutorial** on the most recent advancements in robotics. This guide provides self-contained explanations, re-derives modern techniques from first principles, and includes ready-to-use code examples using LeRobot and Hugging Face.
+加入 [Hugging Face Robotics 组织](https://huggingface.co/robotics-course) 一起学习吧！
 
-The tutorial itself is hosted in a [Space](https://huggingface.co/spaces/lerobot/robot-learning-tutorial) and it features practical examples using LeRobot, with all models and datasets on the Hugging Hub. You can also check out [our paper](https://huggingface.co/papers/2510.12403) for a detailed overview.
+### 深入讲解：现代机器人学习教程
 
+我们还发布了一篇**动手实践**的现代机器人学习教程，系统梳理近期的关键进展。该指南从第一性原理重新推导现代技术，并提供可直接运行的示例代码，全面基于 LeRobot 与 Hugging Face。
 
-## Final thoughts from the team
+教程托管在一个 [Space](https://huggingface.co/spaces/lerobot/robot-learning-tutorial) 中，包含大量基于 LeRobot 的实操示例，所有模型与数据集均在 Hugging Face Hub 上。同时你也可以查看 [我们的论文](https://huggingface.co/papers/2510.12403) 以获得更全面的概览。
 
-Beyond these major features, this release is packed with numerous bug fixes, documentation improvements, updated dependencies, more examples and better infrastructure to make your experience with LeRobot smoother and more reliable.
+## 团队总结
 
-We want to extend a huge **thank you to everyone in the community** for your invaluable contributions, feedback, and support. We're incredibly excited about the future of open-source robotics and can't wait to work with you on what's next!
+除了以上重大功能，这个版本还包含大量的错误修复、文档改进、依赖更新、更多示例与更好的基础设施，只为让你在使用 LeRobot 时获得更顺滑、更可靠的体验。
 
-Stay tuned for more to come 🤗 Get started [here](https://github.com/huggingface/lerobot)!
-– The LeRobot team ❤️
+衷心感谢**每一位社区成员**的宝贵贡献、反馈与支持。我们对开源机器人的未来无比期待，也迫不及待地想与你一起构建下一步！
+
+更多精彩，敬请期待 🤗 现在就从 [这里](https://github.com/huggingface/lerobot) 开始吧！
+—— LeRobot 团队 ❤️
