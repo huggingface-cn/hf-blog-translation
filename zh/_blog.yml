@@ -2363,3 +2363,15 @@
   tags:
     - lerobot
     - robotics
+
+- local: ocr-open-models
+  title: 用开源模型强化你的 OCR 工作流
+  author: merve
+  thumbnail: /blog/assets/ocr-open-models/thumbnail.png
+  date: Oct 21, 2025
+  tags:
+    - ocr
+    - vision
+    - multimodal
+    - vlm
+    - open-source
