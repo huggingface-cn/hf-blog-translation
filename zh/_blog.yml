@@ -1689,11 +1689,11 @@
     - open-source
     - vision
 
-- local: ocr-open-models
-  date: Oct 21, 2025
+- local: huggingface-hub-v1
+  date: Oct 27, 2025
   tags:
-    - ocr
-    - vision
-    - multimodal
-    - vlm
+    - huggingface_hub
+    - python
+    - announcement
     - open-source
+    - hub
