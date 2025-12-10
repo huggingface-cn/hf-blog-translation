@@ -1706,3 +1706,9 @@
     - announcement
     - open-source
     - hub
+
+- local: lerobotxnvidia-healthcare
+  date: Oct 29, 2025
+  tags:
+    - lerobot
+    - robotics
