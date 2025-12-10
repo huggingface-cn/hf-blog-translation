@@ -1707,13 +1707,9 @@
     - open-source
     - hub
 
-- local: voice-consent-gate
-  date: Oct 28, 2025
+- local: google-cloud
+  date: Nov 13, 2025
   tags:
-    - ethics
-    - guide
-    - speech
-    - audio
-    - text-to-speech
-    - voice
-    - voice-cloning
+    - partnerships
+    - google
+    - announcement
