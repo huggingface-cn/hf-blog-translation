@@ -1707,8 +1707,38 @@
     - open-source
     - hub
 
+- local: streaming-datasets
+  date: Oct 27, 2025
+  tags:
+    - datasets
+    - xet
+    - hub
+    - parquet
+    - streaming
+    - scale
+    - dataloaders
+    - storage
+
+- local: voice-consent-gate
+  date: Oct 28, 2025
+  tags:
+    - ethics
+    - guide
+    - speech
+    - audio
+    - text-to-speech
+    - voice
+    - voice-cloning
+
 - local: lerobotxnvidia-healthcare
   date: Oct 29, 2025
   tags:
     - lerobot
     - robotics
+
+- local: google-cloud
+  date: Nov 13, 2025
+  tags:
+    - partnerships
+    - google
+    - announcement
