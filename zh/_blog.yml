@@ -1742,3 +1742,12 @@
     - partnerships
     - google
     - announcement
+
+- local: anylanguagemodel
+  date: Nov 20, 2025
+  tags:
+    - llm
+    - coreml
+    - mlx
+    - community
+    - open-source
