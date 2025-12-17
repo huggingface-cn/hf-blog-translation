@@ -1742,3 +1742,10 @@
     - partnerships
     - google
     - announcement
+
+- local: build-rocm-kernels
+  date: Nov 17, 2025
+  tags:
+    - amd
+    - rocm
+    - kernels
