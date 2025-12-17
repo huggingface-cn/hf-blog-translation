@@ -1,5 +1,5 @@
 ---
-title: "Codex 正在开源人工智能模型"
+title: "Codex 正在推动 AI 模型的开源与训练流程"
 thumbnail: /blog/assets/hf-skills-training/thumbnail-codex.png
 authors:
 - user: burtenshaw
@@ -8,12 +8,11 @@ translators:
 - user: chenglu
 ---
 
-
-# Codex 正在开源人工智能模型
+# Codex 正在推动开源 AI 模型的训练与发布
 
 ![banner](https://huggingface.co/blog/assets/hf-skills-training/thumbnail-codex.png)
 
-继我们使用 [Claude Code](https://huggingface.co/blog/hf-skills-training) 训练开源模型的项目之后，现在我们更进一步，将 [Codex](https://developers.openai.com/codex/) 引入这一流程。我们为 Codex 接入了 [Hugging Face Skills](https://github.com/huggingface/skills) 仓库，该仓库包含了许多与机器学习和 AI 相关的“技能”，比如模型训练与评估等任务。通过 HF Skills，Codex 这样的编码代理可以实现：
+继我们使用 [Claude Code](https://huggingface.co/blog/hf-skills-training) 训练开源模型的项目之后，现在我们更进一步，将 [Codex](https://developers.openai.com/codex/) 引入这一流程。这里的重点不是“Codex 自己开源模型”，而是让 Codex 作为编码代理，参与并自动化开源模型的训练、评估与发布全流程。为此，我们为 Codex 接入了 [Hugging Face Skills](https://github.com/huggingface/skills) 仓库，该仓库包含了许多与机器学习和 AI 相关的“技能”，比如模型训练与评估等任务。通过 HF Skills，Codex 这样的编码代理可以实现：
 
 * 对语言模型进行微调和强化学习（RL）对齐训练
 * 查看、解释并基于 Trackio 的实时训练指标做出操作
@@ -45,7 +44,7 @@ Codex 将自动执行以下步骤：
 
 模型会在 Hugging Face 提供的 GPU 上训练，你可以同时做其他事情。训练完成后，你的微调模型将自动发布到 Hub，可立即使用。
 
-这不仅仅是一个演示工具。这套扩展系统支持生产级的训练方法：有监督微调（SFT）、直接偏好优化（DPO）和带有可验证奖励的强化学习（RL）。你可以训练 0.5B 到 7B 参数规模的模型，将它们转换为 GGUF 格式便于本地运行，还可以通过多阶段流程结合不同方法。
+这不仅仅是一个演示工具。这套扩展系统支持生产级的训练方法，有监督微调（SFT）、直接偏好优化（DPO）和带有可验证奖励的强化学习（RL）。你可以训练 0.5B 到 7B 参数规模的模型，将它们转换为 GGUF 格式便于本地运行，还可以通过多阶段流程结合不同方法。
 
 ## 目标：端到端的机器学习实验
 
@@ -135,7 +134,7 @@ Start a new fine-tuning experiment to improve code solving abilities on using SF
 >
 > 你也可以尝试自己不断迭代这个实验，提出一些更开放性的问题，比如：“哪个模型最擅长代码解题？”或“哪个数据集最适合训练代码解题能力？”
 
-Codex 会分析你的请求，并生成对应的训练配置。例如，对于一个 0.6B 参数规模的模型和一个演示数据集，它会选择 `t4-small`——这是适合该模型大小的最低成本 GPU 选项。Codex 会在 `training_reports/<model>-<dataset>-<method>.md` 路径下创建一份新的实验报告，并在实验过程中持续更新每次运行的相关信息。
+Codex 会分析你的请求，并生成对应的训练配置。例如，对于一个 0.6B 参数规模的模型和一个演示数据集，它会选择 `t4-small`，这是适合该模型大小的最低成本 GPU 选项。Codex 会在 `training_reports/<model>-<dataset>-<method>.md` 路径下创建一份新的实验报告，并在实验过程中持续更新每次运行的相关信息。
 
 <details>
 <summary>训练报告示例</summary>
@@ -328,6 +327,7 @@ Codex 会返回类似的表格总结：
 | `qwen3-0.6b-lora-v1` - `2025-12-09 13:47:47 UTC` - `Completed` | HumanEval pass@1 | 0.342 | [Logs](<link>) | [burtenshaw/qwen3-codeforces-cots-sft](https://huggingface.co/burtenshaw/qwen3-codeforces-cots-sft)
 | `base-humaneval-a10g` - `2025-12-09 13:47:47 UTC` - `Completed` | HumanEval pass@1 | 0.306 | [Logs](<link>) | [Qwen/Qwen3-0.6B](https://huggingface.co/Qwen/Qwen3-0.6B)
 ```
+
 通过这种方式，你可以清楚地看到微调后的模型是否优于基础模型。
 
 你也可以实时查看训练损失变化：
@@ -381,7 +381,7 @@ Codex 会根据你的模型规模自动选择合适的硬件，但了解背后�
 
 ## 接下来可以做什么？
 
-我们已经展示了 Codex 如何处理模型微调的完整生命周期：验证数据、选择硬件、生成训练脚本、提交任务、监控进度，以及转换输出。
+我们已经展示了 Codex 如何处理模型微调的完整生命周期，验证数据、选择硬件、生成训练脚本、提交任务、监控进度，以及转换输出。
 
 你可以尝试以下操作：
 
@@ -397,16 +397,15 @@ Codex 会根据你的模型规模自动选择合适的硬件，但了解背后�
 
 ### Codex
 
-* [Codex 官方文档](https://developers.openai.com/codex/) — OpenAI 的 AI 编码代理
+* [Codex 官方文档](https://developers.openai.com/codex/) ，OpenAI 的 AI 编码代理
 * [Codex 快速上手](https://developers.openai.com/codex/)
-* [Codex AGENTS 指南](https://developers.openai.com/codex/) — 使用 AGENTS.md 文件说明
+* [Codex AGENTS 指南](https://developers.openai.com/codex/) ，使用 AGENTS.md 文件说明
 
 ### Hugging Face Skills
 
-* [SKILL.md](https://github.com/huggingface/skills/blob/main/hf-llm-trainer/skills/model-trainer/SKILL.md) — 技能文档
-* [训练方法指南](https://github.com/huggingface/skills/blob/main/hf-llm-trainer/skills/model-trainer/references/training_methods.md) — 介绍 SFT、DPO、GRPO 等方法
+* [SKILL.md](https://github.com/huggingface/skills/blob/main/hf-llm-trainer/skills/model-trainer/SKILL.md) ，技能文档
+* [训练方法指南](https://github.com/huggingface/skills/blob/main/hf-llm-trainer/skills/model-trainer/references/training_methods.md) ，介绍 SFT、DPO、GRPO 等方法
 * [硬件指南](https://github.com/huggingface/skills/blob/main/hf-llm-trainer/skills/model-trainer/references/hardware_guide.md)
-* [TRL 文档](https://huggingface.co/docs/trl) — Hugging Face 的训练库
-* [HF Jobs 文档](https://huggingface.co/docs/huggingface_hub/guides/jobs) — 云端训练任务指南
-* [Trackio 文档](https://huggingface.co/docs/trackio) — 实时训练监控工具
-
+* [TRL 文档](https://huggingface.co/docs/trl) ，Hugging Face 的训练库
+* [HF Jobs 文档](https://huggingface.co/docs/huggingface_hub/guides/jobs) ，云端训练任务指南
+* [Trackio 文档](https://huggingface.co/docs/trackio) ，实时训练监控工具
