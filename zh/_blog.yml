@@ -1743,11 +1743,15 @@
     - google
     - announcement
 
-- local: anylanguagemodel
-  date: Nov 20, 2025
+- local: hf-skills-training-codex
+  date: Dec 11, 2025
   tags:
     - llm
-    - coreml
-    - mlx
-    - community
+    - fine-tuning
     - open-source
+    - community
+    - training
+    - Claude
+    - Codex
+    - Gemini
+    - agents
