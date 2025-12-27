@@ -1743,6 +1743,12 @@
     - google
     - announcement
 
+- local: open-asr-leaderboard
+  date: Nov 21, 2025
+  tags:
+    - audio
+    - speech
+    - leaderboard
 - local: hf-skills-training-codex
   date: Dec 11, 2025
   tags:
