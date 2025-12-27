@@ -1743,6 +1743,15 @@
     - google
     - announcement
 
+- local: rapidfireai
+  date: Nov 21, 2025
+  tags:
+    - llm
+    - experimentation
+    - fine-tuning
+    - post-training
+    - trl
+    - rapidfireai
 - local: hf-skills-training-codex
   date: Dec 11, 2025
   tags:
