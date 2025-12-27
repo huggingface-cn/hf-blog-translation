@@ -1752,3 +1752,15 @@
     - post-training
     - trl
     - rapidfireai
+- local: hf-skills-training-codex
+  date: Dec 11, 2025
+  tags:
+    - llm
+    - fine-tuning
+    - open-source
+    - community
+    - training
+    - Claude
+    - Codex
+    - Gemini
+    - agents
