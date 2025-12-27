@@ -1742,3 +1742,10 @@
     - partnerships
     - google
     - announcement
+
+- local: open-asr-leaderboard
+  date: Nov 21, 2025
+  tags:
+    - audio
+    - speech
+    - leaderboard
