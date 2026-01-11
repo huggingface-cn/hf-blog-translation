@@ -1,5 +1,5 @@
 ---
-title: "使用 Hugging Face 轻松构建和共享 ROCm 内核"
+title: "使用 Hugging Face 轻松构建并共享 ROCm 内核"
 thumbnail: /blog/assets/build-rocm-kernels/thumbnail.png
 authors:
 - user: badaoui
@@ -10,7 +10,7 @@ translators:
 - user: chenglu
 ---
 
-# 使用 Hugging Face 轻松构建并分享 ROCm 内核
+# 使用 Hugging Face 轻松构建并共享 ROCm 内核
 
 ![Easily Build and Share ROCm Kernels with Hugging Face](/blog/assets/build-rocm-kernels/thumbnail.png)
 
