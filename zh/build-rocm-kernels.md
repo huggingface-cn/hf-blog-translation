@@ -374,6 +374,7 @@ cachix use huggingface
 ```bash
 # Use cachix without installing it
 nix run nixpkgs#cachix -- use huggingface
+```
 
 #### 使用 Nix 构建内核
 
