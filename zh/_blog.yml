@@ -1755,3 +1755,10 @@
     - Codex
     - Gemini
     - agents
+
+- local: lerobot-release-v050
+  date: Mar 09, 2026
+  tags:
+    - lerobot
+    - robotics
+    - agents
