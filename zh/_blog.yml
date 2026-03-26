@@ -1742,3 +1742,26 @@
     - partnerships
     - google
     - announcement
+
+- local: hf-skills-training-codex
+  date: Dec 11, 2025
+  tags:
+    - llm
+    - fine-tuning
+    - open-source
+    - community
+    - training
+    - Claude
+    - Codex
+    - Gemini
+    - agents
+
+- local: moe-transformers
+  date: Feb 26, 2026
+  tags:
+    - mixture-of-experts
+    - optimization
+    - transformers
+    - transformers-internal
+    - inference
+    - speed
