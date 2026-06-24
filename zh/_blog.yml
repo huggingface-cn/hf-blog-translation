@@ -1647,6 +1647,13 @@
     - LLM
     - community
 
+- local: mcp-for-research
+  date: Aug 18, 2025
+  tags:
+    - mcp
+    - research
+    - guide
+
 - local: claude-and-mcp
   date: Aug 19, 2025
   tags:
