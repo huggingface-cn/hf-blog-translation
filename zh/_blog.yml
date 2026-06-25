@@ -1765,6 +1765,14 @@
     - Gemini
     - agents
 
+- local: agent-glossary
+  date: May 25, 2026
+  tags:
+    - agents
+    - llms
+    - guide
+    - rl
+
 - local: torch-profiler
   date: May 29, 2026
   tags:
