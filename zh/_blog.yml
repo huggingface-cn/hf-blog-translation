@@ -1765,6 +1765,18 @@
     - Gemini
     - agents
 
+- local: open-responses
+  date: Jan 15, 2026
+  tags:
+    - open-responses
+    - responses
+    - open-source
+    - community
+    - inference
+    - agents
+    - mcp
+    - inference-providers
+
 - local: torch-profiler
   date: May 29, 2026
   tags:
