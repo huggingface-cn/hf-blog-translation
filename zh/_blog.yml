@@ -1765,6 +1765,17 @@
     - Gemini
     - agents
 
+- local: deepseekv4
+  date: April 24, 2026
+  tags:
+    - llm
+    - moe
+    - long-context
+    - agents
+    - open-source
+    - research
+    - community
+
 - local: torch-profiler
   date: May 29, 2026
   tags:
